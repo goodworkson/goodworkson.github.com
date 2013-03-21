@@ -82,8 +82,7 @@ body {
 .header-container {
     background: #FFF;
     text-align:center;
-    position:fixed;
-    z-index:1000;
+    position:relative;
     width:100%;
    	border-bottom:1px solid #EDEDED;
 }
@@ -91,7 +90,7 @@ body {
 .main-container {
 	margin:0 auto;
 	max-width:1920px;
-	padding-top:146px;
+	padding-top:0;
 }
 
 .footer-container {
@@ -213,6 +212,10 @@ h1 {
 	.main-container {
 		padding-top:145px;
 	}
+    .header-container  {
+         position:fixed;
+         z-index:1000;
+    }
 	h1{
 	    text-align:center;
 	}
