@@ -68,6 +68,7 @@ textarea {
     padding:1.5em;
 }
 
+.main-text,
 .project-text {
 	margin:0 auto;
 	max-width:600px;
