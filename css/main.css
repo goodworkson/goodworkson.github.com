@@ -1,3 +1,12 @@
+/*
+ * Website - www.goodworkson.co
+ * Copyright (C) 2012 Gareth Hughes.
+ * Author: Gareth Hughes (hello@goodworkson.co)
+ * "Design makes the world a better place" &#8212; Alvin Lustig
+*/
+
+/* ============== 1em = 16px ============== */
+
 html,
 button,
 input,
@@ -8,37 +17,22 @@ textarea {
 
 body {
     font-size: 1em;
-    line-height: 1.4;
+    line-height: 1.4em;
 }
 
 ::-moz-selection {
-    background: #b3d4fc;
+    background: #cbeed5;
     text-shadow: none;
 }
 
 ::selection {
-    background: #b3d4fc;
+    background: #cbeed5;
     text-shadow: none;
-}
-
-hr {
-    display: block;
-    height: 1px;
-    border: 0;
-    border-top: 1px solid #ccc;
-    margin: 1em 0;
-    padding: 0;
 }
 
 img {
     vertical-align: middle;
     max-width:100%;
-}
-
-fieldset {
-    border: 0;
-    margin: 0;
-    padding: 0;
 }
 
 textarea {
@@ -52,10 +46,20 @@ textarea {
     padding: 0.2em 0;
 }
 
+a {
+    -webkit-transition:color 0.1s ease-in; 
+    -o-transition:color 0.1s ease-in;
+    -moz-transition:color 0.1s ease-in;
+}
+
 /* ============== PROJECT PAGE ============== */
 
 .projects {
+    margin-top: 28px;
 	max-width:1920px;
+}
+.project-container {
+    max-width:1920px;
 }
 
 .project-hero {
@@ -68,18 +72,59 @@ textarea {
     padding:1.5em;
 }
 
+.showcase-collection {
+    margin:0 auto;
+    max-width:800px;
+    padding: 1.5em;
+}
+
 .main-text,
-.project-text {
+.project-text,
+.showcase-text {
 	margin:0 auto;
 	max-width:600px;
-	padding:1.5em;
+	padding:0 1.5em;
 }
 
 
 /* ============== STYLE ============== */
 
 body {
-    font: 16px/26px Helvetica, Helvetica Neue, Arial;
+    font: 16px/26px "minion pro", "minion-pro2", serif;
+}
+
+p { 
+    font-size: 22px;
+    line-height: 1.5;
+}
+
+h1 {
+    padding: 0;
+    margin-top: 50px;
+    font-size: 38px;
+    text-align:left;
+    font-family: 'Alternategothic2 BT', helvetica-neue, arial;
+}
+
+h1.blog{
+    padding: 0;
+    margin: 50px 0 0.3em 0;
+    font-size: 38px;
+    text-align:left;
+    font-family: 'Alternategothic2 BT', helvetica-neue, arial;
+}
+
+p.date { 
+    font-size: 18px;
+    padding: 0;
+    margin: 0;
+    color:#999;
+}
+
+.showcase-text {   
+    font-size: 21px; 
+    line-height: 1.4em;
+    padding:0 10px;
 }
 
 .wrapper {
@@ -98,55 +143,67 @@ body {
 .main-container {
 	margin:0 auto;
 	max-width:1920px;
-	padding-top:0;
 }
 
 .footer-container {
-	margin-top:100px;
+	margin-top:60px;
     background:#FFF;
     text-align:center;
    	border-top:1px solid #EDEDED;
-   	
-   	font-size:0.8em;
-   	line-height:14px;
-   	color:#999;
+    padding: 20px 0;
 }
+
+.footer-container p {       
+    font-size:18px;
+    line-height:14px;
+    color:#999;
+}
+
 .footer-container a {
 	color:#999; text-decoration:none;
-	} 
+} 
 
 .footer-container a:hover,visited {
 	color:#666; text-decoration:none;
-	} 
-	
-.title {
+} 
+
+.title{
+    font-family: 'Alternategothic2 BT', helvetica-neue, arial;
+    font-size:48px;
+    font-weight:normal;
+    text-transform:uppercase;
+    letter-spacing:2px;
+    line-height: 0;
+    margin: 50px 0;
+
+    text-align: center;
     color: #222;
+    float: left;
 }
+article {margin: 0 0 80px 0; }
 
 /* ============== MOBILE MENU ============== */
 
 nav a {
-    float: left;
-    width: 27%;
-    margin: 0 1.7%;
-    padding: 25px 2%;
+    float: right;
+    margin: 0 3%;
+    padding: 40px 5% 34px;
     margin-bottom: 0;
 	display: block;
         
     text-align: center;
     text-decoration: none;
-    font-weight: bold;
 	
-	font-size:0.8em;
-	font-weight:normal;
-	text-transform:uppercase;
-	letter-spacing:2px;
+    font-family: "minion pro", "minion-pro2", serif;
+    font-size: 20px;
+	font-weight: normal;
     color: #222;
 }
 
 nav li:first-child a {
-      margin-left: 0;
-}
+     margin-right: 0;
+     margin-left: 0;
+ }
 
 nav li:last-child a {
      margin-right: 0;
@@ -160,28 +217,22 @@ nav ul {
 nav a:hover,
 nav a:visited {
     color: #222;
+    text-decoration:none;
 }
 
 nav a:hover {
-    text-decoration: underline;
+    color: #999;
+    text-decoration:none;
+}
+
+nav a.active {
+    color: #999;
 }
 
 .main {
     padding: 30px 0;
 }
 
-.title{
-	text-align: center;
-}
-
-h1 {
-    font-size: 2em;
-    text-align:left;
-}
-
-.footer-container footer {
-    padding: 20px 0;
-}
 
 
 
@@ -190,13 +241,19 @@ h1 {
    ========================================================================================== */
 
 @media only screen and (min-width: 480px) {
+    .title{
+        margin: 50px 0;
+        text-align: center;
+        color: #222;
+        float: left;
+    }
 
     nav a {
-        float: left;
-        width: 27%;
-        margin: 0 1.7%;
-        padding: 25px 2%;
+        float: right;
+        margin: 0 3%;
+        padding: 40px 5% 34px;
         margin-bottom: 0;
+        display: block;
     }
 
     nav li:first-child a {
@@ -208,15 +265,45 @@ h1 {
     }
     
 	.main-container {
-		padding-top:145px;
+		padding-top:140px;
 	}
+
+    .main-container_project {
+        padding-top:100px;
+    }
+
+
     .header-container  {
          position:fixed;
          z-index:1000;
     }
+
 	h1{
+        font-size:60px;
 	    text-align:center;
 	}
+
+    h1.blog{
+        padding: 0;
+        margin: 50px 0 0.3em 0;
+        font-size: 60px;
+        text-align:center;
+        font-family: 'Alternategothic2 BT', helvetica-neue, arial;
+    }
+
+    p.date { 
+        font-size: 18px;
+        padding: 0;
+        margin: 0;
+        text-align: center;
+        color:#999;
+    }
+
+    p.showcase-text{   
+        text-align: center;
+        font-size: 32px; 
+        line-height: 1.4em;
+    }
 
     nav ul li {
         display: inline;
@@ -225,6 +312,11 @@ h1 {
     .oldie nav a {
         margin: 0 0.7%;
     }
+
+    .showcase-collection {
+    padding: 70px 1.5em 0;
+    }
+
 }
 
 
@@ -234,24 +326,15 @@ h1 {
    ========================================================================================== */
 
 @media only screen and (min-width: 768px) {
-
-    .title {
-        float: left;
+   
+    nav a {
+        padding: 40px 4% 34px;
     }
 
-    nav {
-        float: right;
-        width: 38%;
-    }
-
-    .main article {
+    .main-article {
         float: left;
         width: 100%;
     }
-    
-    .main-container {
-		padding-top:76px;
-	}
 	
     .wrapper {
         max-width:1200px;
@@ -265,6 +348,15 @@ h1 {
    ========================================================================================== */
 
 @media only screen and (min-width: 1140px) {
+    .title{
+        font-size:68px;
+        margin: 50px 0;
+    }
+
+    nav a {
+        padding: 40px 3% 34px;
+        font-size: 24px;
+    }
 
 }
 
