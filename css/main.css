@@ -129,7 +129,7 @@ p.date {
 }
 
 .wrapper {
-    width: 85%;
+    width: 90%;
     margin: 0 5%;
 }
 
@@ -143,7 +143,7 @@ p.date {
 
 .main-container {
 	margin:0 auto;
-	width:100%;
+	max-width:1920px;
 }
 
 .footer-container {
@@ -266,21 +266,17 @@ nav a.active {
     }
     
 	.main-container {
-        width:85%;
 		padding-top:140px;
 	}
 
     .main-container-project {
-        width:85%;
         padding-top:100px;
     }
 
 
     .header-container  {
-        position:fixed;
-        z-index:1000;
-        width:100%;
-
+         position:fixed;
+         z-index:1000;
     }
 
 	h1{
@@ -342,8 +338,12 @@ nav a.active {
     }
 	
     .wrapper {
-        width:85%;
+        max-width:900px;
         margin: 0 auto;
+    }
+
+    .main-container {
+        max-width:900px;
     }
 }
 
