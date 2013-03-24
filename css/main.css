@@ -343,7 +343,9 @@ nav a.active {
     }
 
     .main-container {
-        max-width:768px;
+        min-width: 768px;
+        max-width:1200px;
+        background-color: aqua;
     }
 }
 
@@ -362,7 +364,11 @@ nav a.active {
         padding: 40px 3% 34px;
         font-size: 24px;
     }
-
+    .main-container {
+        min-width: 1140px;
+        max-width:1400px;
+        background-color: red;
+    }
 }
 
 
