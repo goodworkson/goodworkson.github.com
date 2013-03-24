@@ -55,11 +55,12 @@ a {
 /* ============== PROJECT PAGE ============== */
 
 .projects {
-    margin-top: 28px;
-	max-width:1920px;
+    margin: 28px auto 0;
+	max-width:1600;
 }
 .project-container {
-    max-width:1920px;
+    margin:0 auto;
+    max-width:1600px;
 }
 
 .project-hero {
@@ -128,7 +129,7 @@ p.date {
 }
 
 .wrapper {
-    width: 90%;
+    width: 85%;
     margin: 0 5%;
 }
 
@@ -142,7 +143,7 @@ p.date {
 
 .main-container {
 	margin:0 auto;
-	max-width:1920px;
+	width:100%;
 }
 
 .footer-container {
@@ -265,17 +266,21 @@ nav a.active {
     }
     
 	.main-container {
+        width:85%;
 		padding-top:140px;
 	}
 
     .main-container-project {
+        width:85%;
         padding-top:100px;
     }
 
 
     .header-container  {
-         position:fixed;
-         z-index:1000;
+        position:fixed;
+        z-index:1000;
+        width:100%;
+
     }
 
 	h1{
@@ -337,7 +342,7 @@ nav a.active {
     }
 	
     .wrapper {
-        max-width:1200px;
+        width:85%;
         margin: 0 auto;
     }
 }
