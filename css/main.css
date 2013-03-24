@@ -316,6 +316,7 @@ nav a.active {
 
     .showcase-collection {
     padding: 70px 1.5em 0;
+    width:100%;
     }
 
 }
@@ -343,7 +344,7 @@ nav a.active {
     }
 
     .main-container {
-        min-width: 768px;
+        min-width: 900px;
         max-width:1200px;
         background-color: aqua;
     }
