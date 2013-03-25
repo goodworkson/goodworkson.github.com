@@ -169,12 +169,12 @@ h1 {
 
 nav a {
     float: right;
-    margin: 0 3% 0;
+    margin: 0 4% 0;
     padding: 30px 3% 24px;
     display: block;
         
     font-family: "minion pro", "minion-pro2", serif;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: normal;
     text-decoration: none;
     color: #222;
@@ -190,13 +190,8 @@ nav a:visited {
     text-decoration:none;
 }
 
-nav a:hover {
-    color: #999;
-    text-decoration:none;
-}
-
 nav a.active {
-    color: #999;
+    color: #40bc5d;
 }
 
 .main {
@@ -299,7 +294,7 @@ article {
         line-height:14px;
     }
     nav a {
-        margin: 0 4%;
+        font-size: 20px;
     }
 }
 
