@@ -86,7 +86,9 @@ a {
 	max-width:600px;
 	padding:0 1.5em;
 }
-.project-text p{ text-align: center;}
+.project-text p { 
+    text-align: left;
+}
 
 
 /* ============== STYLE ============== */
@@ -96,7 +98,7 @@ body {
 }
 
 p { 
-    font-size: 22px;
+    font-size: 20px;
     line-height: 1.5;
 }
 
@@ -106,6 +108,7 @@ h1 {
     font-size: 38px;
     text-align:left;
     font-family: 'Alternategothic2 BT', 'Helvetica Neue', Helvetica, arial;
+    line-height: 1.2em;
 }
 
 .icon {   
@@ -136,7 +139,7 @@ h1 {
 	margin-top:60px;
     padding: 20px 0;
 
-    text-align:center;
+    text-align: center;
     border-top:1px solid #EDEDED;
 }
 
@@ -262,7 +265,9 @@ article {
         text-align:center;
         font-family: 'Alternategothic2 BT', helvetica-neue, arial;
     }
-
+    p { 
+        font-size: 22px;
+    }
     p.date { 
         font-size: 18px;
         padding: 0;
@@ -277,6 +282,9 @@ article {
         line-height: 1.4em;
     }
 
+    .project-text p { 
+        text-align: center;
+    }
     nav ul li {
         display: inline;
     }
