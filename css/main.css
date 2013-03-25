@@ -133,7 +133,7 @@ h1 {
 }
 
 .footer-container p {       
-    font-size:18px;
+    font-size:16px;
     line-height:14px;
     color:#999;
 }
@@ -282,11 +282,9 @@ nav a.active {
 	.main-container {
 		padding-top:140px;
 	}
-
     .main-container-project {
-        padding-top:100px;
+        padding-top:80px;
     }
-
 
     .header-container  {
          position:fixed;
@@ -329,9 +327,13 @@ nav a.active {
     }
 
     .showcase-collection {
-    padding: 70px 1.5em 0;
+        padding: 70px 1.5em 0;
     }
-
+    
+    .footer-container p {       
+        font-size:18px;
+        line-height:14px;
+    }
 }
 
 
@@ -348,7 +350,7 @@ nav a.active {
     }
 	
     .wrapper {
-        width:70%;
+        max-width:1200px;
         margin: 0 auto;
     }
 }
@@ -358,7 +360,7 @@ nav a.active {
    LARGE DESKTOP DISPLAYS (According to 2012)
    ========================================================================================== */
 
-@media only screen and (min-width: 1140px) {
+@media only screen and (min-width: 1180px) {
     
     .logo{
         font-size:24px;
