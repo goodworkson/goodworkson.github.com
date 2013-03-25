@@ -86,6 +86,7 @@ a {
 	max-width:600px;
 	padding:0 1.5em;
 }
+.project-text p{ text-align: center;}
 
 
 /* ============== STYLE ============== */
@@ -105,6 +106,13 @@ h1 {
     font-size: 38px;
     text-align:left;
     font-family: 'Alternategothic2 BT', 'Helvetica Neue', Helvetica, arial;
+}
+
+.icon {   
+    padding: 0;
+    margin-top: 15px;
+    float:left;
+    width:50px
 }
 
 .wrapper {
@@ -365,6 +373,13 @@ nav a.active {
     .logo{
         font-size:24px;
         margin: 40px 0 0;
+    }
+
+    .icon {   
+        padding: 0;
+        margin-top: 20px;
+        float:left;
+        width:60px
     }
 
     nav a {
