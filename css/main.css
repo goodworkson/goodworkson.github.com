@@ -107,27 +107,6 @@ h1 {
     font-family: 'Alternategothic2 BT', 'Helvetica Neue', Helvetica, arial;
 }
 
-h1.blog{
-    padding: 0;
-    margin: 50px 0 0.3em 0;
-    font-size: 38px;
-    text-align:left;
-    font-family: 'Alternategothic2 BT', 'Helvetica Neue', Helvetica, arial;
-}
-
-p.date { 
-    font-size: 18px;
-    padding: 0;
-    margin: 0;
-    color:#999;
-}
-
-.showcase-text {   
-    font-size: 21px; 
-    line-height: 1.4em;
-    padding:0 10px;
-}
-
 .wrapper {
     width: 90%;
     margin: 0 5%;
@@ -135,7 +114,6 @@ p.date {
 
 .header-container {
     background: #FFF;
-    text-align:center;
     position:relative;
     width:100%;
    	border-bottom:1px solid #EDEDED;
@@ -143,15 +121,15 @@ p.date {
 
 .main-container {
 	margin:0 auto;
-	max-width:1920px;
+	max-width:100%;
 }
 
 .footer-container {
 	margin-top:60px;
-    background:#FFF;
-    text-align:center;
-   	border-top:1px solid #EDEDED;
     padding: 20px 0;
+
+    text-align:center;
+    border-top:1px solid #EDEDED;
 }
 
 .footer-container p {       
@@ -168,27 +146,91 @@ p.date {
 	color:#666; text-decoration:none;
 } 
 
-.title{
-    font-family: 'Alternategothic2 BT', helvetica-neue, arial;
-    font-size:48px;
-    font-weight:normal;
-    text-transform:uppercase;
-    letter-spacing:2px;
-    line-height: 0;
-    margin: 50px 0;
-
-    text-align: center;
-    color: #222;
+.logo {
     float: left;
+    margin: 30px 0 0 0;
+        
+    font-family: "minion pro", "minion-pro2", serif;
+    font-size: 20px;
+    font-weight: normal;
+    text-decoration: none;
+    color: #222;
 }
-article {margin: 0 0 80px 0; }
+
+/* ============== MOBILE MENU ============== */
+
+nav a {
+    float: right;
+    margin: 0 3% 0;
+    padding: 30px 5% 24px;
+    display: block;
+        
+    font-family: "minion pro", "minion-pro2", serif;
+    font-size: 20px;
+    font-weight: normal;
+    text-decoration: none;
+    color: #222;
+}
+
+nav li:first-child a { margin-right: 0; margin-left: 0; }
+nav li:last-child a { margin-right: 0;}
+nav ul { margin: 0; padding: 0; }
+
+nav a:hover,
+nav a:visited {
+    color: #222;
+    text-decoration:none;
+}
+
+nav a:hover {
+    color: #999;
+    text-decoration:none;
+}
+
+nav a.active {
+    color: #999;
+}
+
+.main {
+    padding: 30px 0;
+}
+
+/* ============== SHOWCASE STYLE ============== */
+
+.showcase-text {   
+    font-size: 21px; 
+    line-height: 1.4em;
+    padding:0 10px;
+}
+
+/* ============== BLOG STYLE ============== */
+
+h1.blog{
+    padding: 0;
+    margin: 50px 0 0.3em 0;
+    font-size: 38px;
+    text-align:left;
+    font-family: 'Alternategothic2 BT', 'Helvetica Neue', Helvetica, arial;
+}
+
+p.date { 
+    font-size: 18px;
+    padding: 0;
+    margin: 0;
+    color:#999;
+}
+
+article {
+    margin: 0 0 80px 0;
+}
+
 
 /* ============== MOBILE MENU ============== */
 
 nav a {
     float: right;
     margin: 0 3%;
-    padding: 40px 5% 34px;
+    padding: 30px 5% 24px;
     margin-bottom: 0;
 	display: block;
         
@@ -201,19 +243,9 @@ nav a {
     color: #222;
 }
 
-nav li:first-child a {
-     margin-right: 0;
-     margin-left: 0;
- }
-
-nav li:last-child a {
-     margin-right: 0;
-}
-    
-nav ul {
-    margin: 0;
-    padding: 0;
-}
+nav li:first-child a { margin-right: 0; margin-left: 0; }
+nav li:last-child a { margin-right: 0;}
+nav ul { margin: 0; padding: 0; }
 
 nav a:hover,
 nav a:visited {
@@ -242,27 +274,9 @@ nav a.active {
    ========================================================================================== */
 
 @media only screen and (min-width: 480px) {
-    .title{
-        margin: 50px 0;
-        text-align: center;
-        color: #222;
-        float: left;
-    }
 
-    nav a {
-        float: right;
-        margin: 0 3%;
-        padding: 40px 5% 34px;
-        margin-bottom: 0;
-        display: block;
-    }
-
-    nav li:first-child a {
-        margin-left: 0;
-    }
-
-    nav li:last-child a {
-        margin-right: 0;
+    .logo{
+        margin: 30px 0 0 0;
     }
     
 	.main-container {
@@ -316,7 +330,6 @@ nav a.active {
 
     .showcase-collection {
     padding: 70px 1.5em 0;
-    width:100%;
     }
 
 }
@@ -328,10 +341,6 @@ nav a.active {
    ========================================================================================== */
 
 @media only screen and (min-width: 768px) {
-   
-    nav a {
-        padding: 40px 4% 34px;
-    }
 
     .main-article {
         float: left;
@@ -339,14 +348,8 @@ nav a.active {
     }
 	
     .wrapper {
-        max-width:768px;
+        width:70%;
         margin: 0 auto;
-    }
-
-    .main-container {
-        min-width: 900px;
-        max-width:1200px;
-        background-color: aqua;
     }
 }
 
@@ -356,20 +359,17 @@ nav a.active {
    ========================================================================================== */
 
 @media only screen and (min-width: 1140px) {
-    .title{
-        font-size:68px;
-        margin: 50px 0;
+    
+    .logo{
+        font-size:24px;
+        margin: 40px 0 0;
     }
 
     nav a {
         padding: 40px 3% 34px;
         font-size: 24px;
     }
-    .main-container {
-        min-width: 1140px;
-        max-width:1400px;
-        background-color: red;
-    }
+
 }
 
 
