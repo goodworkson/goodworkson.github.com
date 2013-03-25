@@ -170,7 +170,7 @@ h1 {
 nav a {
     float: right;
     margin: 0 3% 0;
-    padding: 30px 5% 24px;
+    padding: 30px 3% 24px;
     display: block;
         
     font-family: "minion pro", "minion-pro2", serif;
@@ -203,6 +203,7 @@ nav a.active {
     padding: 30px 0;
 }
 
+
 /* ============== SHOWCASE STYLE ============== */
 
 .showcase-text {   
@@ -231,51 +232,6 @@ p.date {
 article {
     margin: 0 0 80px 0;
 }
-
-
-/* ============== MOBILE MENU ============== */
-
-nav a {
-    float: right;
-    margin: 0 3%;
-    padding: 30px 3% 24px;
-    margin-bottom: 0;
-	display: block;
-        
-    text-align: center;
-    text-decoration: none;
-	
-    font-family: "minion pro", "minion-pro2", serif;
-    font-size: 20px;
-	font-weight: normal;
-    color: #222;
-}
-
-nav li:first-child a { margin-right: 0; margin-left: 0; }
-nav li:last-child a { margin-right: 0;}
-nav ul { margin: 0; padding: 0; }
-
-nav a:hover,
-nav a:visited {
-    color: #222;
-    text-decoration:none;
-}
-
-nav a:hover {
-    color: #999;
-    text-decoration:none;
-}
-
-nav a.active {
-    color: #999;
-}
-
-.main {
-    padding: 30px 0;
-}
-
-
-
 
 /* ==========================================================================================
    TABLET DISPLAYS (According to 2012)
