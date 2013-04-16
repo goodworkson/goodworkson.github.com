@@ -47,6 +47,11 @@ textarea {
 }
 
 a {
+    -webkit-transition-property: text-decoration 0.1s ease-in;
+    -o-transition-property: text-decoration 0.1s ease-in;
+    -moz-transition-property: text-decoration 0.1s ease-in;    
+}
+a {
     -webkit-transition:color 0.1s ease-in; 
     -o-transition:color 0.1s ease-in;
     -moz-transition:color 0.1s ease-in;
@@ -70,7 +75,7 @@ a {
 .project-img {
     margin:0 auto;
     max-width:600px;
-    padding:1.5em;
+    padding:0 1.5em;
 }
 
 .showcase-collection {
@@ -102,7 +107,7 @@ p {
     line-height: 1.5;
 }
 
-h1 {
+h2 {
     padding: 0;
     margin-top: 50px;
     font-size: 38px;
@@ -110,6 +115,8 @@ h1 {
     font-family: 'Alternategothic2 BT', 'Helvetica Neue', Helvetica, arial;
     line-height: 1.2em;
 }
+header {}
+section{}
 
 .icon {   
     padding: 0;
@@ -124,10 +131,9 @@ h1 {
 }
 
 .header-container {
-    background: #FFF;
+    background-color:rgba(255,255,255,0.7);
     position:relative;
     width:100%;
-   	border-bottom:1px solid #EDEDED;
 }
 
 .main-container {
@@ -160,51 +166,76 @@ h1 {
 .logo {
     float: left;
     margin: 30px 0 0 0;
-        
-    font-family: "minion pro", "minion-pro2", serif;
-    font-size: 20px;
-    font-weight: normal;
-    text-decoration: none;
-    color: #222;
 }
 
+.sub-img {
+    padding:0 1.5em;
+    margin:0;
+}
+
+.sub-text {
+    padding:0 1.5em;
+    margin:0;
+}
+
+
 /* ============== MOBILE MENU ============== */
+h1.logo {
+    float: left;
+    margin: 0;
+    padding: 30px 0 24px;
+    display: block;
+    
+    font-family: "Proxima Nova", Arial, sans-serif;
+    font-size: 15px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-decoration: none;
+    color: #111;
+}
 
 nav a {
     float: right;
     margin: 0 4% 0;
     padding: 30px 3% 24px;
     display: block;
-        
+    
+    font-family: "Proxima Nova", Arial, sans-serif;
+    font-size: 14px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-decoration: none;
+    color: #111;
+
+    /* Serif Nav
     font-family: "minion pro", "minion-pro2", serif;
     font-size: 18px;
     font-weight: normal;
     text-decoration: none;
     color: #222;
+    */
 }
 
 nav li:first-child a { margin-right: 0; margin-left: 0; }
 nav li:last-child a { margin-right: 0;}
 nav ul { margin: 0; padding: 0; }
 
-nav a:hover,
 nav a:visited {
     color: #222;
     text-decoration:none;
 }
-
-nav a.active {
-    color: #40bc5d;
-}
+nav a.active { text-decoration: line-through; }
+nav a:hover { text-decoration: line-through; }
 
 .main {
     padding: 30px 0;
 }
 
-
 /* ============== SHOWCASE STYLE ============== */
 
-.showcase-text {   
+.showcase-text {
     font-size: 21px; 
     line-height: 1.4em;
     padding:0 10px;
@@ -212,7 +243,7 @@ nav a.active {
 
 /* ============== BLOG STYLE ============== */
 
-h1.blog{
+h2.blog{
     padding: 0;
     margin: 50px 0 0.3em 0;
     font-size: 38px;
@@ -228,7 +259,7 @@ p.date {
 }
 
 article {
-    margin: 0 0 80px 0;
+    margin: 60px 0 80px 0;
 }
 
 /* ==========================================================================================
@@ -236,13 +267,9 @@ article {
    ========================================================================================== */
 
 @media only screen and (min-width: 480px) {
-
-    .logo{
-        margin: 30px 0 0 0;
-    }
     
 	.main-container {
-		padding-top:140px;
+		padding-top:100px;
 	}
     .main-container-project {
         padding-top:80px;
@@ -253,21 +280,23 @@ article {
          z-index:1000;
     }
 
-	h1{
+    h2.project{
         font-size:60px;
-	    text-align:center;
-	}
+        text-align:center;
+    }
 
-    h1.blog{
+    h2.blog{
         padding: 0;
-        margin: 50px 0 0.3em 0;
+        margin: 0;
         font-size: 60px;
         text-align:center;
         font-family: 'Alternategothic2 BT', helvetica-neue, arial;
     }
+
     p { 
         font-size: 22px;
     }
+
     p.date { 
         font-size: 18px;
         padding: 0;
@@ -276,10 +305,15 @@ article {
         color:#999;
     }
 
-    p.showcase-text{   
+    .showcase-text {
         text-align: center;
-        font-size: 32px; 
-        line-height: 1.4em;
+        line-height: 1.4em; 
+        padding:0 10px;
+        margin-top:60px;  
+    }
+
+    p.showcase-text{   
+        font-size: 26px; 
     }
 
     .project-text p { 
@@ -302,8 +336,33 @@ article {
         line-height:14px;
     }
     nav a {
-        font-size: 20px;
+        font-size: 14px;
+        letter-spacing: 2px;
     }
+
+    h1.logo {
+        font-size: 14px;
+        letter-spacing: 2px;
+    }
+
+    .project-small-container {
+        margin: 0 auto;
+        max-width: 900px;
+   }
+
+   .sub-img {
+        padding:0;
+        margin:60px 0;
+        float:left;
+        max-width: 420px;
+   }
+
+   .sub-text {
+        float:right;
+        padding:0;
+        max-width: 450px;
+        margin:60px 0 60px 0px;
+   }
 }
 
 
@@ -330,7 +389,7 @@ article {
    LARGE DESKTOP DISPLAYS (According to 2012)
    ========================================================================================== */
 
-@media only screen and (min-width: 1180px) {
+@media only screen and (min-width: 1300px) {
     
     .logo{
         font-size:24px;
@@ -346,7 +405,18 @@ article {
 
     nav a {
         padding: 40px 3% 34px;
-        font-size: 24px;
+    }
+    h1.logo {  
+        padding: 40px 0 34px;
+    }
+    
+    .showcase-text {
+        margin-top:80px;   
+        font-size: 24px; 
+    }
+
+    p.showcase-text{   
+        font-size: 32px; 
     }
 
 }
