@@ -109,10 +109,9 @@ p {
 
 h2 {
     padding: 0;
-    margin-top: 50px;
+    margin: 50px 0 0 0;
     font-size: 38px;
     text-align:left;
-    font-family: 'Alternategothic2 BT', 'Helvetica Neue', Helvetica, arial;
     line-height: 1.2em;
 }
 header {}
@@ -248,7 +247,6 @@ h2.blog{
     margin: 50px 0 0.3em 0;
     font-size: 38px;
     text-align:left;
-    font-family: 'Alternategothic2 BT', 'Helvetica Neue', Helvetica, arial;
 }
 
 p.date { 
@@ -267,18 +265,6 @@ article {
    ========================================================================================== */
 
 @media only screen and (min-width: 480px) {
-    
-	.main-container {
-		padding-top:100px;
-	}
-    .main-container-project {
-        padding-top:80px;
-    }
-
-    .header-container  {
-         position:fixed;
-         z-index:1000;
-    }
 
     h2.project{
         font-size:60px;
@@ -290,7 +276,6 @@ article {
         margin: 0;
         font-size: 60px;
         text-align:center;
-        font-family: 'Alternategothic2 BT', helvetica-neue, arial;
     }
 
     p { 
@@ -318,6 +303,7 @@ article {
 
     .project-text p { 
         text-align: center;
+        margin: 80px 0;
     }
     nav ul li {
         display: inline;
