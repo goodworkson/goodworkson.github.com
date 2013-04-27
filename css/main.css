@@ -16,8 +16,8 @@ textarea {
 }
 
 body {
-    font-size: 1em;
-    line-height: 1.4em;
+    font-size: 17px;
+    line-height: 120%;
 }
 
 ::-moz-selection {
@@ -110,8 +110,19 @@ body {
 }
 
 p { 
-    font-size: 20px;
+    font-size: 17px;
     line-height: 150%;
+}
+
+a {
+    color: #5ca4be;
+    text-decoration:none;
+}
+
+a:hover {
+    color: #1480a8;
+    text-decoration:none;
+
 }
 
 h2 {
@@ -120,7 +131,25 @@ h2 {
     font-size: 38px;
     text-align:left;
     line-height: 120%;
+    font-weight: normal;
 }
+
+h3 { 
+    margin: 0;
+    padding: 20px 0 0 0;
+    font-size: 22px;
+    line-height: 120%;
+    color: #588596;
+    font-weight: normal;
+}
+
+li {
+    font-size:18px;
+    line-height: 150%;
+    text-decoration: none;
+    list-style: none;
+}
+
 header {}
 section{}
 
@@ -232,8 +261,10 @@ nav a:visited {
     color: #222;
     text-decoration:none;
 }
+/*
 nav a.active { text-decoration: line-through; }
 nav a:hover { text-decoration: line-through; }
+*/
 
 .main {
     padding: 30px 0;
@@ -274,23 +305,23 @@ article {
 @media only screen and (min-width: 480px) {
 
     h2.project{
-        font-size:60px;
+        font-size:57.375px;
         text-align:center;
     }
 
     h2.blog{
         padding: 0;
         margin: 0;
-        font-size: 60px;
+        font-size: 57.375px;
         text-align:center;
     }
 
     p { 
-        font-size: 22px;
+        font-size: 20px;
     }
 
     p.date { 
-        font-size: 18px;
+        font-size: 16px;
         padding: 0;
         margin: 0;
         text-align: center;
@@ -305,7 +336,7 @@ article {
     }
 
     p.showcase-text{   
-        font-size: 26px; 
+        font-size: 24px; 
     }
 
     .project-text p { 
@@ -448,6 +479,7 @@ article {
     nav a {
         padding: 40px 3% 34px;
     }
+
     h1.logo {  
         padding: 40px 0 34px;
     }
