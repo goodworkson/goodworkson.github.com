@@ -20,12 +20,12 @@ body {
 }
 
 ::-moz-selection {
-    background: blue;
+    background: aqua;
     text-shadow: none;
 }
 
 ::selection {
-    background: blue;
+    background: aqua;
     text-shadow: none;
 }
 
