@@ -42,11 +42,10 @@ img {
 }
 
 .project-container {
-    margin:0 auto;
+    margin:0 auto 200px;
     max-width:1600px;
-    margin: 400px 0;
-    padding: 60px 0;
-    border-top: 1px solid #222;
+    padding: 80px 0;
+    border-top: 1px solid #444;
 }
 
 .project-hero {
@@ -65,6 +64,17 @@ img {
     padding:0 1.5em;
 }
 
+.outlined {
+    border:1px #333 solid;
+    padding:0;
+}
+
+.project-img-small {
+    margin:80px auto;
+    max-width:600px;
+    padding:0 1.5em;
+}
+
 .main-text,
 .project-text {
     margin:0 auto;
@@ -75,7 +85,7 @@ img {
 /* ============== STYLE ============== */
 
 body {
-    font: 16px "Avenir", Arial, sans-serif;
+    font: 16px "Proxima Nova", "Avenir", Arial, sans-serif;
 }
 
 p { 
@@ -84,7 +94,7 @@ p {
 }
 
 a {
-    color: red;
+    color: #999;
     text-decoration:none;
     -webkit-transition:color 0.1s ease-in; 
     -o-transition:color 0.1s ease-in;
@@ -92,7 +102,7 @@ a {
 }
 
 a:hover {
-    color: #AAAAAA;
+    color: #666;
     text-decoration:none;
 
 }
@@ -232,6 +242,10 @@ nav a {
     text-decoration: none;
     color: #FFF;
 }
+nav a:hover {
+    text-decoration: none;
+    color: #BBB;
+}
 
 nav li:first-child a { margin-right:0; }
 nav li:last-child a { margin-left:0; }
@@ -280,8 +294,12 @@ article {
 @media only screen and (min-width: 480px) {
 
     h2.project{
-        font-size: 57.375px;
+        font-size: 30px;
         text-align: center;
+        text-transform: uppercase;
+        letter-spacing: 16px;
+        font-weight: normal;
+        line-height: 150%;
     }
 
     h2.blog{
@@ -419,7 +437,7 @@ article {
 
 @-webkit-keyframes fadein{
   0%{
-    -webkit-transform: translateY(-20px);
+    -webkit-transform: translateY(20px);
     opacity: 0;
   }
   100%{
@@ -429,7 +447,7 @@ article {
 }
 @-moz-keyframes fadein{
   0%{
-    -moz-transform: translateY(-20px);
+    -moz-transform: translateY(20px);
     opacity: 0;
   }
   100%{
@@ -439,7 +457,7 @@ article {
 }
 @keyframes fadein{
   0%{
-    transform: translateY(-20px);
+    transform: translateY(20px);
     opacity: 0;
   }
   100%{
