@@ -20,12 +20,12 @@ body {
 }
 
 ::-moz-selection {
-    background: aqua;
+    background: #9fcfd6;
     text-shadow: none;
 }
 
 ::selection {
-    background: aqua;
+    background: #9fcfd6;
     text-shadow: none;
 }
 
@@ -78,7 +78,13 @@ img {
 .main-text,
 .project-text {
     margin:0 auto;
-    max-width:600px;
+    max-width:520px;
+    padding:0 1.5em;
+}
+
+.about-text {
+    margin:0 auto;
+    max-width:520px;
     padding:0 1.5em;
 }
 
@@ -108,28 +114,26 @@ a:hover {
 }
 
 h1 {
-    margin:300px 0;
-    text-align: center;
+    margin:50px 0;
+    padding:0 1.5em;
+    text-align:left;
     font-weight: normal;
     line-height: 140%;
-    font-size: 40px;
+    font-size: 22px;
     letter-spacing: 1px;
     opacity: 0;
-    -webkit-transform: translateY(-20px);
-    -moz-transform: translateY(-20px);
-    transform: translateY(-20px);
-    -webkit-animation: fadein .6s .5s 1 forwards ease-in-out;
-    -moz-animation: fadein .6s .5s 1 forwards ease-in-out;
-    animation: fadein .6s .5s 1 forwards ease-in-out;
-    }
+    -webkit-animation: fadein 2s; /* Safari and Chrome */  
+    -webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+}
 
-h2 {
-    padding: 0;
-    font-size:49.5px;
-    margin:0 0 36px 0;
-    text-align:left;
-    line-height: 120%;
+
+h2.project{
+    font-size: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 16px;
     font-weight: normal;
+    line-height: 150%;
 }
 
 h3 { 
@@ -141,23 +145,23 @@ h3 {
 }
 
 p.project-intro {
-    font-size:22 px;
+    font-size:18px;
     margin:0 0 36px 0;
-    text-align: center;
+    text-align: left;
     padding: 0;
 }
 
 p.project-intro-sub {
     font-size: 14.67px;
     font-style: italic;
-    text-align: center;
+    text-align: left;
     color: #999;
     margin: 0;
     padding: 0;
 }
 
 p.project-text {
-    font-size: 22 px;
+    font-size: 18px;
     margin: 0 0 36px 0;
     text-align: left;
     padding: 0;
@@ -173,7 +177,7 @@ li {
 iframe { width:100%;}
 
 .main-container { 
-    margin: 100px auto 0;
+    margin: 300px auto 0;
     max-width: 100%;
 }
 
@@ -207,11 +211,6 @@ iframe { width:100%;}
     text-transform: uppercase;     
 } 
 
-.logo {
-    float: left;
-    margin: 30px 0 0 0;
-}
-
 .sub-img {
     padding:0 1.5em;
     margin:0;
@@ -225,42 +224,42 @@ iframe { width:100%;}
 
 /* ============== MOBILE MENU ============== */
 .toplinks {
-    margin:0 auto;
+    margin:40px auto 0;
+    padding: 0;
+    height:44px;
     max-width: 460px;
+    border: red 1px solid;
 }
+nav {
+        margin:0 auto ;
 
+}
 nav a {
     float: left;
-    margin: 44px 4% 0;
-    padding: 24px 24px;
+    margin:0 6%;
+    padding: 10px 10px;
     display: block;
-    
-    font-family: "Avenir", Arial, sans-serif;
+
+    font-family: "Proxima Nova", "Avenir", Arial, sans-serif;
     font-size: 14.73px;
-    letter-spacing: 4px;
+    letter-spacing: 3px;
     text-transform: uppercase;
     text-decoration: none;
     color: #FFF;
 }
-nav a:hover {
-    text-decoration: none;
-    color: #BBB;
-}
+
+nav a:hover { text-decoration: none;color: #BBB;}   
+nav a:visited { text-decoration:none;}
 
 nav li:first-child a { margin-right:0; }
 nav li:last-child a { margin-left:0; }
 nav ul { 
     margin:0;
-    padding:0; 
-    animation: fadein 2s;
-    -moz-animation: fadein 2s; /* Firefox */
-    -webkit-animation: fadein 2s; /* Safari and Chrome */
-    -o-animation: fadein 2s; /* Opera */
+    padding:0;  
+    -webkit-animation-delay: 6s;
+    -webkit-animation: fadein 5s;
+    -webkit-animation-fill-mode:forwards;
     }
-}
-
-nav a:visited {
-    text-decoration:none;
 }
 
 .main {
@@ -293,24 +292,27 @@ article {
 
 @media only screen and (min-width: 480px) {
 
-    h2.project{
-        font-size: 30px;
-        text-align: center;
-        text-transform: uppercase;
-        letter-spacing: 16px;
-        font-weight: normal;
-        line-height: 150%;
-    }
-
-    h2.blog{
-        padding: 0;
-        margin: 0;
-        font-size: 57.375px;
-        text-align: center;
+    .main-container { 
+        margin: 100px auto 0;
     }
 
     p { 
-        font-size: 20px;
+        font-size: 18px;
+    }
+
+    p.project-intro {
+        text-align: center;
+    }
+
+    p.project-intro-sub {
+        text-align: center;
+    }
+
+    h1 {
+        margin:200px 0;
+        text-align: center;
+        font-size: 44px;
+        padding:0;
     }
 
     p.date { 
@@ -338,6 +340,20 @@ article {
         padding:0;
         max-width: 450px;
         margin:60px 0 60px 0px;
+   }
+
+   nav a {
+        float: left;
+        margin:0 4%;
+        padding: 24px 24px;
+        display: block;
+       
+        font-family: "Proxima Nova", "Avenir", Arial, sans-serif;
+        font-size: 14.73px;
+        letter-spacing: 4px;
+        text-transform: uppercase;
+        text-decoration: none;
+        color: #FFF;
    }
 }
 
@@ -433,35 +449,36 @@ article {
     *zoom: 1;
 }
 
-/* Keyframes */
 
-@-webkit-keyframes fadein{
-  0%{
-    -webkit-transform: translateY(20px);
-    opacity: 0;
-  }
-  100%{
-    -webkit-transform: translateY(0);
-    opacity: 1;
-  }
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
 }
-@-moz-keyframes fadein{
-  0%{
-    -moz-transform: translateY(20px);
-    opacity: 0;
-  }
-  100%{
-    -moz-transform: translateY(0);
-    opacity: 1;
-  }
+@-moz-keyframes fadein { /* Firefox */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
 }
-@keyframes fadein{
-  0%{
-    transform: translateY(20px);
-    opacity: 0;
-  }
-  100%{
-    transform: translateY(0);
-    opacity: 1;
-  }
+@-webkit-keyframes fadein { /* Safari and Chrome */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
 }
+@-o-keyframes fadein { /* Opera */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity: 1;
+    }
+}​
