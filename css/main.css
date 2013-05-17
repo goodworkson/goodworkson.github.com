@@ -14,7 +14,7 @@
 
 body {
     font-size: 17px;
-    line-height: 120%;
+    line-height: 140%;
     color: #FFF;
     background: #000;
 }
@@ -114,12 +114,12 @@ a:hover {
 }
 
 h1 {
-    margin:50px 0;
+    margin:100px 0;
     padding:0 1.5em;
-    text-align:left;
+    text-align:center;
     font-weight: normal;
     line-height: 140%;
-    font-size: 22px;
+    font-size: 24px;
     letter-spacing: 1px;
     opacity: 0;
     -webkit-animation: fadein 2s; /* Safari and Chrome */  
@@ -225,23 +225,22 @@ iframe { width:100%;}
 /* ============== MOBILE MENU ============== */
 .toplinks {
     margin:40px auto 0;
-    padding: 0;
     height:44px;
-    max-width: 460px;
-    border: red 1px solid;
+    max-width: 360px;
 }
+
 nav {
         margin:0 auto ;
 
 }
 nav a {
     float: left;
-    margin:0 6%;
+    margin:0 5%;
     padding: 10px 10px;
     display: block;
 
     font-family: "Proxima Nova", "Avenir", Arial, sans-serif;
-    font-size: 14.73px;
+    font-size: 13px;
     letter-spacing: 3px;
     text-transform: uppercase;
     text-decoration: none;
@@ -256,8 +255,8 @@ nav li:last-child a { margin-left:0; }
 nav ul { 
     margin:0;
     padding:0;  
-    -webkit-animation-delay: 6s;
-    -webkit-animation: fadein 5s;
+    -webkit-animation-delay: 2s;
+    -webkit-animation: fadein 3s;
     -webkit-animation-fill-mode:forwards;
     }
 }
@@ -342,18 +341,15 @@ article {
         margin:60px 0 60px 0px;
    }
 
+   .toplinks {
+       max-width: 480px;
+       border: red 1px solid;
+   }
+   
    nav a {
-        float: left;
-        margin:0 4%;
-        padding: 24px 24px;
-        display: block;
-       
-        font-family: "Proxima Nova", "Avenir", Arial, sans-serif;
         font-size: 14.73px;
-        letter-spacing: 4px;
-        text-transform: uppercase;
-        text-decoration: none;
-        color: #FFF;
+        margin: 0 4%;
+        padding: 10px 24px;
    }
 }
 
