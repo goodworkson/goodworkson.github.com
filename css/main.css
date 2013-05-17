@@ -235,12 +235,12 @@ nav {
 }
 nav a {
     float: left;
-    margin:0 4%;
+    margin:0 3%;
     padding: 10px 10px;
     display: block;
 
     font-family: "Proxima Nova", "Avenir", Arial, sans-serif;
-    font-size: 12px;
+    font-size: 13px;
     letter-spacing: 3px;
     text-transform: uppercase;
     text-decoration: none;
