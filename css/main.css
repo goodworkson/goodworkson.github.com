@@ -122,6 +122,7 @@ h1 {
     font-size: 20px;
     letter-spacing: 1px;
     opacity: 0;
+    color: red;
     -webkit-animation: fadein 2s; /* Safari and Chrome */  
     -webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
 }
