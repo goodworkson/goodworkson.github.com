@@ -60,8 +60,9 @@ img {
 }
 
 .outlined {
+    margin:40px 3%;
     border:1px #333 solid;
-    padding:0 3%;
+    padding:0;
 }
 
 .project-img-small {
@@ -114,13 +115,15 @@ h1 {
     text-align:center;
     font-weight: normal;
     line-height: 140%;
-    font-size: 18px;
+    font-size: 24px;
     letter-spacing: 1px;
     opacity: 0;
     -webkit-animation: fadein 2s; /* Safari and Chrome */  
     -webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
 }
 
+h1.big {display:none;}
+h1.mobile {display:block;}
 
 h2.project{
     font-size: 20px;
@@ -304,6 +307,8 @@ article {
         font-size: 44px;
         padding:0;
     }
+    h1.big {display:block;}
+    h1.mobile {display:none;}
 
     h2.project{
         font-size: 30px;
@@ -357,6 +362,10 @@ article {
        padding: 80px 0;
        margin:0 auto 200px auto;
    }
+
+    .outlined {
+        margin:40px 0;
+    }
 }
 
 
