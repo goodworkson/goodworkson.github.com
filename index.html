@@ -98,11 +98,11 @@
                     </div>
 
                     <div class="project-text">
-                       <p class="project-text">
-                            "A beautifully crafted short" – <a href="http://www.theatlantic.com/video/archive/2012/10/gloam/264260">The Atlantic</a>
+                       <p class="project-intro">
+                            &ldquo;A beautifully crafted short&rdquo; &mdash; <a href="http://www.theatlantic.com/video/archive/2012/10/gloam/264260">The Atlantic</a>
                         </p>
-                        <p class="project-text">
-                            "Better than titanic" – Youtube user
+                        <p class="project-intro">
+                            &ldquo;Better than titanic&rdquo; &mdash; Youtube user
                         </p>
                     </div>
 
@@ -120,7 +120,7 @@
                 <div class="project-container" >          
                     <div class="project-text">
                        <h2 class="project">2 Sugars</h2>
-                       <p class="project-intro">2 Sugars is a tool that makes jotting down drink requests a doddle whether it's your round in a small team or a runner in an ad agency</p>
+                       <p class="project-intro">&ldquo;It's a neat idea that's very elegantly and charmingly implemented&rdquo; &mdash; Stephen Fry</p>
                        <p class="project-intro-sub">Designer and Co-Creator</p>
                     </div>
 
@@ -134,13 +134,13 @@
                     </div>
 
                     <div class="project-text">
-                        <p class="project-text">
-                            After creating the 2 Sugars 1.0 in 2010 shortly after graduating, I decided to give it a fresh look for 2.0 to demonstrate a smarter UX and more options to choose from.
-                        </p>
 
-                        <p class="project-text">
-                            Although 2 Sugars 2.0 isn't complete yet, v1.0 is still available on the app store.
-                        </p>
+                        <p class="project-text">2 Sugars is a tool that makes jotting down drink requests a doddle whether it's your round in a small team or a runner in an ad agency</p>
+                        
+                        <p class="project-text">After creating the 2 Sugars 1.0 in 2010 shortly after graduating, I decided to give it a fresh look for 2.0 to demonstrate a smarter UX and more options to choose from.</p>
+
+                        <p class="project-text">Although 2 Sugars 2.0 isn't complete yet, v1.0 is still available on the app store.</p>
+
                     </div>
                     
                     <div class="project-img-small">
@@ -403,6 +403,17 @@
 
         <script src="js/main.js"></script>
 
+        <script type="text/javascript" >
+            jQuery(function($) {
+
+            var divs = $('.big, .mobile');
+            $(window).on('scroll', function() {
+               var st = $(this).scrollTop();
+               divs.css({'opacity' : 1 - st/400}) 
+                });
+            });
+        </script>
+        
         <script>
             var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
             (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];

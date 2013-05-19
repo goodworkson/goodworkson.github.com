@@ -45,7 +45,6 @@ img {
     max-width:1600px;
     margin:0 auto;
     padding: 40px 0;
-    border-top: 1px solid #444;
 }
 
 .project-hero {
@@ -117,9 +116,7 @@ h1 {
     line-height: 140%;
     font-size: 20px;
     letter-spacing: 1px;
-    opacity: 0;
-    -webkit-animation: fadein 2s; /* Safari and Chrome */  
-    -webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+
 }
 
 h1.big {display:none;}
