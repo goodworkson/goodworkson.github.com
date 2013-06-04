@@ -286,8 +286,8 @@ nav li:first-child a { margin-right:0; }
 nav li:last-child a { margin-left:0; }
 nav img{ text-align:center; max-width: 60px; padding: 0; }
 
-nav .left {float:left; padding: 14px 10px;}
-nav .right {float:right; padding: 14px 10px;}
+nav .left {float:right; padding: 10px 0 10px 20px;}
+nav .right {float:left; padding: 10px 20px 10px 0;}
 
 nav ul { 
     padding:0;
@@ -405,6 +405,9 @@ p.date {
    }
 
    nav img{ text-align:center; max-width: 80px; padding: 0; }
+
+   nav .left {float:right; padding: 14px 0 14px 20px;}
+   nav .right {float:left; padding: 14px 20px 14px 0;}
 
    .project-img,
    .project-img-small {
