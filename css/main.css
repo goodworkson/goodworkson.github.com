@@ -92,6 +92,7 @@ img {
     margin: 0 auto 200px;
     max-width:520px;
     padding:0 3%;
+    font-size: 16px;    
     -webkit-animation-delay: 2s;
     -webkit-animation: fadein 3s;
     -webkit-animation-fill-mode:forwards;
@@ -195,7 +196,6 @@ p.project-text {
 }
 
 li {
-    font-size: 18px;
     line-height: 150%;
     text-decoration: none;
     list-style: none;
@@ -337,10 +337,10 @@ p.date {
         margin: 300px auto 0;
     }
 
-    p { 
-        font-size: 18px;
-    }
+    p { font-size: 18px;}
 
+    li{ font-size: 18px;}
+    
     p.project-intro {
         text-align: center;
     }
@@ -373,7 +373,7 @@ p.date {
     }
     .about-text {
         margin:140px auto;
-        font-size: 44px;
+        font-size: 18px;    
     }
     .project-small-container {
         margin: 0 auto;
@@ -397,7 +397,7 @@ p.date {
    nav a {
         font-size: 14.73px;
    }
-   
+
    nav img{ text-align:center; max-width: 80px; padding: 0; }
 
    .project-img,
