@@ -4,6 +4,9 @@
  * Author: Gareth Hughes (hello@goodworkson.co)
 */
 
+
+/* ============== STANDARDS ============== */
+
 body {
     font-size: 17px;
     line-height: 140%;
@@ -26,71 +29,49 @@ img {
     max-width:100%;
 }
 
-.logo {
-    float: left;
-    max-width: 90px;
-    padding: 0;
-}
+/* ============== FUNDEMENTALS ============== */
 
-.projects {
-    margin: 28px auto 0;
-    max-width:1920px;
-}
-
-.project-container {
+.project-container { 
     max-width:1600px;
-    margin:0 auto;
     padding: 40px 0;
-}
+} /* Container for each project */
+
 
 .project-hero {
     width:100%;
     margin:40px auto;
-}
-/**
-.about-hero {
-    width:100%;
-    margin:0 auto 80px;
-}**/
+} /* Size for hero image of each project */
+
 .project-img {
     margin:40px auto;
     max-width:900px;
     padding:0 3%;
-}
+} /* Standard image size */
 
 .outlined {
-    margin:40px 3%;
     border:1px #333 solid;
     padding:0;
-}
+} /* where a black UI needs to stand out from the background */
 
 .project-img-small {
-    margin:40px auto;
+    margin:40px auto 0;
     max-width:600px;
     padding:0 3%;
-}
+} /* When images don't need to be so big */
 
 .first-project {
     opacity:0;
-}
+} /* Part of the fading in javascript */
 
-.main-text,
 .project-text {
     margin:0 auto;
     max-width:520px;
     padding:0 3%;
-    -webkit-animation-delay: 2s;
-    -webkit-animation: fadein 3s;
-    -webkit-animation-fill-mode:forwards;
+} /* Text box for each project */
 
-    -moz-animation-delay: 2s;
-    -moz-animation: fadein 3s;
-    -moz-animation-fill-mode:forwards;
 
-    -o-animation-delay: 2s;
-    -o-animation: fadein 3s;
-    -o-animation-fill-mode:forwards;
-}
+
+/* ============== ABOUT ============== */
 
 .about-text {
     margin: 0 auto 200px;
@@ -108,7 +89,15 @@ img {
     -o-animation-delay: 2s;
     -o-animation: fadein 3s;
     -o-animation-fill-mode:forwards;
-}
+} /* Text on About page, fades in */
+
+/**
+.about-hero {
+    width:100%;
+    margin:0 auto 80px;
+}**/ 
+
+
 
 /* ============== STYLE ============== */
 
@@ -126,9 +115,9 @@ a {
     text-decoration:none;
     padding-bottom: 2px;
     border-bottom: 1px solid #666;
-    -webkit-transition:color 0.1s ease-in; 
-    -o-transition:color 0.1s ease-in;
-    -moz-transition:color 0.1s ease-in; 
+        -webkit-transition:color 0.1s ease-in; 
+        -o-transition:color 0.1s ease-in;
+        -moz-transition:color 0.1s ease-in; 
 }
 
 a:hover {
@@ -146,16 +135,17 @@ h1 {
     line-height: 140%;
     font-size: 20px;
     letter-spacing: 1px;
-    -webkit-animation-delay: 2s;
-    -webkit-animation: fadein 3s;
-    -webkit-animation-fill-mode:forwards;
+        -webkit-animation-delay: 2s;
+        -webkit-animation: fadein 3s;
+        -webkit-animation-fill-mode:forwards;
 
-    -moz-animation-delay: 2s;
-    -moz-animation: fadein 3s;
-    -moz-animation-fill-mode:forwards;
+        -moz-animation-delay: 2s;
+        -moz-animation: fadein 3s;
+        -moz-animation-fill-mode:forwards;
 
-    -o-animation-delay: 2s;
-    -o-animation: fadein 3s;
+        -o-animation-delay: 2s;
+        -o-animation: fadein 3s;
+        -o-animation-fill-mode:forwards;
 }
 
 h1.big {display:none;}
@@ -189,14 +179,19 @@ p.project-intro-sub {
     font-style: italic;
     text-align: left;
     color: #999;
-    margin: 0;
-    padding: 0;
 }
 
 p.project-text {
     margin: 0 0 36px 0;
     text-align: left;
     padding: 0;
+}
+
+p.quote {
+    font-style: italic;
+}
+p.quote a {
+    font-size: 18px;
 }
 
 li {
@@ -210,14 +205,25 @@ li {
 
 iframe { 
     width:100%;
-    border-top:1px solid #333;
-    border-bottom: 1px solid #333; 
 }
 
 .main-container { 
     margin: 0 auto;
     max-width: 100%;
 }
+
+.sub-img {
+    padding:0 1.5em;
+    margin:0;
+}
+
+.sub-text {
+    padding:0 1.5em;
+    margin:0;
+}
+
+
+/* ============== ABOVE FOOTER TEMP ============== 
 
 .temp-message {
     margin-top: 60px;
@@ -233,11 +239,12 @@ iframe {
     font-size: 20px;
     line-height: 40px;
     color: #FFF;
-}
+} */
+
+/* ============== FOOTER ============== */
 
 .footer-container {
-    padding: 20px 0;
-
+    padding: 60px 0;
     text-align: center;
     background: #111111;
 }
@@ -246,28 +253,22 @@ iframe {
     text-transform: uppercase;
     letter-spacing: 2px;    
     font-size: 14px;
-    line-height: 14px;
-    color: #666;
+    line-height: 180%;
+    color: #888;
 }
 
 .footer-container a {
     color: #FFF; 
     text-decoration: none; 
-    text-transform: uppercase;
     letter-spacing: 2px; 
-    font-size: 14px;        
+    font-size: 14px;
+    border-bottom: none;
 } 
 
-.sub-img {
-    padding:0 1.5em;
-    margin:0;
-}
-
-.sub-text {
-    padding:0 1.5em;
-    margin:0;
-}
-
+.footer-container a:hover {
+    color: #FFF; 
+    border-bottom: 1px solid #666;      
+} 
 
 /* ============== MOBILE MENU ============== */
 
@@ -300,8 +301,8 @@ nav .left {float:right; padding: 10px 0 10px 20px;}
 nav .right {float:left; padding: 10px 20px 10px 0;}
 
 nav ul { 
-    padding:0;
-    height:64px;
+    padding: 0;
+    height: 64px;
     max-width: 280px;
     margin: 40px auto;
     text-align: center;
@@ -317,10 +318,6 @@ nav ul {
     -o-animation: fadein 3s;
     -o-animation-fill-mode:forwards;
     }
-}
-
-.main {
-    padding: 30px 0;
 }
 
 /* ============== BLOG STYLE ============== */
@@ -343,7 +340,7 @@ p.date {
    TABLET DISPLAYS (According to 2012)
    ============================================================ */
 
-@media only screen and (min-width: 480px) {
+@media only screen and (min-width: 480px) { 
 
     .main-container { 
         margin: 0 auto;
@@ -355,7 +352,7 @@ p.date {
 
     p { font-size: 18px;}
 
-    li{ font-size: 15px;}
+    li { font-size: 15px;}
     
     p.project-intro {
         text-align: center;
@@ -366,9 +363,9 @@ p.date {
     }
 
     h1 {
-        margin:200px 0 200px;
+        margin:160px 0 160px;
         text-align: center;
-        font-size: 44px;
+        font-size: 54px;
         padding:0;
     }
 
@@ -388,7 +385,6 @@ p.date {
         color:#999;
     }
     .about-text {
-        margin:140px auto;
         font-size: 18px;    
     }
     .project-small-container {
@@ -410,6 +406,11 @@ p.date {
         margin:60px 0 60px 0px;
    }
 
+   nav ul { 
+       margin: 70px auto;
+       max-width: 360px;
+   }
+
    nav a {
         font-size: 14.73px;
    }
@@ -419,10 +420,15 @@ p.date {
    nav .left {float:right; padding: 14px 0 14px 20px;}
    nav .right {float:left; padding: 14px 20px 14px 0;}
 
-   .project-img,
-   .project-img-small {
+   .project-img {
        padding:0 1.5em;
        margin:80px auto;
+   }
+   .outlined {padding: 0;}
+
+   .project-img-small {
+       padding:0 1.5em;
+       margin:80px auto 80px;
    }
 
    .project-hero {
@@ -430,14 +436,10 @@ p.date {
    }
 
    .project-container {
-       padding: 80px 0;
-       margin:0 auto 200px auto;
+       margin:0 auto;
    }
 
-    .outlined {
-        margin:40px auto;
-        padding: 0;
-    }
+
 }
 
 
@@ -446,6 +448,10 @@ p.date {
    ============================================================= */
 
 @media only screen and (min-width: 768px) {
+
+    nav ul { 
+        margin: 100px auto;
+    }
 
 }
 
