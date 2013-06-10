@@ -33,7 +33,7 @@ img {
 
 .project-container { 
     max-width:1600px;
-    padding: 40px 0;
+    padding: 80px 0;
 } /* Container for each project */
 
 
@@ -50,7 +50,7 @@ img {
 
 .outlined {
     border:1px #333 solid;
-    padding:0;
+    padding:0 0 1px 0;
 } /* where a black UI needs to stand out from the background */
 
 .project-img-small {
@@ -75,7 +75,7 @@ img {
 
 .about-text {
     margin: 0 auto 200px;
-    max-width:520px;
+    max-width:580px;
     padding:0 3%;
     font-size: 16px;    
     -webkit-animation-delay: 2s;
@@ -163,7 +163,7 @@ h2.project{
 h3 { 
     margin: 0;
     padding: 20px 0 0 0;
-    font-size: 22px;
+    font-size: 24px;
     line-height: 120%;
     font-weight: normal;
 }
@@ -198,9 +198,6 @@ li {
     line-height: 190%;
     text-decoration: none;
     list-style: none;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    font-size: 14px;
 }
 
 iframe { 
@@ -350,9 +347,7 @@ p.date {
         max-width: 100px;
     }
 
-    p { font-size: 18px;}
-
-    li { font-size: 15px;}
+    p, li { font-size: 18px;}
     
     p.project-intro {
         text-align: center;
@@ -424,7 +419,10 @@ p.date {
        padding:0 1.5em;
        margin:80px auto;
    }
-   .outlined {padding: 0;}
+
+   .outlined {
+        padding:0 0 1px 0;
+    }
 
    .project-img-small {
        padding:0 1.5em;
