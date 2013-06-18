@@ -1,0 +1,690 @@
+/* Resets */
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, 
+p, blockquote, pre, a, abbr, address, cite, code, del, dfn, em, 
+img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, hr, 
+dl, dt, dd, ol, ul, li, fieldset, form, label, legend, 
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figure, figcaption, hgroup, 
+menu, footer, header, nav, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+article, aside, canvas, figure, figure img, figcaption, hgroup,
+footer, header, nav, section, audio, video {
+	display: block;
+}
+
+::-moz-selection {
+    background: #888;
+    text-shadow: none;
+}
+
+::selection {
+    background: #888;
+    text-shadow: none;
+}
+
+img {
+    vertical-align: middle;
+    width:100%;
+}
+
+a {
+	text-decoration: none;
+}
+
+a img {border: 0;}
+
+/* Body */
+
+body {
+  background-color: #fdfdfd;
+  font-size: 18px;
+  font-family: "ff-tisa-web-pro", Helvetica, Arial, 'sans-serif';
+  font-weight:400;
+  font-style:normal;
+  color: #111111;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Global */
+
+a {
+  color: inherit;
+  border-bottom: #cdcdcd 1px solid;
+  padding-bottom: 2px;
+  -webkit-transition: border-bottom 0.15s cubic-bezier(0.54, 0.24, 0.35, 0.68);
+  -moz-transition: border-bottom 0.15s cubic-bezier(0.54, 0.24, 0.35, 0.68);
+  -o-transition: border-bottom 0.15s cubic-bezier(0.54, 0.24, 0.35, 0.68);
+  -webkit-transition: color 0.15s cubic-bezier(0.54, 0.24, 0.35, 0.68);
+  -moz-transition: color 0.15s cubic-bezier(0.54, 0.24, 0.35, 0.68);
+  -o-transition: color 0.15s cubic-bezier(0.54, 0.24, 0.35, 0.68);
+}
+a:hover {
+  border-bottom: #111111 1px solid;
+  color:#cdcdcd;
+  cursor: pointer;
+  -webkit-transition: border-bottom 0.15s cubic-bezier(0.54, 0.24, 0.35, 0.68);
+  -moz-transition: border-bottom 0.15s cubic-bezier(0.54, 0.24, 0.35, 0.68);
+  -o-transition: border-bottom 0.15s cubic-bezier(0.54, 0.24, 0.35, 0.68);
+  -webkit-transition: color 0.15s cubic-bezier(0.54, 0.24, 0.35, 0.68);
+  -moz-transition: color 0.15s cubic-bezier(0.54, 0.24, 0.35, 0.68);
+  -o-transition: color 0.15s cubic-bezier(0.54, 0.24, 0.35, 0.68);
+}
+
+img a {
+  border:0;
+  text-decoration:none;
+}
+
+h1 {
+  font-size:28px !important;
+}
+
+
+/* Main Content */
+
+#wrapper {
+  width: 100%;
+}
+
+#wrapper #head {
+  margin-bottom: 46px;
+  height:120px;
+  background: #000;
+  width: 100%; 
+  overflow: hidden;
+  z-index: 2;
+  position: relative;
+  text-align: center;
+}
+
+#wrapper #foot {
+  border-top: #e5e5e5 1px solid;
+}
+
+#wrapper section {
+  width: 100%;
+  float: left;
+}
+
+
+/* Navigation Content */
+
+#wrapper section navigation {
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#wrapper section header #nav-container {
+  max-width: 600px;
+}
+
+
+
+
+/* Header Content */
+
+#wrapper section header {
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#wrapper section header #head-container {
+  max-width: 600px;
+  margin-top: 10px;
+}
+
+#wrapper section header #head-container #description h3 {
+  font-family: 'Open Sans', Helvetica, Arial, 'sans-serif';
+  font-size: 19px;
+  color: #111111;
+  font-weight: 700;
+  line-height: 34px;
+  width: 530px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Nav Content */
+
+#wrapper section #navigation #nav-container nav {
+  position:absolute;
+  left:50%;
+  margin-left:-40px;
+  z-index:10;
+  top:20px;
+}
+
+#wrapper #navigation #nav-container nav ul {
+  width:100%;
+  padding-left: 0px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  background:#000;
+}
+
+#wrapper #navigation #nav-container nav ul li {
+  list-style: none;
+  display: inline-block;
+  margin-left: 40px;
+  padding:20px 0;
+}
+
+#wrapper #navigation #nav-container nav ul li a {
+  font-family: 'Open Sans', Helvetica, Arial, 'sans-serif';
+  text-transform:uppercase;
+  text-decoration:none;
+  letter-spacing:3px;
+  font-size: 13px;
+  font-weight: 700;
+  color:#FFFFFF;
+  border:none;
+}
+
+#wrapper #navigation #nav-container nav ul li a:hover { 
+  text-decoration: none; 
+  color: #BBB; 
+  border-bottom: none;
+} 
+
+#wrapper #navigation #nav-container nav ul li:first-child {
+  margin-left: 0px;
+}
+
+
+
+/* Header/logo Content */
+
+#wrapper section header #head-container #banner {
+  position:absolute;
+  left:50%;
+  margin-left:-40px;
+  z-index:10;
+  top:20px;
+}
+
+#wrapper section header #head-container #banner .logo {
+  max-width: 80px;
+  padding-left: 0px;
+  margin: 0 auto;
+}
+#wrapper section header #head-container #banner .logo a {
+  border:0;
+}
+
+
+/* Articles */
+
+#wrapper section article {
+  width: 100%;
+  height: 100%;
+  margin-bottom: 66px;
+  padding-bottom: 66px;
+}
+
+#wrapper section article:last-child {
+  margin-bottom: 66px;
+  padding-bottom: 0px;
+}
+
+#wrapper section article div.content {
+  max-width: 600px;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 5%;
+}
+
+#wrapper section article div.content div.title div.date {
+  max-width: 600px;
+  font-weight: normal;
+  font-family: helvetica, arial, san-serif;
+  font-size:14px;
+  color: #cdcdcd;
+}
+
+#wrapper section article div.content div.title h1,
+#wrapper section article div.content div.title h2,
+#wrapper section article div.content div.title h3,
+#wrapper section article div.content div.title h4,
+#wrapper section article div.content div.title h5,
+#wrapper section article div.content div.title h6 {
+  max-width: 600px;
+  font-family: 'Open Sans', Helvetica, Arial, 'sans-serif';
+  font-size: 40px;
+  font-weight: 700;
+  color: #030303;
+  margin-bottom: 20px;
+  letter-spacing:-1px;
+  -webkit-transition: color 0.15s cubic-bezier(0.54, 0.24, 0.35, 0.68);
+  -moz-transition: color 0.15s cubic-bezier(0.54, 0.24, 0.35, 0.68);
+  -o-transition: color 0.15s cubic-bezier(0.54, 0.24, 0.35, 0.68);
+}
+
+#wrapper section article div.content div.title h1 a,
+#wrapper section article div.content div.title h2 a,
+#wrapper section article div.content div.title h3 a,
+#wrapper section article div.content div.title h4 a,
+#wrapper section article div.content div.title h5 a,
+#wrapper section article div.content div.title h6 a {
+  width: auto;
+  display: inline-block;
+  color: #111111;
+  padding-bottom: 0px;
+  border: none;
+  -webkit-transition: color 0.15s cubic-bezier(0.54, 0.24, 0.35, 0.68);
+  -moz-transition: color 0.15s cubic-bezier(0.54, 0.24, 0.35, 0.68);
+  -o-transition: color 0.15s cubic-bezier(0.54, 0.24, 0.35, 0.68);
+}
+
+#wrapper section article div.content div.title h1 a:hover,
+#wrapper section article div.content div.title h2 a:hover,
+#wrapper section article div.content div.title h3 a:hover,
+#wrapper section article div.content div.title h4 a:hover,
+#wrapper section article div.content div.title h5 a:hover,
+#wrapper section article div.content div.title h6 a:hover {
+  color: #cdcdcd;
+  -webkit-transition: color 0.15s cubic-bezier(0.54, 0.24, 0.35, 0.68);
+  -moz-transition: color 0.15s cubic-bezier(0.54, 0.24, 0.35, 0.68);
+  -o-transition: color 0.15s cubic-bezier(0.54, 0.24, 0.35, 0.68);
+}
+
+#wrapper section article div.content div.title h1 a.post-permalink,
+#wrapper section article div.content div.title h2 a.post-permalink,
+#wrapper section article div.content div.title h3 a.post-permalink,
+#wrapper section article div.content div.title h4 a.post-permalink,
+#wrapper section article div.content div.title h5 a.post-permalink,
+#wrapper section article div.content div.title h6 a.post-permalink {
+  width: auto;
+  font-size: 22px;
+  position: relative;
+  top: -2px;
+  left: 4px;
+}
+
+/* Body Content */
+
+#wrapper section article div.content #body {
+  max-width: 600px;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#wrapper section article div.content #body img,
+#wrapper section article div.content #body iframe,
+#wrapper section article div.content #body object,
+#wrapper section article div.content #body video,
+#wrapper section article div.content #body embed {
+  max-width: 600px;
+  float: left;
+  margin-bottom: 30px;
+}
+
+#wrapper section article div.content #body p,
+#wrapper section article div.content #body blockquote,
+#wrapper section article div.content #body pre {
+  line-height: 28px;
+  word-wrap: break-word;
+  margin-top: 0px;
+  margin-bottom: 30px;
+}
+
+#wrapper section article div.content #body pre {
+  line-height: normal;
+  background-color: #f6f6f6;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 38px;
+}
+
+#wrapper section article div.content #body blockquote {
+  padding-left: 15px;
+  margin-left: 15px;
+  border-left: #e5e5e5 3px solid;
+  font-style: italic;
+  float: left;
+}
+
+#wrapper section article div.content #body blockquote p {
+  max-width: 562px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+#wrapper section article div.content #body p.introduction {
+  font-style: italic;
+}
+
+#wrapper section article div.content #body p {
+  max-width: 600px;
+}
+
+#wrapper section article div.content #body p:last-child {
+  margin-bottom: 0px;
+}
+
+#wrapper section article div.content #body p img {
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+}
+
+#wrapper section article div.content #body p img,
+#wrapper section article div.content #body p iframe,
+#wrapper section article div.content #body p object,
+#wrapper section article div.content #body p video,
+#wrapper section article div.content #body p embed {
+  max-width: 600px;
+  margin-bottom: 0px;
+}
+
+#wrapper section article div.content #body p img:last-child,
+#wrapper section article div.content #body p iframe:last-child,
+#wrapper section article div.content #body p object:last-child,
+#wrapper section article div.content #body p video:last-child,
+#wrapper section article div.content #body p embed:last-child {
+  margin-bottom: 30px;
+}
+
+#wrapper section article div.content #body p a.read-more {
+  color: #111111;
+}
+
+#wrapper section article div.content #body p a.read-more:after {
+  content: "\2026";
+}
+
+#wrapper section article div.content #body h1,
+#wrapper section article div.content #body h2,
+#wrapper section article div.content #body h3,
+#wrapper section article div.content #body h4,
+#wrapper section article div.content #body h5,
+#wrapper section article div.content #body h6 {
+  font-family: 'Open Sans', Helvetica, Arial, 'sans-serif';
+  font-weight: 800;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 0px;
+  margin-bottom: 25px;
+}
+
+#wrapper section article div.content #body h1 {
+  font-size: 22px;
+}
+
+#wrapper section article div.content #body h2 {
+  font-size: 25px;
+}
+
+#wrapper section article div.content #body h3 {
+  font-size: 20px;
+  letter-spacing: normal;
+}
+
+#wrapper section article div.content #body h4 {
+  font-size: 18px;
+  letter-spacing: normal;
+}
+
+#wrapper section article div.content #body h5 {
+  font-size: 15px;
+  letter-spacing: normal;
+}
+
+#wrapper section article div.content #body h6 {
+  font-size: 12px;
+  letter-spacing: normal;
+}
+
+#wrapper section article div.content #body hr {
+  border-top: #e5e5e5 1px solid;
+  margin-bottom: 30px;
+}
+
+#wrapper section article div.content #body ul {
+  display: block;
+  list-style-type: disc;
+  padding-left: 56px;
+  margin-bottom: 30px;
+}
+
+#wrapper section article div.content #body ul li {
+  display: list-item;
+  list-style-type: disc;
+}
+
+#wrapper section article div.content #body div.footnotes {
+  margin-top: 30px;
+}
+
+#wrapper section article div.content #body div.footnotes p {
+  font-size: 12px;
+}
+
+#wrapper section article div.content #body dl dt {
+  font-weight: bold;
+}
+
+#wrapper section article div.content #body dl dd {
+  margin-left: 30px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#wrapper section article div.content #body ol {
+  display: block;
+  list-style-type: decimal;
+  padding-left: 56px;
+  margin-bottom: 30px;
+}
+
+#wrapper section article div.content #body ol li {
+  display: list-item;
+}
+
+/* Post Meta */
+
+#wrapper section article div.content #meta {
+  margin-top: 40px;
+}
+
+#wrapper section article div.content #meta div {
+  font-size: 14px;
+  color: #cdcdcd;
+}
+
+#wrapper section article div.content #meta div a {
+  color: #cdcdcd;
+  border: none;
+  padding: 0;
+  text-transform: capitalize;
+  -webkit-transition: color 0.15s cubic-bezier(0.54, 0.24, 0.35, 0.68);
+  -moz-transition: color 0.15s cubic-bezier(0.54, 0.24, 0.35, 0.68);
+  -o-transition: color 0.15s cubic-bezier(0.54, 0.24, 0.35, 0.68);
+}
+
+#wrapper section article div.content #meta div a:hover {
+  color: #030303;
+  -webkit-transition: color 0.15s cubic-bezier(0.54, 0.24, 0.35, 0.68);
+  -moz-transition: color 0.15s cubic-bezier(0.54, 0.24, 0.35, 0.68);
+  -o-transition: color 0.15s cubic-bezier(0.54, 0.24, 0.35, 0.68);
+}
+
+#wrapper section article div.content #meta div#info {
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+#wrapper section article div.content #meta div#info a {
+  text-transform: lowercase;
+}
+
+#wrapper section article div.content #meta #social {
+  opacity: 0.5;
+  display: block;
+  width: 166px;
+  margin-left: auto;
+  margin-right: auto;
+  -webkit-transition: opacity 0.15s cubic-bezier(0.54, 0.24, 0.35, 0.68);
+  -moz-transition: opacity 0.15s cubic-bezier(0.54, 0.24, 0.35, 0.68);
+  -o-transition: opacity 0.15s cubic-bezier(0.54, 0.24, 0.35, 0.68);
+}
+
+#wrapper section article div.content #meta #social > * {
+  float: left;
+  overflow: hidden;
+}
+
+#wrapper section article div.content #meta #social > *:hover {
+  cursor: pointer;
+}
+
+#wrapper section article div.content #meta #social div.fb-like {
+  width: 48px;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+#wrapper section article div.content #meta #social div.fb-like span {
+  width: 48px !important;
+}
+
+#wrapper section article div.content #meta #social:hover {
+  opacity: 1.0;
+  -webkit-transition: opacity 0.15s cubic-bezier(0.54, 0.24, 0.35, 0.68);
+  -moz-transition: opacity 0.15s cubic-bezier(0.54, 0.24, 0.35, 0.68);
+  -o-transition: opacity 0.15s cubic-bezier(0.54, 0.24, 0.35, 0.68);
+}
+
+#wrapper section article div.content #meta #social div#___plusone_0 {
+  width: 32px;
+}
+
+#wrapper section article.index {
+  border-bottom: #E7E7E7 1px solid;
+}
+
+#wrapper section article.index:last-child {
+  border-bottom: none;
+}
+
+#wrapper section article.archive {
+  margin-bottom: 26px;
+  padding-bottom: 0px;
+}
+
+#wrapper section article.archive:last-child {
+  margin-bottom: 46px;
+  padding-bottom: 0px;
+}
+
+#wrapper section article.page {
+  margin-bottom: 46px;
+  padding-bottom: 0px;
+}
+
+/* Footer */
+
+#wrapper section footer {
+  max-width: 600px;
+  height: 110px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#wrapper section footer p {
+  padding-top: 45px;
+  font-size: 12px;
+  text-align: center;
+}
+
+#wrapper section footer p strong {
+  font-size: 14px;
+  font-family: 'Open Sans', Helvetica, Arial, 'sans-serif';
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+/* Return Button */
+
+#return-button {
+  position: fixed;
+  top: 80px;
+  right: 35px;
+  border: none;
+  padding: 0px;
+  display: none;
+}
+
+footer p {
+    font-family: 'Open Sans', Helvetica, Arial, 'sans-serif';
+    text-transform: uppercase;
+    letter-spacing: 2px;    
+    font-size: 14px;
+    line-height: 180%;
+    color: #888;
+}
+
+
+/* Pretty printing */
+
+@import("prettify.css");
+
+
+@media only screen and (min-width: 480px) { 
+
+#wrapper #head {
+    margin-bottom: 66px;
+    height:220px;
+  }
+  
+  #wrapper section header #head-container #banner .logo {
+    max-width: 130px;
+    margin-top:30px;
+  }
+  
+  #wrapper section header #head-container #banner {
+    margin-left:-65px;
+  }
+   
+  #wrapper section article div.content #body h1 {
+    font-size: 28px;
+  }
+  
+  #wrapper #navigation #nav-container nav ul li {
+  margin-left: 60px;
+  }
+  
+  #wrapper #navigation #nav-container nav ul li a {
+    font-size: 14px;
+  }
+  h1 {
+  font-size:40px !important;
+  }
+
+}
+
+@media only screen and (min-width: 768px) {
+  
+  #wrapper #head {
+      margin-bottom: 66px;
+      height:260px;
+    }
+  
+  #wrapper section header #head-container #banner {
+    margin-left:-70px;
+  }
+  
+  #wrapper section header #head-container #banner .logo {
+    max-width: 140px;
+    margin-top:40px;
+  }
+  
+}
