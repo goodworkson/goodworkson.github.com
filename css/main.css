@@ -396,6 +396,8 @@ h1.mobile {
 }
 
 h2.project{
+    font-family: 'Open Sans', Helvetica, Arial, 'sans-serif';
+    font-weight: 700;
     font-size: 20px;
     text-align: center;
     text-transform: uppercase;
