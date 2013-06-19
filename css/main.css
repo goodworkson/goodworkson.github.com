@@ -24,15 +24,13 @@ footer, header, nav, section, audio, video {
 }
 
 
-/* ============== ABOUT ============== */
-
+/* * * * * * * * * * ABOUT * * * * * * * * * */
 
 #about {
     background: #FFF;
     width: 100%;
     float: left;
     margin-bottom: 62px;
-
 }
 
 .about-text {
@@ -56,6 +54,7 @@ footer, header, nav, section, audio, video {
     text-align: center;
 }
 
+
 /* Navigation Content */
 
 #wrapper section navigation {
@@ -67,6 +66,7 @@ footer, header, nav, section, audio, video {
 #wrapper section header #nav-container {
   max-width: 600px;
 }
+
 
 /* Header Content */
 
@@ -91,6 +91,7 @@ footer, header, nav, section, audio, video {
   margin-left: auto;
   margin-right: auto;
 }
+
 
 /* Nav Content */
 
@@ -179,6 +180,7 @@ footer, header, nav, section, audio, video {
   -o-transition: color 0.15s cubic-bezier(0.54, 0.24, 0.35, 0.68);
 }
 
+
 /* Body Content */
 
 #wrapper section .about-text #body {
@@ -255,14 +257,17 @@ a.contact:hover {
 }
 
 
-/* ============== STANDARDS ============== */
+/* * * * * * * * * * STANDARDS * * * * * * * * * */
 
 body {
-    font-size: 17px;
+    font-family: "ff-tisa-web-pro", Helvetica, Arial, 'sans-serif';
+    font-weight:400;
+    font-style:normal;
+    font-size: 18px;
     line-height: 140%;
     color: #FFF;
     background: #000;
-    -webkit-font-smoothing: antialiased;
+        -webkit-font-smoothing: antialiased;
 }
 
 ::-moz-selection {
@@ -280,7 +285,7 @@ img {
     max-width:100%;
 }
 
-/* ============== FUNDEMENTALS ============== */
+/* * * * * * * * * * LAYOUT * * * * * * * * * */
 
 .project-container { 
     max-width:1600px;
@@ -322,18 +327,7 @@ img {
 
 
 
-/* ============== ABOUT ============== */
-
-
-
-/* ============== STYLE ============== */
-
-body {
-    font-family: "ff-tisa-web-pro", Helvetica, Arial, 'sans-serif';
-    font-weight:400;
-    font-style:normal;
-    font-size: 18px
-}
+/* * * * * * * * * * STYLE * * * * * * * * * */
 
 p { 
     font-size: 18px;
