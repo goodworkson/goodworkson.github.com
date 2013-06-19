@@ -517,57 +517,6 @@ iframe {
     border-bottom: 1px solid #666;      
 } 
 
-
-/* ============== MOBILE MENU ============== */
-
-/* ==
-nav a {
-    float: left;
-    font-family: "Proxima Nova", "Avenir", Arial, sans-serif;
-    font-size: 13px;
-    letter-spacing: 3px;
-    text-transform: uppercase;
-    text-decoration: none;
-    color: #FFF;
-    border-bottom: none;
-    padding: 10px 10px;
-}
-
-nav a:hover { text-decoration: none; color: #BBB; border-bottom: none;
-}   
-nav a:visited { text-decoration:none;}
-
-nav li {    
-    display: inline-block;
-}
-
-nav li:first-child a { margin-right:0; }
-nav li:last-child a { margin-left:0; }
-nav img{ text-align:center; max-width: 60px; padding: 0; }
-
-nav .left {float:right; padding: 10px 0 10px 20px;}
-nav .right {float:left; padding: 10px 20px 10px 0;}
-
-nav ul { 
-    padding: 0;
-    height: 64px;
-    max-width: 280px;
-    margin: 40px auto;
-    text-align: center;
-    -webkit-animation-delay: 2s;
-    -webkit-animation: fadein 3s;
-    -webkit-animation-fill-mode:forwards;
-
-    -moz-animation-delay: 2s;
-    -moz-animation: fadein 3s;
-    -moz-animation-fill-mode:forwards;
-
-    -o-animation-delay: 2s;
-    -o-animation: fadein 3s;
-    -o-animation-fill-mode:forwards;
-    }
-} ==== */
-
 /* ============== BLOG STYLE ============== */
 
 h2.blog{
