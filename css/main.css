@@ -36,9 +36,10 @@ footer, header, nav, section, audio, video {
 .about-text {
     max-width: 600px;
     font-size: 18px;
-    font-family: "ff-tisa-web-pro", Helvetica, Arial, 'sans-serif';
-    font-weight: 400;
-    font-style: normal;
+    font-family:"Apercu Regular", Calibri, sans-serif; 
+    font-size-adjust:0.508; 
+    font-weight:normal; 
+    font-style:normal;
     color: #111111;
     margin: 30px auto;
     padding: 0 5%;
@@ -82,10 +83,12 @@ footer, header, nav, section, audio, video {
 }
 
 #wrapper section header #head-container #description h3 {
-  font-family: 'Open Sans', Helvetica, Arial, 'sans-serif';
+  font-family:"Apercu Regular", Calibri, sans-serif; 
+  font-size-adjust:0.508; 
+  font-weight:normal; 
+  font-style:normal;
   font-size: 19px;
   color: #111111;
-  font-weight: 700;
   line-height: 34px;
   width: 530px;
   margin-left: auto;
@@ -122,12 +125,14 @@ footer, header, nav, section, audio, video {
 }
 
 #wrapper #navigation #nav-container nav ul li a {
-  font-family: 'Open Sans', Helvetica, Arial, 'sans-serif';
+  font-family:"Apercu Regular", Calibri, sans-serif; 
+  font-size-adjust:0.508; 
+  font-weight:normal; 
+  font-style:normal;
   text-transform:uppercase;
   text-decoration:none;
   letter-spacing:3px;
   font-size: 13px;
-  font-weight: 700;
   color:#FFFFFF;
   border:none;
 }
@@ -169,9 +174,11 @@ footer, header, nav, section, audio, video {
 #wrapper section .about-text h2,
 #wrapper section .about-text h3 {
   max-width: 600px;
-  font-family: 'Open Sans', Helvetica, Arial, 'sans-serif';
+  font-family:"Apercu Regular", Calibri, sans-serif; 
+  font-size-adjust:0.508; 
+  font-weight:normal; 
+  font-style:normal;
   font-size: 40px;
-  font-weight: 700;
   color: #030303;
   margin-bottom: 20px;
   letter-spacing:-1px;
@@ -260,8 +267,9 @@ a.contact:hover {
 /* * * * * * * * * * STANDARDS * * * * * * * * * */
 
 body {
-    font-family: "ff-tisa-web-pro", Helvetica, Arial, 'sans-serif';
-    font-weight:400;
+    font-family:"Apercu Regular", Calibri, sans-serif; 
+    font-size-adjust:0.508; 
+    font-weight:normal; 
     font-style:normal;
     font-size: 18px;
     line-height: 140%;
@@ -352,8 +360,10 @@ a:hover {
 }
 
 h1.big {
-    font-family: 'Open Sans', Helvetica, Arial, 'sans-serif';
-    font-weight: 700;
+    font-family:"Apercu Regular", Calibri, sans-serif; 
+    font-size-adjust:0.508; 
+    font-weight:normal; 
+    font-style:normal;
     display:none;
     margin:80px 0;
     padding:0 1.5em;
@@ -375,8 +385,9 @@ h1.big {
 }
 
 h1.mobile {
-    font-family: 'Open Sans', Helvetica, Arial, 'sans-serif';
-    font-weight: 700;
+    font-family:"Apercu Regular", Calibri, sans-serif; 
+    font-size-adjust:0.508; 
+    font-weight:normal; 
     display:block;
     margin:80px 0;
     padding:0 1.5em;
@@ -398,14 +409,15 @@ h1.mobile {
 }
 
 h2.project{
-    font-family: 'Open Sans', Helvetica, Arial, 'sans-serif';
-    font-weight: 700;
+    font-family:"Apercu Regular", Calibri, sans-serif; 
+    font-size-adjust:0.508; 
+    font-weight:normal; 
+    font-style:normal;
     font-size: 20px;
     padding-bottom: 28px;
     text-align: center;
     text-transform: uppercase;
     letter-spacing: 10px;
-    font-weight: normal;
     line-height: 150%;
 }
 
