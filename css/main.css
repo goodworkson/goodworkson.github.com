@@ -276,7 +276,7 @@ img {
 
 .project-container { 
     max-width:1600px;
-    padding: 100px 0;
+    padding: 60px 0;
 } /* Container for each project */
 
 
@@ -596,7 +596,7 @@ p.date {
 
     .project-container {
         margin:0 auto;
-        padding: 60px 0;
+        padding: 100px 0;
     }
 
     #wrapper #head {
