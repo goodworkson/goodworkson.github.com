@@ -489,9 +489,8 @@ p.date {
 @media only screen and (min-width: 480px) { 
 
     body {
-        font-size: 18px;
+        font-size: 21px;
     }
-
 
     .main-container { 
         margin: 0 auto;
@@ -501,7 +500,7 @@ p.date {
         max-width: 100px;
     }
 
-    p { font-size: 18px;}
+    p { font-size: 21px;}
     
     p.project-intro {
         text-align: center;
