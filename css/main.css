@@ -81,20 +81,6 @@ footer, header, nav, section, audio, video {
   margin-top: 10px;
 }
 
-#wrapper section header #head-container #description h3 {
-  font-family:"Apercu Regular", Calibri, sans-serif; 
-  font-size-adjust:0.508; 
-  font-weight:normal; 
-  font-style:normal;
-  font-size: 19px;
-  color: #111111;
-  line-height: 34px;
-  width: 530px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-
 /* Nav Content */
 
 #wrapper section #navigation #nav-container nav {
@@ -270,7 +256,7 @@ body {
     font-size-adjust:0.508; 
     font-weight:normal; 
     font-style:normal;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 140%;
     color: #FFF;
     background: #111;
@@ -511,6 +497,10 @@ p.date {
    ============================================================ */
 
 @media only screen and (min-width: 480px) { 
+
+    body {
+        font-size: 18px;
+    }
 
     .main-container { 
         margin: 0 auto;
