@@ -203,12 +203,7 @@ footer, header, nav, section, audio, video {
 }
 
 #wrapper section .about-text h2 {
-  font-size: 25px;
-}
-
-#wrapper section .about-text h3 {
-  font-size: 20px;
-  letter-spacing: normal;
+  font-size: 28px;
 }
 
 #wrapper section .about-text ul {
