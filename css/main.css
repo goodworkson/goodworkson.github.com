@@ -204,7 +204,7 @@ footer, header, nav, section, audio, video {
 }
 
 #wrapper section .about-text h2 {
-  margin-top:28px;
+  margin-top:62px;
   font-size: 28px;
 }
 
@@ -438,7 +438,7 @@ iframe {
 .footer-container {
     padding: 60px 0;
     text-align: center;
-    background: #111111;
+    background: #1f1f1f;
 }
 
 .footer-container p {  
