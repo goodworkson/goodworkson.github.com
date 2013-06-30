@@ -203,6 +203,7 @@ footer, header, nav, section, audio, video {
 }
 
 #wrapper section .about-text h2 {
+  margin-top:10px;
   font-size: 28px;
 }
 
