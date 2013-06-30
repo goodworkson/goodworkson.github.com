@@ -47,7 +47,6 @@ footer, header, nav, section, audio, video {
 
 #head {
     height:120px;
-    background: #000;
     width: 100%; 
     overflow: hidden;
     z-index: 2;
@@ -112,7 +111,7 @@ footer, header, nav, section, audio, video {
   margin-left: auto;
   margin-right: auto;
   text-align: center;
-  background:#000;
+  background:#191919;
   margin:0;
 }
 
@@ -139,7 +138,7 @@ footer, header, nav, section, audio, video {
 
 #wrapper #navigation #nav-container nav ul li a:hover { 
   text-decoration: none; 
-  color: #BBB; 
+  color: #666; 
   border-bottom: none;
 } 
 
@@ -274,7 +273,7 @@ body {
     font-size: 18px;
     line-height: 140%;
     color: #FFF;
-    background: #000;
+    background: #111;
         -webkit-font-smoothing: antialiased;
 }
 
@@ -297,7 +296,7 @@ img {
 
 .project-container { 
     max-width:1600px;
-    padding: 80px 0;
+    padding: 100px 0;
 } /* Container for each project */
 
 
@@ -397,7 +396,7 @@ h2.project{
     text-align: center;
     text-transform: uppercase;
     letter-spacing: 10px;
-    line-height: 150%;
+    line-height: 170%;
 }
 
 h3 { 
@@ -523,6 +522,8 @@ p.date {
     color:#999;
 }
 
+
+
 /* ============================================================
    TABLET DISPLAYS (According to 2012)
    ============================================================ */
@@ -555,7 +556,7 @@ p.date {
         display:block;
 
         font-family:"Apercu Regular", Calibri, sans-serif; 
-        font-size: 32px !important;
+        font-size: 48px !important;
         font-size-adjust:0.508; 
         font-weight:normal; 
         font-style:normal;
@@ -581,7 +582,7 @@ p.date {
 
     h2.project{
         font-size: 30px;
-        letter-spacing: 16px;
+        letter-spacing: 14px;
     }
 
     p.date { 
