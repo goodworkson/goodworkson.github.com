@@ -601,6 +601,7 @@ p.date {
 
     .project-container {
         margin:0 auto;
+        padding: 60px 0;
     }
 
     #wrapper #head {
