@@ -105,22 +105,23 @@ footer, header, nav, section, audio, video {
   list-style: none;
   display: inline-block;
   margin-left: 40px;
-  padding:24px 0px 22px;
   line-height: 28px;
   width: 14%;
 }
 
 #wrapper #navigation #nav-container nav ul li a {
   font-family:"Apercu Regular", Calibri, sans-serif; 
+  font-size: 14px;
   font-size-adjust:0.508; 
   font-weight:normal; 
   font-style:normal;
   text-transform:uppercase;
   text-decoration:none;
   letter-spacing:3px;
-  font-size: 14px;
   color:#FFFFFF;
   border:none;
+  display: block;
+  padding:22px 5%;
 }
 
 #wrapper #navigation #nav-container nav ul li a:hover { 
