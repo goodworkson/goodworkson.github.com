@@ -318,7 +318,7 @@ img {
 } /* where a black UI needs to stand out from the background */
 
 .project-img-small {
-    margin:40px auto 0;
+    margin:40px auto;
     max-width:600px;
     padding:0 3%;
 } /* When images don't need to be so big */
@@ -576,11 +576,6 @@ p.date {
         color:#999;
     }
 
-    .project-small-container {
-        margin: 0 auto;
-        max-width: 900px;
-    }
-
    .sub-img {
         padding:0;
         margin:60px 0;
@@ -610,11 +605,11 @@ p.date {
 
     .project-img-small {
        padding:0 1.5em;
-       margin:80px auto 80px;
+       margin:80px auto;
     }
 
     .project-hero {
-        width:100%;
+        max-width:100%;
         margin:80px auto;
         padding: 0;
     }
