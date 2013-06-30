@@ -425,18 +425,13 @@ iframe {
     max-width: 100%;
 }
 
-.sub-img {
-    padding:0 1.5em;
-    margin:0;
-}
-
 .sub-text {
     padding:0 1.5em;
     margin:0;
 }
 
 
-/* ============== FOOTER ============== */
+/* * * * * * * * * * FOOTER * * * * * * * * * */
 
 .footer-container {
     padding: 60px 0;
@@ -464,22 +459,6 @@ iframe {
     color: #FFF; 
     border-bottom: 1px solid #666;      
 } 
-
-/* ============== BLOG STYLE ============== */
-
-h2.blog{
-    padding: 0;
-    margin: 50px 0 0.3em 0;
-    font-size: 38px;
-    text-align:left;
-}
-
-p.date { 
-    padding: 0;
-    margin: 0;
-    color:#999;
-}
-
 
 
 /* ============================================================
@@ -546,21 +525,6 @@ p.date {
         font-size: 30px;
         letter-spacing: 14px;
     }
-
-    p.date { 
-        font-size: 16px;
-        padding: 0;
-        margin: 0;
-        text-align: center;
-        color:#999;
-    }
-
-   .sub-img {
-        padding:0;
-        margin:60px 0;
-        float:left;
-        max-width: 420px;
-   }
 
     .sub-text {
         float:right;
