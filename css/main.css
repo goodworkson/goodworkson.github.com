@@ -35,7 +35,6 @@ footer, header, nav, section, audio, video {
 
 .about-text {
     max-width: 600px;
-    font-size: 18px;
     font-family:"Apercu Regular", Calibri, sans-serif; 
     font-size-adjust:0.508; 
     font-weight:normal; 
@@ -117,7 +116,7 @@ footer, header, nav, section, audio, video {
   text-transform:uppercase;
   text-decoration:none;
   letter-spacing:3px;
-  font-size: 13px;
+  font-size: 14px;
   color:#FFFFFF;
   border:none;
 }
@@ -324,7 +323,7 @@ img {
 /* * * * * * * * * * STYLE * * * * * * * * * */
 
 p { 
-    font-size: 18px;
+    font-size: 16px;
     line-height: 150%;
 }
 
@@ -415,9 +414,6 @@ p.project-text {
 p.quote {
     font-style: italic;
 }
-p.quote a {
-    font-size: 18px;
-}
 
 li {
     line-height: 150%;
@@ -484,7 +480,6 @@ h2.blog{
 }
 
 p.date { 
-    font-size: 18px;
     padding: 0;
     margin: 0;
     color:#999;
@@ -501,6 +496,7 @@ p.date {
     body {
         font-size: 18px;
     }
+
 
     .main-container { 
         margin: 0 auto;
