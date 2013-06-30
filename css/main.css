@@ -548,7 +548,7 @@ p.date {
     }
 
     h1.big {
-        margin:180px 0;
+        margin:200px 0;
         padding:0 1.5em;
 
         text-align: center;
@@ -576,10 +576,6 @@ p.date {
     }
 
     h1.mobile {
-        margin:160px 0 160px;
-        text-align: center;
-        font-size: 54px !important;
-        padding:0;
         display:none;
     }
 
