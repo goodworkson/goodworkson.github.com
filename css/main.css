@@ -360,28 +360,7 @@ a:hover {
 }
 
 h1.big {
-    font-family:"Apercu Regular", Calibri, sans-serif; 
-    font-size-adjust:0.508; 
-    font-weight:normal; 
-    font-style:normal;
     display:none;
-    margin:80px 0;
-    padding:0 1.5em;
-    text-align:center;
-    line-height: 140%;
-    font-size: 20px !important;
-    letter-spacing: 1px;
-        -webkit-animation-delay: 2s;
-        -webkit-animation: fadein 3s;
-        -webkit-animation-fill-mode:forwards;
-
-        -moz-animation-delay: 2s;
-        -moz-animation: fadein 3s;
-        -moz-animation-fill-mode:forwards;
-
-        -o-animation-delay: 2s;
-        -o-animation: fadein 3s;
-        -o-animation-fill-mode:forwards;
 }
 
 h1.mobile {
@@ -570,10 +549,30 @@ p.date {
 
     h1.big {
         margin:180px 0;
+        padding:0 1.5em;
+
         text-align: center;
-        font-size: 54px !important;
-        padding:0;
         display:block;
+
+        font-family:"Apercu Regular", Calibri, sans-serif; 
+        font-size: 54px !important;
+        font-size-adjust:0.508; 
+        font-weight:normal; 
+        font-style:normal;
+        line-height: 140%;
+        letter-spacing: 1px;
+
+            -webkit-animation-delay: 2s;
+            -webkit-animation: fadein 3s;
+            -webkit-animation-fill-mode:forwards;
+
+            -moz-animation-delay: 2s;
+            -moz-animation: fadein 3s;
+            -moz-animation-fill-mode:forwards;
+
+            -o-animation-delay: 2s;
+            -o-animation: fadein 3s;
+            -o-animation-fill-mode:forwards;
     }
 
     h1.mobile {
