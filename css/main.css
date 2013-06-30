@@ -306,7 +306,7 @@ img {
 } /* Size for hero image of each project */
 
 .project-img {
-    margin:40px auto;
+    margin:0 auto;
     max-width:900px;
     padding:0 3%;
 } /* Standard image size */
