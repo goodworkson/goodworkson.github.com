@@ -365,6 +365,7 @@ h1.big {
 
 h1.mobile {
     font-family:"Apercu Regular", Calibri, sans-serif; 
+    font-size: 24px !important;
     font-size-adjust:0.508; 
     font-weight:normal; 
     display:block;
@@ -372,7 +373,6 @@ h1.mobile {
     padding:0 1.5em;
     text-align:center;
     line-height: 140%;
-    font-size: 20px !important;
     letter-spacing: 1px;
         -webkit-animation-delay: 2s;
         -webkit-animation: fadein 3s;
