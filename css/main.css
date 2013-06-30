@@ -301,12 +301,13 @@ img {
 
 
 .project-hero {
-    width:100%;
+    max-width:900px;
     margin:40px auto;
+    padding:0 3%;
 } /* Size for hero image of each project */
 
 .project-img {
-    margin:0 auto;
+    margin:40px auto;
     max-width:900px;
     padding:0 3%;
 } /* Standard image size */
@@ -458,24 +459,6 @@ iframe {
     margin:0;
 }
 
-
-/* ============== ABOVE FOOTER TEMP ============== 
-
-.temp-message {
-    margin-top: 60px;
-    padding: 140px 0;
-
-    text-align: center;
-    background: #111111;
-}
-
-.temp-message p {  
-    text-transform: uppercase;
-    letter-spacing: 4px;    
-    font-size: 20px;
-    line-height: 40px;
-    color: #FFF;
-} */
 
 /* ============== FOOTER ============== */
 
@@ -631,7 +614,9 @@ p.date {
     }
 
     .project-hero {
+        width:100%;
         margin:80px auto;
+        padding: 0;
     }
 
     .project-container {
