@@ -206,7 +206,7 @@ footer, header, nav, section, audio, video {
 }
 
 #wrapper section .about-text h2 {
-  margin-top:62px;
+  margin-top:32px;
   font-size: 28px;
 }
 
@@ -522,6 +522,11 @@ iframe {
 
     h1.mobile {
         display:none;
+    }
+
+    #wrapper section .about-text h2 {
+      margin-top:62px;
+      font-size: 28px;
     }
 
     h2.project{
