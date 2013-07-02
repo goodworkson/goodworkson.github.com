@@ -110,11 +110,12 @@ footer, header, nav, section, audio, video {
 }
 
 #wrapper #navigation #nav-container nav ul li a {
-  font-family:"Apercu Regular", Calibri, sans-serif; 
-  font-size: 14px;
-  font-size-adjust:0.508; 
+  font-family:"Apercu Regular", Calibri, sans-serif;
   font-weight:normal; 
   font-style:normal;
+  font-size: 14px;
+  font-size-adjust:0.508; 
+  
   text-transform:uppercase;
   text-decoration:none;
   letter-spacing:3px;
@@ -255,7 +256,7 @@ body {
     font-size-adjust:0.508; 
     font-weight:normal; 
     font-style:normal;
-    font-size: 16px;
+    font-size: 17px;
     line-height: 140%;
     color: #FFF;
     background: #111;
