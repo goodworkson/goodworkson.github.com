@@ -6,14 +6,14 @@ dl, dt, dd, ol, ul, li, fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
 article, aside, canvas, details, figure, figcaption, hgroup, 
 menu, footer, header, nav, section, summary, time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
+  margin: 0;
+  padding: 0;
+  border: 0;
 }
 
 article, aside, canvas, figure, figure img, figcaption, hgroup,
 footer, header, nav, section, audio, video {
-	display: block;
+  display: block;
 }
 
 ::-moz-selection {
@@ -32,7 +32,7 @@ img {
 }
 
 a {
-	text-decoration: none;
+  text-decoration: none;
 }
 
 a img {border: 0;}
@@ -40,11 +40,12 @@ a img {border: 0;}
 /* Body */
 
 body {
-  background-color: #fdfdfd;
   font-size: 18px;
-  font-family: "ff-tisa-web-pro", Helvetica, Arial, 'sans-serif';
-  font-weight:400;
+  font-family:"Apercu Regular", Calibri, sans-serif; 
+  font-size-adjust:0.508; 
+  font-weight:normal; 
   font-style:normal;
+  line-height: 150%;
   color: #111111;
   -webkit-font-smoothing: antialiased;
 }
@@ -111,6 +112,7 @@ h1 {
 }
 
 
+
 /* Navigation Content */
 
 #wrapper section navigation {
@@ -122,8 +124,6 @@ h1 {
 #wrapper section header #nav-container {
   max-width: 600px;
 }
-
-
 
 
 /* Header Content */
@@ -139,17 +139,6 @@ h1 {
   margin-top: 10px;
 }
 
-#wrapper section header #head-container #description h3 {
-  font-family: 'Open Sans', Helvetica, Arial, 'sans-serif';
-  font-size: 19px;
-  color: #111111;
-  font-weight: 700;
-  line-height: 34px;
-  width: 530px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
 /* Nav Content */
 
 #wrapper section #navigation #nav-container nav {
@@ -162,34 +151,41 @@ h1 {
 
 #wrapper #navigation #nav-container nav ul {
   width:100%;
-  padding-left: 0px;
+  padding: 0px;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
-  background:#000;
+  background:#1f1f1f;
+  margin:0;
 }
 
 #wrapper #navigation #nav-container nav ul li {
   list-style: none;
   display: inline-block;
   margin-left: 40px;
-  padding:20px 0;
+  line-height: 28px;
+  width: 14%;
 }
 
 #wrapper #navigation #nav-container nav ul li a {
-  font-family: 'Open Sans', Helvetica, Arial, 'sans-serif';
+  font-family:"Apercu Regular", Calibri, sans-serif;
+  font-weight:normal; 
+  font-style:normal;
+  font-size: 14px;
+  font-size-adjust:0.508; 
+  
   text-transform:uppercase;
   text-decoration:none;
   letter-spacing:3px;
-  font-size: 13px;
-  font-weight: 700;
   color:#FFFFFF;
   border:none;
+  display: block;
+  padding:22px 5%;
 }
 
 #wrapper #navigation #nav-container nav ul li a:hover { 
   text-decoration: none; 
-  color: #BBB; 
+  color: #666; 
   border-bottom: none;
 } 
 
@@ -198,6 +194,25 @@ h1 {
 }
 
 
+/* Header/logo Content */
+
+#wrapper section header #head-container #banner {
+  position:absolute;
+  left:50%;
+  margin-left:-40px;
+  z-index:10;
+  top:20px;
+}
+
+#wrapper section header #head-container #banner .logo {
+  max-width: 80px;
+  padding-left: 0px;
+  margin: 0 auto;
+}
+
+#wrapper section header #head-container #banner .logo a {
+  border:0;
+}
 
 /* Header/logo Content */
 
@@ -217,7 +232,6 @@ h1 {
 #wrapper section header #head-container #banner .logo a {
   border:0;
 }
-
 
 /* Articles */
 
@@ -256,12 +270,14 @@ h1 {
 #wrapper section article div.content div.title h5,
 #wrapper section article div.content div.title h6 {
   max-width: 600px;
-  font-family: 'Open Sans', Helvetica, Arial, 'sans-serif';
+  font-family:"Apercu Regular", Calibri, sans-serif; 
+  font-weight:normal; 
+  font-style:normal;
   font-size: 40px;
-  font-weight: 700;
   color: #030303;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   letter-spacing:-1px;
+  line-height: 130%;
   -webkit-transition: color 0.15s cubic-bezier(0.54, 0.24, 0.35, 0.68);
   -moz-transition: color 0.15s cubic-bezier(0.54, 0.24, 0.35, 0.68);
   -o-transition: color 0.15s cubic-bezier(0.54, 0.24, 0.35, 0.68);
@@ -330,7 +346,6 @@ h1 {
 #wrapper section article div.content #body p,
 #wrapper section article div.content #body blockquote,
 #wrapper section article div.content #body pre {
-  line-height: 28px;
   word-wrap: break-word;
   margin-top: 0px;
   margin-bottom: 30px;
@@ -407,8 +422,9 @@ h1 {
 #wrapper section article div.content #body h4,
 #wrapper section article div.content #body h5,
 #wrapper section article div.content #body h6 {
-  font-family: 'Open Sans', Helvetica, Arial, 'sans-serif';
-  font-weight: 800;
+  font-family:"Apercu Regular", Calibri, sans-serif; 
+  font-weight:normal; 
+  font-style:normal;
   text-transform: uppercase;
   text-align: center;
   margin-top: 0px;
@@ -607,8 +623,9 @@ h1 {
 
 #wrapper section footer p strong {
   font-size: 14px;
-  font-family: 'Open Sans', Helvetica, Arial, 'sans-serif';
-  font-weight: 700;
+  font-family:"Apercu Regular", Calibri, sans-serif; 
+  font-weight:normal; 
+  font-style:normal;
   text-transform: uppercase;
 }
 
@@ -624,10 +641,12 @@ h1 {
 }
 
 footer p {
-    font-family: 'Open Sans', Helvetica, Arial, 'sans-serif';
+    font-family:"Apercu Regular", Calibri, sans-serif; 
+    font-weight:normal; 
+    font-style:normal;
     text-transform: uppercase;
+    font-size: 14px;    
     letter-spacing: 2px;    
-    font-size: 14px;
     line-height: 180%;
     color: #888;
 }
@@ -659,14 +678,19 @@ footer p {
   }
   
   #wrapper #navigation #nav-container nav ul li {
-  margin-left: 60px;
+    margin-left: 60px;
   }
   
   #wrapper #navigation #nav-container nav ul li a {
-    font-size: 14px;
+    font-size: 15px;
   }
+
+  body {
+    font-size: 21px;
+  }
+
   h1 {
-  font-size:40px !important;
+    font-size:40px !important;
   }
 
 }
@@ -678,9 +702,6 @@ footer p {
       height:260px;
     }
   
-  #wrapper section header #head-container #banner {
-    margin-left:-70px;
-  }
   
   #wrapper section header #head-container #banner .logo {
     max-width: 140px;
