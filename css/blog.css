@@ -608,26 +608,31 @@ h1 {
 
 /* Footer */
 
-#wrapper section footer {
-  max-width: 600px;
-  height: 110px;
-  margin-left: auto;
-  margin-right: auto;
+.footer-container {
+    padding: 60px 0;
+    text-align: center;
+    background: #1f1f1f;
 }
 
-#wrapper section footer p {
-  padding-top: 45px;
-  font-size: 12px;
-  text-align: center;
+.footer-container p {  
+    text-transform: uppercase;
+    letter-spacing: 2px;    
+    font-size: 14px;
+    line-height: 180%;
+    color: #888;
 }
 
-#wrapper section footer p strong {
-  font-size: 14px;
-  font-family:"Apercu Regular", Calibri, sans-serif; 
-  font-weight:normal; 
-  font-style:normal;
-  text-transform: uppercase;
-}
+.footer-container a {
+    color: #FFF; 
+    text-decoration: none; 
+    letter-spacing: 2px; 
+    font-size: 14px;
+    border-bottom: none;
+} 
+
+.footer-container a:hover {
+    color: #666; 
+} 
 
 /* Return Button */
 
@@ -640,16 +645,7 @@ h1 {
   display: none;
 }
 
-footer p {
-    font-family:"Apercu Regular", Calibri, sans-serif; 
-    font-weight:normal; 
-    font-style:normal;
-    text-transform: uppercase;
-    font-size: 14px;    
-    letter-spacing: 2px;    
-    line-height: 180%;
-    color: #888;
-}
+
 
 
 /* Pretty printing */
@@ -657,13 +653,18 @@ footer p {
 @import("prettify.css");
 
 
+
+/* ============================================================
+   TABLET DISPLAYS (According to 2012)
+   ============================================================ */
+
 @media only screen and (min-width: 480px) { 
 
 #wrapper #head {
     margin-bottom: 66px;
     height:220px;
   }
-  
+
   #wrapper section header #head-container #banner .logo {
     max-width: 130px;
     margin-top:30px;
@@ -695,17 +696,24 @@ footer p {
 
 }
 
+
+/* =============================================================
+   DESKTOP DISPLAYS (According to 2012)
+   ============================================================= */
+
 @media only screen and (min-width: 768px) {
-  
-  #wrapper #head {
-      margin-bottom: 66px;
-      height:260px;
+    
+    #wrapper #head {
+        height:260px;
     }
-  
-  
-  #wrapper section header #head-container #banner .logo {
-    max-width: 140px;
-    margin-top:40px;
-  }
-  
+    
+    #wrapper section header #head-container #banner {
+        margin-left:-70px;
+    }
+    
+    #wrapper section header #head-container #banner .logo {
+        max-width: 140px;
+        margin-top:40px;
+    }
+
 }

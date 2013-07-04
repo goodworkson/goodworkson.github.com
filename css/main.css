@@ -502,7 +502,7 @@ iframe {
         font-family:"Apercu Regular", Calibri, sans-serif; 
         font-size: 48px !important;
         font-size-adjust:0.508; 
-        font-weight:normal; 
+        font-weight:bold; 
         font-style:normal;
         line-height: 140%;
         letter-spacing: 1px;
@@ -571,12 +571,12 @@ iframe {
     }
 
     #wrapper #head {
-        height:220px;
+        height: 220px;
      }
      
      #wrapper section header #head-container #banner .logo {
        max-width: 130px;
-       margin-top:30px;
+       margin-top: 30px;
      }
      
      #wrapper section header #head-container #banner {
