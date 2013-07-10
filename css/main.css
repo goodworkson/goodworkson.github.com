@@ -127,9 +127,17 @@ img a {
   border:none;
   display: block;
   padding:22px 5%;
-    -webkit-transition: color 0.15s cubic-bezier(0.54, 0.24, 0.35, 0.68);
-    -moz-transition: color 0.15s cubic-bezier(0.54, 0.24, 0.35, 0.68);
-    -o-transition: color 0.15s cubic-bezier(0.54, 0.24, 0.35, 0.68);
+  -webkit-animation-delay: 3s;
+  -webkit-animation: fadein 5s;
+  -webkit-animation-fill-mode:forwards;
+
+  -moz-animation-delay: 3s;
+  -moz-animation: fadein 5s;
+  -moz-animation-fill-mode:forwards;
+
+  -o-animation-delay: 3s;
+  -o-animation: fadein 5s;
+  -o-animation-fill-mode:forwards;
 }
 
 #wrapper #navigation #nav-container nav ul li a:hover { 
@@ -350,6 +358,17 @@ a:hover {
 #down {
     width:72px;
     margin:80px auto;
+    -webkit-animation-delay: 2s;
+    -webkit-animation: fadein 4s;
+    -webkit-animation-fill-mode:forwards;
+
+    -moz-animation-delay: 2s;
+    -moz-animation: fadein 4s;
+    -moz-animation-fill-mode:forwards;
+
+    -o-animation-delay: 2s;
+    -o-animation: fadein 4s;
+    -o-animation-fill-mode:forwards;
 }
 
 h1.big {
@@ -519,7 +538,6 @@ iframe {
         font-style:normal;
         line-height:160%;
         letter-spacing:1px;
-
             -webkit-animation-delay: 2s;
             -webkit-animation: fadein 3s;
             -webkit-animation-fill-mode:forwards;
