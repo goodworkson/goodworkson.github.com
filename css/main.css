@@ -127,6 +127,9 @@ img a {
   border:none;
   display: block;
   padding:22px 5%;
+    -webkit-transition: color 0.15s cubic-bezier(0.54, 0.24, 0.35, 0.68);
+    -moz-transition: color 0.15s cubic-bezier(0.54, 0.24, 0.35, 0.68);
+    -o-transition: color 0.15s cubic-bezier(0.54, 0.24, 0.35, 0.68);
 }
 
 #wrapper #navigation #nav-container nav ul li a:hover { 
