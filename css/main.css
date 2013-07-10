@@ -493,14 +493,14 @@ iframe {
     }
 
     h1.big {
-        margin:200px 0;
+        margin:220px 0;
         padding:0 1.5em;
 
         text-align: center;
         display:block;
 
         font-family:"Apercu Regular", Calibri, sans-serif; 
-        font-size: 48px !important;
+        font-size: 42px !important;
         font-size-adjust:0.508; 
         font-weight:bold; 
         font-style:normal;
