@@ -23,7 +23,6 @@ footer, header, nav, section, audio, video {
     display: block;
 }
 
-
 /* * * * * * * * * * ABOUT * * * * * * * * * */
 
 #about {
@@ -54,6 +53,11 @@ footer, header, nav, section, audio, video {
     text-align: center;
 }
 
+img a {
+  border: 0!important; 
+  text-decoration: none!important;
+  cursor:pointer;
+}
 
 /* Navigation Content */
 
@@ -111,7 +115,7 @@ footer, header, nav, section, audio, video {
 
 #wrapper #navigation #nav-container nav ul li a {
   font-family:"Apercu Regular", Calibri, sans-serif;
-  font-weight:normal; 
+  font-weight:bold; 
   font-style:normal;
   font-size: 14px;
   font-size-adjust:0.508; 
@@ -135,7 +139,6 @@ footer, header, nav, section, audio, video {
   margin-left: 0px;
 }
 
-
 /* Header/logo Content */
 
 #wrapper section header #head-container #banner {
@@ -156,7 +159,6 @@ footer, header, nav, section, audio, video {
   border:0;
 }
 
-
 /* Articles */
 
 #wrapper section .about-text h1,
@@ -175,7 +177,6 @@ footer, header, nav, section, audio, video {
   -moz-transition: color 0.15s cubic-bezier(0.54, 0.24, 0.35, 0.68);
   -o-transition: color 0.15s cubic-bezier(0.54, 0.24, 0.35, 0.68);
 }
-
 
 /* Body Content */
 
@@ -343,6 +344,11 @@ a:hover {
     text-decoration:none;
 }
 
+#down {
+    width:72px;
+    margin:80px auto;
+}
+
 h1.big {
     display:none;
 }
@@ -353,7 +359,7 @@ h1.mobile {
     font-size-adjust:0.508; 
     font-weight:normal; 
     display:block;
-    margin:120px 0 80px;
+    margin:120px 0 0 0;
     padding:0 1.5em;
     text-align:center;
     line-height: 140%;
@@ -492,20 +498,24 @@ iframe {
         text-align: center;
     }
 
+    #down {
+        margin:110px auto;
+    }
+
     h1.big {
-        margin:220px 0;
+        margin:200px 0 0 0;
         padding:0 1.5em;
 
         text-align: center;
         display:block;
 
         font-family:"Apercu Regular", Calibri, sans-serif; 
-        font-size: 42px !important;
+        font-size:42px !important;
         font-size-adjust:0.508; 
         font-weight:normal; 
         font-style:normal;
-        line-height: 160%;
-        letter-spacing: 1px;
+        line-height:160%;
+        letter-spacing:1px;
 
             -webkit-animation-delay: 2s;
             -webkit-animation: fadein 3s;
