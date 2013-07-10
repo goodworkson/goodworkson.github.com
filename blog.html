@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
   <head>
-    <title>  {{author}} × Blog{{#is_post}}{{#posts}} — {{title}}{{/posts}}{{/is_post}}</title>
+    <title>{{author}} × Blog{{#is_post}}{{#posts}} — {{title}}{{/posts}}{{/is_post}}</title>
     <meta name="description" content="{{blog_title}}" />
     <meta name="viewport" content="width=device-width; initial-scale=1; maximum-scale=1.0;">
     <meta name="apple-mobile-web-app-capable" content="yes"/>
@@ -18,18 +18,29 @@
     <meta property="og:type" content="article" />
     {{/is_post}}  
     
-    <link rel="icon" href="http://f.cl.ly/items/3j113K2J0A283C0J0v0v/favicon.ico">
+    <link rel="icon" href="https://dl.dropboxusercontent.com/u/8888369/temp/favicon.ico">
     <link rel="apple-touch-icon-precomposed" href="http://f.cl.ly/items/150t0W1L3U292J2R0i3I/touch-icon-ipad-retina-precomposed.png">
 
     <link rel="alternate" type="application/rss+xml" title="RSS" href="{{base_url}}/feed" />
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:700,800' rel='stylesheet' type='text/css'>
+
     {{css}}
     
-    <script type="text/javascript" src="//use.typekit.net/tqu1lic.js"></script>
-    <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
-    
+    <script type="text/javascript">
+    WebFontConfig = { fontdeck: { id: '34816' } };
+
+    (function() {
+      var wf = document.createElement('script');
+      wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+      '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+      wf.type = 'text/javascript';
+      wf.async = 'true';
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(wf, s);
+    })();
+    </script>
+
   </head>
-  
+
   <body lang="en">
     
     <div id="wrapper">
@@ -190,4 +201,4 @@
 
   </body>
   
-</html>                                                                                                                        
+</html>                                                                                                                                  

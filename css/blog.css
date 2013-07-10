@@ -271,11 +271,11 @@ h1 {
 #wrapper section article div.content div.title h6 {
   max-width: 600px;
   font-family:"Apercu Regular", Calibri, sans-serif; 
-  font-weight:normal; 
+  font-weight:bold; 
   font-style:normal;
   font-size: 40px;
   color: #030303;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   letter-spacing:-1px;
   line-height: 130%;
   -webkit-transition: color 0.15s cubic-bezier(0.54, 0.24, 0.35, 0.68);
@@ -608,31 +608,26 @@ h1 {
 
 /* Footer */
 
-.footer-container {
-    padding: 60px 0;
-    text-align: center;
-    background: #1f1f1f;
+#wrapper section footer {
+  max-width: 600px;
+  height: 110px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.footer-container p {  
-    text-transform: uppercase;
-    letter-spacing: 2px;    
-    font-size: 14px;
-    line-height: 180%;
-    color: #888;
+#wrapper section footer p {
+  padding-top: 45px;
+  font-size: 12px;
+  text-align: center;
 }
 
-.footer-container a {
-    color: #FFF; 
-    text-decoration: none; 
-    letter-spacing: 2px; 
-    font-size: 14px;
-    border-bottom: none;
-} 
-
-.footer-container a:hover {
-    color: #666; 
-} 
+#wrapper section footer p strong {
+  font-size: 14px;
+  font-family:"Apercu Regular", Calibri, sans-serif; 
+  font-weight:normal; 
+  font-style:normal;
+  text-transform: uppercase;
+}
 
 /* Return Button */
 
@@ -644,9 +639,6 @@ h1 {
   padding: 0px;
   display: none;
 }
-
-
-
 
 /* Pretty printing */
 
