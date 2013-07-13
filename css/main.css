@@ -1,7 +1,7 @@
 /*
  * Website - www.goodworkson.co
  * Copyright (C) 2013 Gareth Hughes.
- * Author: Gareth Hughes (hello@goodworkson.co)
+ * Designer, builder, author: Gareth Hughes (hello@goodworkson.co)
 */
 
 
@@ -371,6 +371,7 @@ a:hover {
     -o-animation-fill-mode:forwards;
 }
 
+
 h1.big {
     display:none;
 }
@@ -381,7 +382,7 @@ h1.mobile {
     font-size-adjust:0.508; 
     font-weight:normal; 
     display:block;
-    margin:120px 0 0 0;
+    margin:90px 0 0 0;
     padding:0 1.5em;
     text-align:center;
     line-height: 140%;
@@ -497,7 +498,7 @@ iframe {
    TABLET DISPLAYS (According to 2012)
    ============================================================ */
 
-@media only screen and (min-width: 480px) { 
+@media only screen and (min-width: 600px) { 
 
     body {
         font-size: 21px;
