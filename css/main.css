@@ -54,7 +54,7 @@ footer, header, nav, section, audio, video {
 }
 
 img a {
-  border: 0!important; 
+  border-bottom: 0!important;
   text-decoration: none!important;
   cursor:pointer;
 }
@@ -299,7 +299,7 @@ img {
 
 .project-hero {
     max-width:900px;
-    margin:40px auto;
+    margin:20px auto;
     padding:0 3%;
 } /* Size for hero image of each project */
 
