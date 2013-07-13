@@ -324,7 +324,7 @@ img {
 } /* where a black UI needs to stand out from the background */
 
 .project-img-small {
-    margin:40px auto;
+    margin:20px auto;
     max-width:600px;
     padding:0 3%;
 } /* When images don't need to be so big */
