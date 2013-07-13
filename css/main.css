@@ -452,6 +452,7 @@ li {
 
 iframe { 
     width:100%;
+    height:300px;
 }
 
 .main-container { 
@@ -632,6 +633,11 @@ iframe {
 
      h1 {
         font-size:40px !important;
+    }
+
+    iframe { 
+        width:100%;
+        height:auto;
     }
 
 }
