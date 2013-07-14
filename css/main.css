@@ -297,6 +297,12 @@ img {
 } /* Container for each project */
 
 
+.project-hero-arup {
+    max-width:900px;
+    margin:20px auto;
+    padding:0;
+} /* Size for hero image of each project */
+
 .project-hero {
     max-width:900px;
     margin:20px auto;
