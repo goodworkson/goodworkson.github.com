@@ -305,18 +305,19 @@ img {
 
 .project-img {
     margin:20px auto;
-    max-width:900px;
+    max-width:800px;
     padding:0 3%;
 } /* Standard image size */
 
 .project-video {
-    max-width:900px;
+    max-width:800px;
     margin: 20px auto;
     position: relative;
     padding: 30px 3% 56.25%; /* 16/9 ratio */
     height: 0;
     overflow: hidden;
 } /* Standard video size */
+
 
 .outlined {
     border:1px #333 solid;
