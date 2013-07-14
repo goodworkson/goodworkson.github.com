@@ -330,8 +330,10 @@ img {
 } /* When images don't need to be so big */
 
 .first-project {
-    opacity:0;
+    opacity:1;
 } /* Part of the fading in javascript */
+
+
 
 .project-text {
     margin:0 auto;
@@ -673,6 +675,10 @@ iframe {
         margin-top:40px;
     }
 
+    .first-project {
+        opacity:0;
+    } /* Part of the fading in javascript */
+    
 }
 
 /* ==============================================================
