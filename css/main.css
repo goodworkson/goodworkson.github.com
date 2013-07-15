@@ -97,27 +97,27 @@ img a {
 
 #wrapper #navigation #nav-container nav ul {
   width:100%;
-  padding: 0px;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
+  padding:0px;
+  margin-left:auto;
+  margin-right:auto;
+  text-align:center;
   background:#111111;
-  margin:0;
+  margin: 0;
 }
 
 #wrapper #navigation #nav-container nav ul li {
-  list-style: none;
-  display: inline-block;
-  margin-left: 40px;
-  line-height: 28px;
-  width: 14%;
+  list-style:none;
+  display:inline-block;
+  margin-left:40px;
+  line-height:28px;
+  width:14%;
 }
 
 #wrapper #navigation #nav-container nav ul li a {
   font-family:"Apercu Regular", Calibri, sans-serif;
   font-weight:bold; 
   font-style:normal;
-  font-size: 14px;
+  font-size:14px;
   font-size-adjust:0.508; 
   
   text-transform:uppercase;
@@ -141,13 +141,13 @@ img a {
 }
 
 #wrapper #navigation #nav-container nav ul li a:hover { 
-  text-decoration: none; 
-  color: #666; 
-  border-bottom: none;
+  text-decoration:none; 
+  color:#666; 
+  border-bottom:none;
 } 
 
 #wrapper #navigation #nav-container nav ul li:first-child {
-  margin-left: 0px;
+  margin-left:0px;
 }
 
 /* Header/logo Content */
@@ -174,15 +174,14 @@ img a {
 
 .about-text h2,
 .about-text h3 {
-  max-width: 600px;
+  max-width:600px;
   font-family:"Apercu Regular", Calibri, sans-serif; 
   font-size-adjust:0.508; 
   font-weight:normal; 
   font-style:normal;
   font-size: 40px;
   color: #030303;
-  margin-bottom: 20px;
-  letter-spacing:-1px;
+  margin-bottom: 32px;
   -webkit-transition: color 0.15s cubic-bezier(0.54, 0.24, 0.35, 0.68);
   -moz-transition: color 0.15s cubic-bezier(0.54, 0.24, 0.35, 0.68);
   -o-transition: color 0.15s cubic-bezier(0.54, 0.24, 0.35, 0.68);
@@ -191,35 +190,35 @@ img a {
 /* Body Content */
 
 .about-text #body {
-  max-width: 600px;
-  height: auto;
-  margin:0  auto;
+  max-width:600px;
+  height:auto;
+  margin:0 auto;
 }
 
 #body img,
 .about-text #body iframe {
-  max-width: 600px;
-  float: left;
-  margin-bottom: 30px;
+  max-width:600px;
+  float:left;
+  margin-bottom:30px;
 }
 
 .about-text p {
-  max-width: 600px;
-  margin-bottom: 24px;
+  max-width:600px;
+  margin-bottom:21px;
 }
 
 .about-text p img {
-  max-width: 600px;
-  margin-bottom: 0px;
+  max-width:600px;
+  margin-bottom:0px;
 }
 
 .aboutut-text h1 {
-  font-size: 22px;
+  font-size:22px;
 }
 
 .about-text h2 {
   margin-top:32px;
-  font-size: 28px;
+  font-size:28px;
 }
 
 .about-text ul {
@@ -230,33 +229,21 @@ img a {
 }
 
 #wrapper section .about-text p li {
-    text-decoration: none;
-    list-style: none;
+    text-decoration:none;
+    list-style:none;
 }
 
 a.contact {
-  color: #111111;
-  border-bottom: #cdcdcd 1px solid;
-  padding-bottom: 2px;
-  text-decoration: none;
-  -webkit-transition: border-bottom 0.15s cubic-bezier(0.54, 0.24, 0.35, 0.68);
-  -moz-transition: border-bottom 0.15s cubic-bezier(0.54, 0.24, 0.35, 0.68);
-  -o-transition: border-bottom 0.15s cubic-bezier(0.54, 0.24, 0.35, 0.68);
-  -webkit-transition: color 0.15s cubic-bezier(0.54, 0.24, 0.35, 0.68);
-  -moz-transition: color 0.15s cubic-bezier(0.54, 0.24, 0.35, 0.68);
-  -o-transition: color 0.15s cubic-bezier(0.54, 0.24, 0.35, 0.68);
+  color:#111111;
+  border-bottom:#cdcdcd 1px solid;
+  padding-bottom:2px;
+  text-decoration:none;
 }
 
 a.contact:hover {
   border-bottom: #111111 1px solid;
   color:#111111;
   cursor: pointer;
-  -webkit-transition: border-bottom 0.15s cubic-bezier(0.54, 0.24, 0.35, 0.68);
-  -moz-transition: border-bottom 0.15s cubic-bezier(0.54, 0.24, 0.35, 0.68);
-  -o-transition: border-bottom 0.15s cubic-bezier(0.54, 0.24, 0.35, 0.68);
-  -webkit-transition: color 0.15s cubic-bezier(0.54, 0.24, 0.35, 0.68);
-  -moz-transition: color 0.15s cubic-bezier(0.54, 0.24, 0.35, 0.68);
-  -o-transition: color 0.15s cubic-bezier(0.54, 0.24, 0.35, 0.68);
 }
 
 /* * * * * * * * * * STANDARDS * * * * * * * * * */
@@ -293,26 +280,26 @@ img {
 .project-container { 
     max-width:1600px;
     padding: 60px 0;
-} /* Container for each project */
+}
 
 
 .project-hero-arup {
     max-width:900px;
     margin:20px auto;
     padding:0;
-} /* Size for hero image of each project */
+}
 
 .project-hero {
     max-width:900px;
     margin:20px auto;
     padding:0 3%;
-} /* Size for hero image of each project */
+}
 
 .project-img {
     margin:20px auto;
     max-width:800px;
     padding:0 3%;
-} /* Standard image size */
+}
 
 .project-video {
     max-width:800px;
@@ -321,17 +308,17 @@ img {
     padding: 30px 3% 56.25%; /* 16/9 ratio */
     height: 0;
     overflow: hidden;
-} /* Standard video size */
+}
 
 .project-img-small {
     margin:20px auto;
     max-width:600px;
     padding:0 3%;
-} /* When images don't need to be so big */
+}
 
 .first-project {
     opacity:1;
-} /* Part of the fading in javascript */
+}/* Part of the fading in javascript */
 
 .outlined {
     border:1px #333 solid;
@@ -577,6 +564,10 @@ iframe {
         margin:110px auto;
     }
 
+     h1 {
+        font-size:40px !important;
+    }
+
     h1.big {
         margin:200px 0 0 0;
         padding:0 1.5em;
@@ -608,11 +599,6 @@ iframe {
         display:none;
     }
 
-    #wrapper section .about-text h2 {
-      margin-top:62px;
-      font-size: 28px;
-    }
-
     h2.project{
         font-size: 30px;
         letter-spacing: 14px;
@@ -629,6 +615,11 @@ iframe {
         margin: 62px auto;
     }
 
+    .about-text h2 {
+        margin-top:42px; 
+        font-size: 28px;
+    }
+
     .project-img {
         padding:0 1.5em;
         margin:80px auto;
@@ -636,16 +627,16 @@ iframe {
 
     .project-video {
         margin: 80px auto;
-        padding: 30px 1.5% 56.25%; /* 16/9 ratio */
-    } /* Standard video size */
+        padding: 30px 1.5% 56.25% 0; /* 16/9 ratio */
+    }   /* Standard video size */
 
     .outlined {
         padding:0 0 1px 0;
     }
 
     .project-img-small {
-       padding:0 1.5em;
-       margin:80px auto;
+        padding:0 1.5em;
+        margin:80px auto;
     }
 
     .project-hero, .project-hero-arup {
@@ -664,16 +655,16 @@ iframe {
      }
      
      #wrapper section header #head-container #banner .logo {
-       max-width: 130px;
-       margin-top: 30px;
+        max-width: 130px;
+        margin-top: 30px;
      }
      
      #wrapper section header #head-container #banner {
-       margin-left:-65px;
+        margin-left:-65px;
      }
       
      #wrapper section article div.content #body h1 {
-       font-size: 28px;
+        font-size: 28px;
      }
      
      #wrapper #navigation #nav-container nav ul li {
@@ -681,12 +672,8 @@ iframe {
      }
      
      #wrapper #navigation #nav-container nav ul li a {
-       font-size: 15px;
+        font-size: 15px;
      }
-
-     h1 {
-        font-size:40px !important;
-    }
 }
 
 
@@ -711,7 +698,7 @@ iframe {
 
     .first-project {
         opacity:0.2;
-    } /* Part of the fading in javascript */
+    }   /* Part of the fading in javascript */
 
 }
 
