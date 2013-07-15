@@ -189,17 +189,9 @@ img a {
 
 /* Body Content */
 
-.about-text #body {
+.about-text {
   max-width:600px;
-  height:auto;
   margin:0 auto;
-}
-
-#body img,
-.about-text #body iframe {
-  max-width:600px;
-  float:left;
-  margin-bottom:30px;
 }
 
 .about-text p {
@@ -212,12 +204,9 @@ img a {
   margin-bottom:0px;
 }
 
-.aboutut-text h1 {
-  font-size:22px;
-}
-
 .about-text h2 {
-  margin-top:32px;
+  margin-top:28px;
+  margin-top:28px;
   font-size:28px;
 }
 
@@ -616,7 +605,8 @@ iframe {
     }
 
     .about-text h2 {
-        margin-top:42px; 
+        margin-top:32px; 
+        margin-bottom: 32px;
         font-size: 28px;
     }
 
