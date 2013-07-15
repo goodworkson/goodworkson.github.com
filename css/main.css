@@ -172,9 +172,8 @@ img a {
 
 /* Articles */
 
-#wrapper section .about-text h1,
-#wrapper section .about-text h2,
-#wrapper section .about-text h3 {
+.about-text h2,
+.about-text h3 {
   max-width: 600px;
   font-family:"Apercu Regular", Calibri, sans-serif; 
   font-size-adjust:0.508; 
@@ -191,40 +190,39 @@ img a {
 
 /* Body Content */
 
-#wrapper section .about-text #body {
+.about-text #body {
   max-width: 600px;
   height: auto;
   margin:0  auto;
 }
 
-#wrapper section .about-text #body img,
-#wrapper section .about-text #body iframe {
+#body img,
+.about-text #body iframe {
   max-width: 600px;
   float: left;
   margin-bottom: 30px;
 }
 
-#wrapper section .about-text p {
+.about-text p {
   max-width: 600px;
   margin-bottom: 24px;
 }
 
-#wrapper section .about-text p img,
-#wrapper section .about-text p iframe {
+.about-text p img {
   max-width: 600px;
   margin-bottom: 0px;
 }
 
-#wrapper section .about-text h1 {
+.aboutut-text h1 {
   font-size: 22px;
 }
 
-#wrapper section .about-text h2 {
+.about-text h2 {
   margin-top:32px;
   font-size: 28px;
 }
 
-#wrapper section .about-text ul {
+.about-text ul {
   display: block;
   list-style-type: disc;
   padding-left: 56px;
@@ -240,6 +238,7 @@ a.contact {
   color: #111111;
   border-bottom: #cdcdcd 1px solid;
   padding-bottom: 2px;
+  text-decoration: none;
   -webkit-transition: border-bottom 0.15s cubic-bezier(0.54, 0.24, 0.35, 0.68);
   -moz-transition: border-bottom 0.15s cubic-bezier(0.54, 0.24, 0.35, 0.68);
   -o-transition: border-bottom 0.15s cubic-bezier(0.54, 0.24, 0.35, 0.68);
@@ -324,12 +323,6 @@ img {
     overflow: hidden;
 } /* Standard video size */
 
-
-.outlined {
-    border:1px #333 solid;
-    padding:0 0 1px 0;
-} /* where a black UI needs to stand out from the background */
-
 .project-img-small {
     margin:20px auto;
     max-width:600px;
@@ -340,7 +333,10 @@ img {
     opacity:1;
 } /* Part of the fading in javascript */
 
-
+.outlined {
+    border:1px #333 solid;
+    padding:0 0 1px 0;
+} /* where a black UI needs to stand out from the background */
 
 .project-text {
     margin:0 auto;
@@ -377,18 +373,17 @@ p a:hover {
     width:72px;
     margin:80px auto;
     -webkit-animation-delay: 2s;
-    -webkit-animation: fadein 4s;
+    -webkit-animation:fadein 4s;
     -webkit-animation-fill-mode:forwards;
 
     -moz-animation-delay: 2s;
-    -moz-animation: fadein 4s;
+    -moz-animation:fadein 4s;
     -moz-animation-fill-mode:forwards;
 
     -o-animation-delay: 2s;
-    -o-animation: fadein 4s;
+    -o-animation:fadein 4s;
     -o-animation-fill-mode:forwards;
 }
-
 
 h1.big {
     display:none;
@@ -452,6 +447,15 @@ p.project-intro-sub {
     color: #999;
 }
 
+.project-number{
+  display:none;
+}
+
+.project-number img {
+  display:none;
+}
+
+
 p.project-text {
     margin: 0 0 36px 0;
     text-align: left;
@@ -486,32 +490,41 @@ iframe {
     margin:0;
 }
 
-/* * * * * * * * * * FOOTER * * * * * * * * * */
+
+/* FOOTER */
 
 .footer-container {
     padding: 60px 0;
     text-align: center;
-    background: #1f1f1f;
+    background: #DBDBDB;
 }
 
 .footer-container p {  
+    font-size: 14px;
     text-transform: uppercase;
     letter-spacing: 2px;    
-    font-size: 14px;
     line-height: 180%;
-    color: #888;
+    color: #222222;
+    margin-bottom:20px;
 }
 
-.footer-container a {
-    color: #FFF; 
+.footer-container a, a:visited {
+    color: #111111;
+    font-size: 18px;
+    font-weight: bold;
     text-decoration: none; 
     letter-spacing: 2px; 
-    font-size: 14px;
     border-bottom: none;
+    margin-right: 30px;
+}
+
+.footer-container a.last{
+    margin-right: 0px;
 } 
 
 .footer-container a:hover {
-    color: #666; 
+    color: #777777;
+    border-bottom: none;
 } 
 
 /* ============================================================
@@ -540,6 +553,20 @@ iframe {
 
     p.project-intro-sub {
         text-align: center;
+    }
+
+    .project-number{
+      display: block;
+      position: relative;
+      margin: 0 auto;
+      width: 60px;
+      z-index: 100;
+    }
+
+    .project-number img {
+      display: block;
+      position: absolute;
+      top: 50px;
     }
 
     p.quote {
