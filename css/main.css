@@ -187,53 +187,6 @@ img a {
   -o-transition: color 0.15s cubic-bezier(0.54, 0.24, 0.35, 0.68);
 }
 
-/* Body Content */
-
-.about-text {
-  max-width:600px;
-  margin:0 auto;
-}
-
-.about-text p {
-  max-width:600px;
-  margin-bottom:21px;
-}
-
-.about-text p img {
-  max-width:600px;
-  margin-bottom:0px;
-}
-
-.about-text h2 {
-  margin-top:28px;
-  margin-top:28px;
-  font-size:28px;
-}
-
-.about-text ul {
-  display: block;
-  list-style-type: disc;
-  padding-left: 56px;
-  margin-bottom: 30px;
-}
-
-#wrapper section .about-text p li {
-    text-decoration:none;
-    list-style:none;
-}
-
-a.contact {
-  color:#111111;
-  border-bottom:#cdcdcd 1px solid;
-  padding-bottom:2px;
-  text-decoration:none;
-}
-
-a.contact:hover {
-  border-bottom: #111111 1px solid;
-  color:#111111;
-  cursor: pointer;
-}
 
 /* * * * * * * * * * STANDARDS * * * * * * * * * */
 
@@ -503,33 +456,78 @@ iframe {
     border-bottom: none;
 } 
 
+
+/* About Page Content */
+
+.about-text {
+    max-width:600px;
+    margin:0 auto;
+}
+
+.about-text p {
+    max-width:600px;
+    margin-bottom:21px;
+}
+
+.about-text p img {
+    max-width:600px;
+    margin-bottom:0px;
+}
+
+.about-text h2 {
+    margin-top:28px;
+    margin-bottom:28px;
+    font-size:28px;
+}
+
+.about-text ul {
+    display: block;
+    list-style-type: disc;
+    padding-left: 56px;
+    margin-bottom: 30px;
+}
+
+.about-text p li {
+    text-decoration:none;
+    list-style:none;
+}
+
+a.contact {
+    color:#111111;
+    border-bottom:#cdcdcd 1px solid;
+    padding-bottom:2px;
+    text-decoration:none;
+}
+
+a.contact:hover {
+    border-bottom: #111111 1px solid;
+    color:#111111;
+    cursor: pointer;
+}
+
+
+
+
 /* ============================================================
-   TABLET DISPLAYS (According to 2012)
+   TABLET DISPLAYS (According to 2013)
    ============================================================ */
+
+
+
 
 @media only screen and (min-width: 600px) { 
 
-    body {
-        font-size: 21px;
-    }
+    body { font-size: 21px; }
 
-    .main-container { 
-        margin: 0 auto;
-    }
+    .main-container { margin: 0 auto; }
 
-    .logo {
-        max-width: 100px;
-    }
+    .logo { max-width: 100px; }
 
     p { font-size: 21px;}
     
-    p.project-intro {
-        text-align: center;
-    }
+    p.project-intro { text-align: center; }
 
-    p.project-intro-sub {
-        text-align: center;
-    }
+    p.project-intro-sub { text-align: center; }
 
     .project-number{
       display: block;
@@ -667,9 +665,14 @@ iframe {
 }
 
 
+
+
 /* =============================================================
-   DESKTOP DISPLAYS (According to 2012)
+   DESKTOP DISPLAYS (According to 2013)
    ============================================================= */
+
+
+
 
 @media only screen and (min-width: 768px) {
     
@@ -692,9 +695,15 @@ iframe {
 
 }
 
+
+
+
 /* ==============================================================
    HELPER CLASSES
    ============================================================== */
+
+
+
 
 .ir {
     background-color: transparent;
