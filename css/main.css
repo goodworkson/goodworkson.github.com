@@ -4,7 +4,7 @@
  * Designer, builder, author: Gareth Hughes (hello@goodworkson.co)
 */
 
-/* Clean up */
+/* Mobile first was a bad choice */
 
 html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, 
 p, blockquote, pre, a, abbr, address, cite, code, del, dfn, em, 
@@ -22,125 +22,6 @@ article, aside, canvas, figure, figure img, figcaption, hgroup,
 footer, header, nav, section, audio, video {
     display: block;
 }
-
-/* Mobile first was a bad choice */
-
-
-
-/* Navigation Content */
-
-
-
-/* Header Content */
-
-#wrapper section header {
-  max-width: 600px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-#head-container {
-  max-width: 600px;
-  margin-top: 10px;
-}
-
-
-/* Nav Content */
-
-#wrapper section navigation {
-  max-width: 600px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-#nav-container {
-  max-width: 600px;
-}
-
-#nav-container nav {
-  position:absolute;
-  left:50%;
-  margin-left:-40px;
-  z-index:10;
-  top:20px;
-}
-
-#nav-container nav ul {
-  width:100%;
-  padding:0px;
-  margin-left:auto;
-  margin-right:auto;
-  text-align:center;
-  background:#111111;
-  margin: 0;
-}
-
-#nav-container nav ul li {
-  list-style:none;
-  display:inline-block;
-  margin-left:40px;
-  line-height:28px;
-  width:14%;
-}
-
-#nav-container nav ul li a {
-  font-family:"Apercu Regular", Calibri, sans-serif;
-  font-weight:bold; 
-  font-style:normal;
-  font-size:14px;
-  font-size-adjust:0.508; 
-  
-  text-transform:uppercase;
-  text-decoration:none;
-  letter-spacing:3px;
-  color:#FFFFFF;
-  border:none;
-  display: block;
-  padding:22px 5%;
-  -webkit-animation-delay: 3s;
-  -webkit-animation: fadein 5s;
-  -webkit-animation-fill-mode:forwards;
-
-  -moz-animation-delay: 3s;
-  -moz-animation: fadein 5s;
-  -moz-animation-fill-mode:forwards;
-
-  -o-animation-delay: 3s;
-  -o-animation: fadein 5s;
-  -o-animation-fill-mode:forwards;
-}
-
-#nav-container nav ul li a:hover { 
-  text-decoration:none; 
-  color:#666; 
-  border-bottom:none;
-} 
-
-#nav-container nav ul li:first-child {
-  margin-left:0px;
-}
-
-
-/* Header/logo */
-
-#banner {
-  position:absolute;
-  left:50%;
-  margin-left:-40px;
-  z-index:10;
-  top:20px;
-}
-
-#banner .logo {
-  max-width: 80px;
-  padding-left: 0px;
-  margin: 0 auto;
-}
-
-#banner .logo a {
-  border:0;
-}
-
 
 /* Standards */
 
@@ -176,7 +57,6 @@ img a {
   text-decoration: none!important;
   cursor:pointer;
 }
-
 
 /* Work : Layout */
 
@@ -220,15 +100,13 @@ img a {
 
 .first-project {
     opacity:1;
-}   /* Part of the fading in javascript */
+}
 
 .project-text {
     margin:0 auto;
     max-width:600px;
     padding:0 3%;
 }
-
-
 
 /* Work : Style */
 
@@ -374,8 +252,7 @@ iframe {
     margin:0;
 }
 
-
-/* FOOTER */
+/* Footer */
 
 .footer-container {
     padding: 60px 0;
@@ -392,7 +269,8 @@ iframe {
     margin-bottom:20px;
 }
 
-.footer-container a, .footer-container a:visited {
+.footer-container a, 
+.footer-container a:visited {
     color: #222222;
     font-size: 18px;
     font-weight: bold;
@@ -411,7 +289,88 @@ iframe {
     border-bottom: none;
 } 
 
-/* About Page Content */
+/* Navigation */
+
+#wrapper section navigation {
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#nav-container {
+  max-width: 600px;
+}
+
+#nav-container nav {
+  position:absolute;
+  left:50%;
+  margin-left:-40px;
+  z-index:10;
+  top:20px;
+}
+
+#nav-container nav ul {
+  width:100%;
+  padding:0px;
+  margin-left:auto;
+  margin-right:auto;
+  text-align:center;
+  background:#111111;
+  margin: 0;
+}
+
+#nav-container nav ul li {
+  list-style:none;
+  display:inline-block;
+  margin-left:40px;
+  line-height:28px;
+  width:14%;
+}
+
+#nav-container nav ul li a {
+  font-family:"Apercu Regular", Calibri, sans-serif;
+  font-weight:bold; 
+  font-style:normal;
+  font-size:14px;
+  font-size-adjust:0.508; 
+  
+  text-transform:uppercase;
+  text-decoration:none;
+  letter-spacing:3px;
+  color:#FFFFFF;
+  border:none;
+  display: block;
+  padding:22px 5%;
+      -webkit-animation-delay: 3s;
+      -webkit-animation: fadein 5s;
+      -webkit-animation-fill-mode:forwards;
+
+      -moz-animation-delay: 3s;
+      -moz-animation: fadein 5s;
+      -moz-animation-fill-mode:forwards;
+
+      -o-animation-delay: 3s;
+      -o-animation: fadein 5s;
+      -o-animation-fill-mode:forwards;
+}
+
+#nav-container nav ul li a:hover { 
+    text-decoration:none; 
+    color:#666; 
+    border-bottom:none;
+} 
+
+#nav-container nav ul li:first-child {
+    margin-left:0px;
+}
+
+/* Header Content */
+
+#wrapper section header {
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
 
 #head {
     height:120px;
@@ -421,6 +380,31 @@ iframe {
     position: relative;
     text-align: center;
 }
+
+#head-container {
+    max-width: 600px;
+    margin-top: 10px;
+}
+
+#banner {
+    position:absolute;
+    left:50%;
+    margin-left:-40px;
+    z-index:10;
+    top:20px;
+}
+
+#banner .logo {
+    max-width: 80px;
+    padding-left: 0px;
+    margin: 0 auto;
+}
+
+#banner .logo a {
+    border:0;
+}
+
+/* About Page Content */
 
 #about {
     background: #FFF;
