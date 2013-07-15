@@ -359,13 +359,13 @@ iframe {
       -o-animation-fill-mode:forwards;
 }
 
-#nav-container nav ul li a:hover { 
+#wrapper #navigation #nav-container nav ul li a:hover { 
     text-decoration:none; 
     color:#666; 
     border-bottom:none;
 } 
 
-#nav-container nav ul li:first-child {
+#wrapper #navigation #nav-container nav ul li:first-child {
     margin-left:0px;
 }
 
