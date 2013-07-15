@@ -486,10 +486,9 @@ a.contact:hover {
    TABLET DISPLAYS (According to 2013)
    ============================================================ */
 
-
-
-
 @media only screen and (min-width: 600px) { 
+
+    /* Work : Type */
 
     body { font-size: 21px; }
 
@@ -503,30 +502,16 @@ a.contact:hover {
 
     p.project-intro-sub { text-align: center; }
 
-    .project-number{
-      display: block;
-      position: relative;
-      margin: 0 auto;
-      width: 60px;
-      z-index: 100;
-    }
-
-    .project-number img {
-      display: block;
-      position: absolute;
-      top: 50px;
-    }
-
     p.quote {
         margin: 60px 0;
     }
-
-    #down {
-        margin:110px auto;
-    }
-
+    
     h1 {
         font-size:40px !important;
+    }
+
+    h1.mobile {
+        display:none;
     }
 
     h1.big {
@@ -556,10 +541,6 @@ a.contact:hover {
             -o-animation-fill-mode:forwards;
     }
 
-    h1.mobile {
-        display:none;
-    }
-
     h2.project{
         font-size: 30px;
         letter-spacing: 14px;
@@ -572,33 +553,15 @@ a.contact:hover {
         margin:60px 0 60px 0px;
     }
 
-    .about-text {
-        margin: 62px auto;
+    /* Work : Layout */
+
+    #down {
+        margin:110px auto;
     }
 
-    .about-text h2 {
-        margin-top:28px; 
-        margin-bottom: 28px;
-        font-size: 28px;
-    }
-
-    .project-img {
-        padding:0 1.5em;
-        margin:80px auto;
-    }
-
-    .project-video {
-        margin: 80px auto;
-        padding: 30px 1.5% 56.25% 0; /* 16/9 ratio */
-    }   /* Standard video size */
-
-    .outlined {
-        padding:0 0 1px 0;
-    }
-
-    .project-img-small {
-        padding:0 1.5em;
-        margin:80px auto;
+    .project-container {
+        margin:0 auto;
+        padding: 100px 0;
     }
 
     .project-hero, .project-hero-arup {
@@ -607,34 +570,74 @@ a.contact:hover {
         padding: 0;
     }
 
-    .project-container {
-        margin:0 auto;
-        padding: 100px 0;
+    .project-number{
+        display: block;
+        position: relative;
+        margin: 0 auto;
+        width: 60px;
+        z-index: 100;
     }
 
-    #wrapper #head {
-        height: 220px;
-     }
-     
-     #wrapper section header #head-container #banner .logo {
-        max-width: 130px;
-        margin-top: 30px;
-     }
-     
-     #wrapper section header #head-container #banner {
-        margin-left:-65px;
-     }
-      
-     #wrapper section article div.content #body h1 {
-        font-size: 28px;
-     }
-     
-     #wrapper #navigation #nav-container nav ul li {
+    .project-number img {
+        display: block;
+        position: absolute;
+        top: 50px;
+    }
+
+    .project-img {
+        padding:0 1.5em;
+        margin:80px auto;
+    }
+
+    .project-img-small {
+        padding:0 1.5em;
+        margin:80px auto;
+    }
+
+    .project-video {
+        margin: 80px auto;
+        padding: 30px 1.5% 56.25% 0;
+    }
+
+    .outlined {
+        padding:0 0 1px 0;
+    }
+
+    /* Navigation */
+
+    #nav-container nav ul li {
         margin-left: 60px;
-     }
+    }
      
-     #wrapper #navigation #nav-container nav ul li a {
+    #nav-container nav ul li a {
         font-size: 15px;
+    }
+
+    /* Banner */
+
+    #head {
+        height: 220px;
+    }
+
+    #banner {
+        margin-left:-65px;
+    }
+
+    #banner .logo {
+       max-width: 130px;
+       margin-top: 30px;
+    }
+
+    /* About Content */
+      
+     .about-text {
+        margin: 62px auto;
+     }
+
+     .about-text h2 {
+        margin-top:28px; 
+        margin-bottom: 28px;
+        font-size: 28px;
      }
 }
 
@@ -644,9 +647,6 @@ a.contact:hover {
 /* =============================================================
    DESKTOP DISPLAYS (According to 2013)
    ============================================================= */
-
-
-
 
 @media only screen and (min-width: 768px) {
     
@@ -675,9 +675,6 @@ a.contact:hover {
 /* ==============================================================
    HELPER CLASSES
    ============================================================== */
-
-
-
 
 .ir {
     background-color: transparent;
