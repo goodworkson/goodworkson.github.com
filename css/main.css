@@ -508,7 +508,7 @@ iframe {
     margin-bottom:20px;
 }
 
-.footer-container a, a:visited {
+.footer-container a, .footer-container a:visited {
     color: #222222;
     font-size: 18px;
     font-weight: bold;
