@@ -4,8 +4,8 @@
  * Designer, builder, author: Gareth Hughes (hello@goodworkson.co)
 */
 
+/* Clean up */
 
-/* Resets */
 html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, 
 p, blockquote, pre, a, abbr, address, cite, code, del, dfn, em, 
 img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, hr, 
@@ -23,18 +23,12 @@ footer, header, nav, section, audio, video {
     display: block;
 }
 
+/* Mobile first was a bad choice */
+
+
 
 /* Navigation Content */
 
-#wrapper section navigation {
-  max-width: 600px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-#wrapper section header #nav-container {
-  max-width: 600px;
-}
 
 
 /* Header Content */
@@ -45,7 +39,7 @@ footer, header, nav, section, audio, video {
   margin-right: auto;
 }
 
-#wrapper section header #head-container {
+#head-container {
   max-width: 600px;
   margin-top: 10px;
 }
@@ -53,7 +47,17 @@ footer, header, nav, section, audio, video {
 
 /* Nav Content */
 
-#wrapper section #navigation #nav-container nav {
+#wrapper section navigation {
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#nav-container {
+  max-width: 600px;
+}
+
+#nav-container nav {
   position:absolute;
   left:50%;
   margin-left:-40px;
@@ -61,7 +65,7 @@ footer, header, nav, section, audio, video {
   top:20px;
 }
 
-#wrapper #navigation #nav-container nav ul {
+#nav-container nav ul {
   width:100%;
   padding:0px;
   margin-left:auto;
@@ -71,7 +75,7 @@ footer, header, nav, section, audio, video {
   margin: 0;
 }
 
-#wrapper #navigation #nav-container nav ul li {
+#nav-container nav ul li {
   list-style:none;
   display:inline-block;
   margin-left:40px;
@@ -79,7 +83,7 @@ footer, header, nav, section, audio, video {
   width:14%;
 }
 
-#wrapper #navigation #nav-container nav ul li a {
+#nav-container nav ul li a {
   font-family:"Apercu Regular", Calibri, sans-serif;
   font-weight:bold; 
   font-style:normal;
@@ -106,19 +110,20 @@ footer, header, nav, section, audio, video {
   -o-animation-fill-mode:forwards;
 }
 
-#wrapper #navigation #nav-container nav ul li a:hover { 
+#nav-container nav ul li a:hover { 
   text-decoration:none; 
   color:#666; 
   border-bottom:none;
 } 
 
-#wrapper #navigation #nav-container nav ul li:first-child {
+#nav-container nav ul li:first-child {
   margin-left:0px;
 }
 
-/* Header/logo Content */
 
-#wrapper section header #head-container #banner {
+/* Header/logo */
+
+#banner {
   position:absolute;
   left:50%;
   margin-left:-40px;
@@ -126,18 +131,18 @@ footer, header, nav, section, audio, video {
   top:20px;
 }
 
-#wrapper section header #head-container #banner .logo {
+#banner .logo {
   max-width: 80px;
   padding-left: 0px;
   margin: 0 auto;
 }
 
-#wrapper section header #head-container #banner .logo a {
+#banner .logo a {
   border:0;
 }
 
 
-/* * * * * * * * * * STANDARDS * * * * * * * * * */
+/* Standards */
 
 body {
     font-family:"Apercu Regular", Calibri, sans-serif; 
@@ -173,24 +178,23 @@ img a {
 }
 
 
-/* * * * * * * * * * LAYOUT * * * * * * * * * */
+/* Work : Layout */
 
 .project-container { 
     max-width:1600px;
     padding: 60px 0;
 }
 
+.project-hero {
+    max-width:900px;
+    margin:20px auto;
+    padding:0 3%;
+}
 
 .project-hero-arup {
     max-width:900px;
     margin:20px auto;
     padding:0;
-}
-
-.project-hero {
-    max-width:900px;
-    margin:20px auto;
-    padding:0 3%;
 }
 
 .project-img {
@@ -203,7 +207,7 @@ img a {
     max-width:800px;
     margin: 20px auto;
     position: relative;
-    padding: 30px 3% 56.25%; /* 16/9 ratio */
+    padding: 30px 3% 56.25%;
     height: 0;
     overflow: hidden;
 }
@@ -216,22 +220,17 @@ img a {
 
 .first-project {
     opacity:1;
-}/* Part of the fading in javascript */
-
-.outlined {
-    border:1px #333 solid;
-    padding:0 0 1px 0;
-} /* where a black UI needs to stand out from the background */
+}   /* Part of the fading in javascript */
 
 .project-text {
     margin:0 auto;
     max-width:600px;
     padding:0 3%;
-} /* Text box for each project */
+}
 
 
 
-/* * * * * * * * * * STYLE * * * * * * * * * */
+/* Work : Style */
 
 p { 
     font-size: 16px;
@@ -483,7 +482,7 @@ a.contact:hover {
 
 
 /* ============================================================
-   TABLET DISPLAYS (According to 2013)
+   TABLET (According to 2013)
    ============================================================ */
 
 @media only screen and (min-width: 600px) { 
@@ -599,10 +598,6 @@ a.contact:hover {
         padding: 30px 1.5% 56.25% 0;
     }
 
-    .outlined {
-        padding:0 0 1px 0;
-    }
-
     /* Navigation */
 
     #nav-container nav ul li {
@@ -645,7 +640,7 @@ a.contact:hover {
 
 
 /* =============================================================
-   DESKTOP DISPLAYS (According to 2013)
+   DESKTOP (According to 2013)
    ============================================================= */
 
 @media only screen and (min-width: 768px) {
