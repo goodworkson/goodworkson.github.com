@@ -650,21 +650,21 @@ a.contact:hover {
 
 @media only screen and (min-width: 768px) {
     
-    #wrapper #head {
+    #head {
         height:260px;
     }
     
-    #wrapper section header #head-container #banner {
+    #banner {
         margin-left:-70px;
     }
     
-    #wrapper section header #head-container #banner .logo {
+    #banner .logo {
         max-width: 140px;
         margin-top:40px;
     }
 
     .first-project {
-        opacity:0.2;
+        opacity:0.1;
     }   /* Part of the fading in javascript */
 
 }
