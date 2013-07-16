@@ -651,6 +651,21 @@ a.contact:hover {
         opacity:0.1;
     }   /* Part of the fading in javascript */
 
+}
+
+
+
+
+/* =============================================================
+   SUPER (According to 2013)
+   ============================================================= */
+
+@media only screen and (min-width: 1200px) {
+
+    h1.big {
+        font-size:50px !important;
+    }
+
     h2.project{
         font-size: 40px;
         letter-spacing: 16px;
