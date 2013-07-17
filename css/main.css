@@ -282,29 +282,35 @@ iframe {
 /* Footer */
 
 .footer-container {
-    padding: 60px 0;
+    padding: 30px 0;
     text-align: center;
-    background: #DBDBDB;
+    background: #FFFFFF;
 }
 
 .footer-container p {  
     font-size: 14px;
     text-transform: uppercase;
-    letter-spacing: 2px;    
+    letter-spacing: 2px;
     line-height: 180%;
-    color: #222222;
-    margin-bottom:20px;
+    color: #999998;
+    margin-bottom: 30px;
 }
 
 .footer-container a, 
 .footer-container a:visited {
-    color: #222222;
-    font-size: 18px;
-    font-weight: bold;
-    text-decoration: none; 
-    letter-spacing: 2px; 
+    color: #1f1f1f;
+    width: 200px;
+    font-size: 16px;
+    font-weight: normal;
+    text-decoration: none;
+    letter-spacing: 2px;
     border-bottom: none;
     margin-right: 30px;
+    padding: 14px;
+    background-color: #E7E7E7;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
 }
 
 .footer-container a.last{

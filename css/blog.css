@@ -16,6 +16,38 @@ footer, header, nav, section, audio, video {
   display: block;
 }
 
+/* make keyframes that tell the start state and the end state of our object */
+@-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+
+.fade-in {
+    opacity:0;  /* make things invisible upon start */
+    -webkit-animation:fadeIn ease-in 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+    -moz-animation:fadeIn ease-in 1;
+    animation:fadeIn ease-in 1;
+ 
+    -webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+    -moz-animation-fill-mode:forwards;
+    animation-fill-mode:forwards;   
+ 
+    -webkit-animation-duration:1s;
+    -moz-animation-duration:1s;
+    animation-duration:1s;
+}
+
+.one {
+    -webkit-animation-delay: 0.5s;
+    -moz-animation-delay: 0.5s;
+    animation-delay: 0.5s;
+}
+ 
+.two1 {
+    -webkit-animation-delay: 1s;
+    -moz-animation-delay: 1s;
+    animation-delay: 1s;
+}
+
 ::-moz-selection {
     background: #888;
     text-shadow: none;
@@ -113,9 +145,7 @@ h1 {
   float: left;
 }
 
-
-
-/* Navigation Content */
+/* Navigation */
 
 #wrapper section navigation {
   max-width: 600px;
@@ -127,21 +157,10 @@ h1 {
   max-width: 600px;
 }
 
-
-/* Header Content */
-
-#wrapper section header {
-  max-width: 600px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
 #wrapper section header #head-container {
   max-width: 600px;
   margin-top: 10px;
 }
-
-/* Nav Content */
 
 #wrapper section #navigation #nav-container nav {
   position:absolute;
@@ -153,27 +172,27 @@ h1 {
 
 #wrapper #navigation #nav-container nav ul {
   width:100%;
-  padding: 0px;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
+  padding:0px;
+  margin-left:auto;
+  margin-right:auto;
+  text-align:center;
   background:#111111;
-  margin:0;
+  margin: 0;
 }
 
 #wrapper #navigation #nav-container nav ul li {
-  list-style: none;
-  display: inline-block;
-  margin-left: 40px;
-  line-height: 28px;
-  width: 14%;
+  list-style:none;
+  display:inline-block;
+  margin-left:39px;
+  line-height:28px;
+  width:14%;
 }
 
 #wrapper #navigation #nav-container nav ul li a {
   font-family:"Apercu Regular", Calibri, sans-serif;
-  font-weight:normal; 
+  font-weight:bold; 
   font-style:normal;
-  font-size: 14px;
+  font-size:14px;
   font-size-adjust:0.508; 
   
   text-transform:uppercase;
@@ -186,13 +205,53 @@ h1 {
 }
 
 #wrapper #navigation #nav-container nav ul li a:hover { 
-  text-decoration: none; 
-  color: #666; 
-  border-bottom: none;
+    text-decoration:none; 
+    color:#666; 
+    border-bottom:none;
 } 
 
 #wrapper #navigation #nav-container nav ul li:first-child {
-  margin-left: 0px;
+    margin-left:0px;
+}
+
+/* Header Content */
+
+#wrapper section header {
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#head {
+    height:120px;
+    width: 100%; 
+    overflow: hidden;
+    z-index: 2;
+    position: relative;
+    text-align: center;
+}
+
+#head-container {
+    max-width: 600px;
+    margin-top: 10px;
+}
+
+#banner {
+    position:absolute;
+    left:50%;
+    margin-left:-40px;
+    z-index:10;
+    top:20px;
+}
+
+#banner .logo {
+    max-width: 80px;
+    padding-left: 0px;
+    margin: 0 auto;
+}
+
+#banner .logo a {
+    border:0;
 }
 
 /* Header/logo Content */
@@ -278,7 +337,7 @@ h1 {
   color: #030303;
   margin-bottom: 20px;
   letter-spacing:-2px;
-  line-height: 130%;
+  line-height: 120%;
   -webkit-transition: color 0.15s cubic-bezier(0.54, 0.24, 0.35, 0.68);
   -moz-transition: color 0.15s cubic-bezier(0.54, 0.24, 0.35, 0.68);
   -o-transition: color 0.15s cubic-bezier(0.54, 0.24, 0.35, 0.68);
@@ -653,30 +712,33 @@ h1 {
 
 @media only screen and (min-width: 480px) { 
 
-#wrapper #head {
-    margin-bottom: 66px;
-    height:220px;
+/* Navigation */
+
+  #nav-container nav ul li {
+      margin-left: 60px;
+  }
+   
+  #nav-container nav ul li a {
+      font-size: 15px;
   }
 
-  #wrapper section header #head-container #banner .logo {
-    max-width: 130px;
-    margin-top:30px;
+  /* Banner */
+
+  #head {
+      height: 220px;
   }
-  
-  #wrapper section header #head-container #banner {
-    margin-left:-65px;
+
+  #banner {
+      margin-left:-65px;
+  }
+
+  #banner .logo {
+     max-width: 130px;
+     margin-top: 30px;
   }
    
   #wrapper section article div.content #body h1 {
     font-size: 28px;
-  }
-  
-  #wrapper #navigation #nav-container nav ul li {
-    margin-left: 60px;
-  }
-  
-  #wrapper #navigation #nav-container nav ul li a {
-    font-size: 15px;
   }
 
   body {
@@ -684,10 +746,9 @@ h1 {
   }
 
   h1 {
-    font-size:48px !important;
+    font-size:42px !important;
     line-height: 120%;
   }
-
 }
 
 
