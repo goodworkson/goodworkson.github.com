@@ -48,6 +48,8 @@ body {
   line-height: 150%;
   color: #111111;
   -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+
 }
 
 /* Global */
@@ -155,7 +157,7 @@ h1 {
   margin-left: auto;
   margin-right: auto;
   text-align: center;
-  background:#1f1f1f;
+  background:#111111;
   margin:0;
 }
 
@@ -192,7 +194,6 @@ h1 {
 #wrapper #navigation #nav-container nav ul li:first-child {
   margin-left: 0px;
 }
-
 
 /* Header/logo Content */
 
@@ -683,7 +684,8 @@ h1 {
   }
 
   h1 {
-    font-size:40px !important;
+    font-size:48px !important;
+    line-height: 120%;
   }
 
 }
