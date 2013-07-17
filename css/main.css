@@ -37,6 +37,44 @@ body {
     -webkit-font-smoothing: antialiased;
 }
 
+/* make keyframes that tell the start state and the end state of our object */
+@-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+
+.fade-in {
+    opacity:0;  /* make things invisible upon start */
+    -webkit-animation:fadeIn ease-in 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+    -moz-animation:fadeIn ease-in 1;
+    animation:fadeIn ease-in 1;
+ 
+    -webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+    -moz-animation-fill-mode:forwards;
+    animation-fill-mode:forwards;   
+ 
+    -webkit-animation-duration:1s;
+    -moz-animation-duration:1s;
+    animation-duration:1s;
+}
+
+.one {
+-webkit-animation-delay: 0.5s;
+-moz-animation-delay: 0.5s;
+animation-delay: 0.5s;
+}
+ 
+.two {
+-webkit-animation-delay: 1.5s;
+-moz-animation-delay:1.5s;
+animation-delay: 1.5s;
+}
+ 
+.three {
+-webkit-animation-delay: 2.5s;
+-moz-animation-delay: 2.5s;
+animation-delay: 2.5s;
+}
+
 ::-moz-selection {
     background: #888;
     text-shadow: none;
@@ -134,17 +172,6 @@ p a:hover {
 #down {
     width:72px;
     margin:80px auto;
-    -webkit-animation-delay: 2s;
-    -webkit-animation:fadein 4s;
-    -webkit-animation-fill-mode:forwards;
-
-    -moz-animation-delay: 2s;
-    -moz-animation:fadein 4s;
-    -moz-animation-fill-mode:forwards;
-
-    -o-animation-delay: 2s;
-    -o-animation:fadein 4s;
-    -o-animation-fill-mode:forwards;
 }
 
 h1.big {
@@ -162,17 +189,6 @@ h1.mobile {
     text-align:center;
     line-height: 140%;
     letter-spacing: 1px;
-        -webkit-animation-delay: 2s;
-        -webkit-animation: fadein 3s;
-        -webkit-animation-fill-mode:forwards;
-
-        -moz-animation-delay: 2s;
-        -moz-animation: fadein 3s;
-        -moz-animation-fill-mode:forwards;
-
-        -o-animation-delay: 2s;
-        -o-animation: fadein 3s;
-        -o-animation-fill-mode:forwards;
 }
 
 h2.project{
@@ -346,17 +362,6 @@ iframe {
   border:none;
   display: block;
   padding:22px 5%;
-      -webkit-animation-delay: 3s;
-      -webkit-animation: fadein 5s;
-      -webkit-animation-fill-mode:forwards;
-
-      -moz-animation-delay: 3s;
-      -moz-animation: fadein 5s;
-      -moz-animation-fill-mode:forwards;
-
-      -o-animation-delay: 3s;
-      -o-animation: fadein 5s;
-      -o-animation-fill-mode:forwards;
 }
 
 #wrapper #navigation #nav-container nav ul li a:hover { 
@@ -516,17 +521,6 @@ a.contact:hover {
         font-style:normal;
         line-height:160%;
         letter-spacing:1px;
-            -webkit-animation-delay: 2s;
-            -webkit-animation: fadein 3s;
-            -webkit-animation-fill-mode:forwards;
-
-            -moz-animation-delay: 2s;
-            -moz-animation: fadein 3s;
-            -moz-animation-fill-mode:forwards;
-
-            -o-animation-delay: 2s;
-            -o-animation: fadein 3s;
-            -o-animation-fill-mode:forwards;
     }
 
     h2.project{
@@ -738,35 +732,3 @@ a.contact:hover {
 }
 
 
-@keyframes fadein {
-    from {
-        opacity:0;
-    }
-    to {
-        opacity:1;
-    }
-}
-@-moz-keyframes fadein { /* Firefox */
-    from {
-        opacity:0;
-    }
-    to {
-        opacity:1;
-    }
-}
-@-webkit-keyframes fadein { /* Safari and Chrome */
-    from {
-        opacity:0;
-    }
-    to {
-        opacity:1;
-    }
-}
-@-o-keyframes fadein { /* Opera */
-    from {
-        opacity:0;
-    }
-    to {
-        opacity: 1;
-    }
-}​
