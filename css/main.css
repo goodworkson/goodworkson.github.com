@@ -436,11 +436,6 @@ iframe {
     padding: 0 5%;
 }
 
-.about-text p {
-    max-width:600px;
-    margin-bottom:21px;
-}
-
 .about-text h2 {
     margin: 0 0 18px 0;
     font-size: 21px;
@@ -448,11 +443,15 @@ iframe {
     line-height: 160%;
 }
 
+.about-text p {
+    max-width:600px;
+    margin-bottom:10px;
+}
+
 .about-text ul {
     display:block;
     list-style-type:disc;
-    padding-left:56px;
-    margin-bottom:30px;
+    margin-bottom:10px;
 }
 
 .about-text p li {
