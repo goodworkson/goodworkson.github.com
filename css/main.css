@@ -35,6 +35,7 @@ body {
     color: #FFF;
     background: #111;
     -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing: antialiased;
 }
 
 /* make keyframes that tell the start state and the end state of our object */
