@@ -59,15 +59,25 @@ body {
 }
 
 .one {
--webkit-animation-delay: 0.5s;
--moz-animation-delay: 0.5s;
-animation-delay: 0.5s;
+    -webkit-animation-delay: 0.5s;
+    -moz-animation-delay: 0.5s;
+    animation-delay: 0.5s;
 }
  
-.two {
--webkit-animation-delay: 1.5s;
--moz-animation-delay:1.5s;
-animation-delay: 1.5s;
+.two1 {
+    -webkit-animation-delay: 1s;
+    -moz-animation-delay: 1s;
+    animation-delay: 1s;
+}
+.two2 {
+    -webkit-animation-delay: 1.3s;
+    -moz-animation-delay: 1.3s;
+    animation-delay: 1.3s;
+}
+.two3 {
+    -webkit-animation-delay: 1.6s;
+    -moz-animation-delay: 1.6s;
+    animation-delay: 1.6s;
 }
  
 .three {
