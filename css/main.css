@@ -483,13 +483,13 @@ a.contact:hover {
 
     /* Work : Type */
 
-    body { font-size: 21px; }
+    body { font-size: 20px; }
 
     .main-container { margin: 0 auto; }
 
     .logo { max-width: 100px; }
 
-    p { font-size: 21px;}
+    p { font-size: 20px;}
     
     p.project-intro { text-align: center; }
 
@@ -615,7 +615,7 @@ a.contact:hover {
      .about-text h2 {
         margin-top: 40px; 
         margin-bottom: 12px;
-        font-size: 21px;
+        font-size: 24px;
      }
 }
 
