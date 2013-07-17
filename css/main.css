@@ -442,10 +442,10 @@ iframe {
 }
 
 .about-text h2 {
-    margin-top:28px;
-    margin-bottom:28px;
-    font-size:21px;
-    font-weight:bold;
+    margin: 18px 0;
+    font-size: 21px;
+    font-weight: bold;
+    line-height: 170%;
 }
 
 .about-text ul {
