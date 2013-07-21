@@ -1,0 +1,4 @@
+dig example.com +nostats +nocomments +nocmd
+# Look up DNS record for goodworkson.co
+# www.goodworkson.co.          3592    IN      CNAME   goodworkson.github.io.
+# goodworkson.github.io.      43192   IN      A       204.232.175.78
