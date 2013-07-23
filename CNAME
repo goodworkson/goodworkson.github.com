@@ -1,1 +1,4 @@
-goodworkson.co
+dig www.example.com +nostats +nocomments +nocmd
+# ;www.goodworkson.co.               IN      A
+# www.goodworkson.co.      3592    IN      CNAME   goodworkson.github.io.
+# goodworkson.github.io.      43192   IN      A       204.232.175.78
