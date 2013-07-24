@@ -51,7 +51,7 @@
         <div class="main-container" id="start" name="start">
 
             <!-- GLOAM -->
-            <div class="project-container"><!-- Place 'first-project' as a class to fade in-->
+            <div class="project-container first-project"><!-- Place 'first-project' as a class to fade in-->
                 <div class="project-text">
                    <h2 class="project">Gloam</h2>
                    <p class="project-intro">An animated short which follows a solitary character who encounters something unknown with only curiosity to lead the way.</p>
@@ -430,6 +430,18 @@
             });
         });
     </script>
+
+    <!-- First project fades in --> 
+    <script type="text/javascript" >
+        jQuery(function($) {
+
+        var divs = $('.first-project');
+        $(window).on('scroll', function() {
+            var st = $(this).scrollTop();
+            divs.css({'opacity' : 0.2 - st/ -700}) 
+            })
+        });
+    </script>   
 
 </body>
 </html>
