@@ -109,12 +109,11 @@ img a {
 /* Work : Layout */
 
 .project-container { 
-    max-width:1600px;
+    max-width:100%;
     padding: 60px 0;
 }
 
 .project-hero {
-    max-width:900px;
     margin:20px auto;
     padding:0 3%;
 }
