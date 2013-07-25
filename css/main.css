@@ -674,6 +674,9 @@ a.contact:hover {
         opacity:0.1;
     }   /* Part of the fading in javascript */
 
+    .project-img {
+        max-width:1000px;
+    }
 }
 
 
