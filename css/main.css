@@ -125,6 +125,7 @@ img a {
 }
 
 .project-img {
+    text-align: center;
     margin:20px auto;
     max-width:800px;
     padding:0 3%;
