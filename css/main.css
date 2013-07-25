@@ -674,10 +674,7 @@ a.contact:hover {
         opacity:0.1;
     }   /* Part of the fading in javascript */
 
-    .project-img {
-        max-width:1000px;
-    }
-}
+
 
 
 
@@ -695,6 +692,11 @@ a.contact:hover {
     h2.project{
         font-size: 40px;
         letter-spacing: 16px;
+    }
+
+    .project-img {
+            max-width:1000px;
+        }
     }
 }
 
