@@ -78,7 +78,7 @@ a img {border: 0;}
 /* Body */
 
 body {
-  font-size: 18px;
+  font-size: 16px;
   font-family:"Apercu Regular", Calibri, sans-serif; 
   font-size-adjust:0.508; 
   font-weight:normal; 
@@ -120,11 +120,6 @@ img a {
   text-decoration:none;
 }
 
-h1 {
-  font-size:28px !important;
-}
-
-
 /* Main Content */
 
 #wrapper {
@@ -132,7 +127,7 @@ h1 {
 }
 
 #wrapper #head {
-  margin-bottom: 46px;
+  margin-bottom: 16px;
   height:120px;
   background: #000;
   width: 100%; 
@@ -154,17 +149,17 @@ h1 {
 /* Navigation */
 
 #wrapper section navigation {
-  max-width: 600px;
+  max-width: 700px;
   margin-left: auto;
   margin-right: auto;
 }
 
 #wrapper section header #nav-container {
-  max-width: 600px;
+  max-width: 700px;
 }
 
 #wrapper section header #head-container {
-  max-width: 600px;
+  max-width: 700px;
   margin-top: 10px;
 }
 
@@ -207,7 +202,7 @@ h1 {
   color:#FFFFFF;
   border:none;
   display: block;
-  padding:22px 5%;
+  padding:14px 5%;
 }
 
 #wrapper #navigation #nav-container nav ul li a:hover { 
@@ -223,7 +218,7 @@ h1 {
 /* Header Content */
 
 #wrapper section header {
-    max-width: 600px;
+    max-width: 700px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -238,7 +233,7 @@ h1 {
 }
 
 #head-container {
-    max-width: 600px;
+    max-width: 700px;
     margin-top: 10px;
 }
 
@@ -304,8 +299,8 @@ h1 {
 #wrapper section article {
   width: 100%;
   height: 100%;
-  margin-bottom: 66px;
-  padding-bottom: 66px;
+  margin-bottom: 33px;
+  padding-bottom: 33px;
 }
 
 #wrapper section article:last-child {
@@ -314,7 +309,7 @@ h1 {
 }
 
 #wrapper section article div.content {
-  max-width: 600px;
+  max-width: 700px;
   height: 100%;
   margin-left: auto;
   margin-right: auto;
@@ -322,7 +317,7 @@ h1 {
 }
 
 #wrapper section article div.content div.title div.date {
-  max-width: 600px;
+  max-width: 700px;
   font-weight: normal;
   font-family: helvetica, arial, san-serif;
   font-size:14px;
@@ -335,14 +330,13 @@ h1 {
 #wrapper section article div.content div.title h4,
 #wrapper section article div.content div.title h5,
 #wrapper section article div.content div.title h6 {
-  max-width: 600px;
+  max-width: 700px;
   font-family:"Apercu Regular", Calibri, sans-serif; 
-  font-weight:bold; 
+  font-weight:normal; 
+  font-size: 22px;
   font-style:normal;
-  font-size: 40px;
   color: #030303;
   margin-bottom: 20px;
-  letter-spacing:-2px;
   line-height: 120%;
   -webkit-transition: color 0.15s cubic-bezier(0.54, 0.24, 0.35, 0.68);
   -moz-transition: color 0.15s cubic-bezier(0.54, 0.24, 0.35, 0.68);
@@ -393,7 +387,7 @@ h1 {
 /* Body Content */
 
 #wrapper section article div.content #body {
-  max-width: 600px;
+  max-width: 700px;
   height: auto;
   margin-left: auto;
   margin-right: auto;
@@ -404,7 +398,7 @@ h1 {
 #wrapper section article div.content #body object,
 #wrapper section article div.content #body video,
 #wrapper section article div.content #body embed {
-  max-width: 600px;
+  max-width: 700px;
   float: left;
   margin-bottom: 30px;
 }
@@ -444,7 +438,7 @@ h1 {
 }
 
 #wrapper section article div.content #body p {
-  max-width: 600px;
+  max-width: 700px;
 }
 
 #wrapper section article div.content #body p:last-child {
@@ -462,7 +456,7 @@ h1 {
 #wrapper section article div.content #body p object,
 #wrapper section article div.content #body p video,
 #wrapper section article div.content #body p embed {
-  max-width: 600px;
+  max-width: 700px;
   margin-bottom: 0px;
 }
 
@@ -498,8 +492,12 @@ h1 {
 }
 
 #wrapper section article div.content #body h1 {
-  font-size: 22px;
+  margin: 30px 0 20px 0;
+  font-size: 22px !important;
+  font-weight: normal;
+  line-height: 130%;
 }
+
 
 #wrapper section article div.content #body h2 {
   font-size: 25px;
@@ -675,7 +673,7 @@ h1 {
 /* Footer */
 
 #wrapper section footer {
-  max-width: 600px;
+  max-width: 700px;
   height: 110px;
   margin-left: auto;
   margin-right: auto;
@@ -711,7 +709,6 @@ h1 {
 @import("prettify.css");
 
 
-
 /* ============================================================
    TABLET DISPLAYS (According to 2012)
    ============================================================ */
@@ -744,19 +741,35 @@ h1 {
   }
    
   #wrapper section article div.content #body h1 {
-    font-size: 28px;
+    margin-top: 30px; 
+    margin-bottom: 30px;
+    font-size: 36px !important;
+  }
+
+  #wrapper section article {
+    margin-bottom: 66px;
+    padding-bottom: 66px;
   }
 
   body {
     font-size: 21px;
   }
 
-  h1 {
-    font-size:42px !important;
-    line-height: 120%;
+  #wrapper section article div.content div.title h1,
+  #wrapper section article div.content div.title h2,
+  #wrapper section article div.content div.title h3,
+  #wrapper section article div.content div.title h4,
+  #wrapper section article div.content div.title h5,
+  #wrapper section article div.content div.title h6 {
+    font-size: 36px;
+    margin-top: 30px;
+    margin-bottom: 30px
+  }
+
+  #wrapper #navigation #nav-container nav ul li a {
+    padding:22px 5%;
   }
 }
-
 
 /* =============================================================
    DESKTOP DISPLAYS (According to 2012)
@@ -766,6 +779,7 @@ h1 {
     
     #wrapper #head {
         height:260px;
+        margin-bottom: 46px;
     }
     
     #wrapper section header #head-container #banner {

@@ -363,19 +363,19 @@ iframe {
 }
 
 #wrapper #navigation #nav-container nav ul li a {
-  font-family:"Apercu Regular", Calibri, sans-serif;
-  font-weight:bold; 
-  font-style:normal;
-  font-size:14px;
-  font-size-adjust:0.508; 
+  font-family: "Apercu Regular", Calibri, sans-serif;
+  font-weight: bold; 
+  font-style: normal;
+  font-size: 14px;
+  font-size-adjust: 0.508; 
   
-  text-transform:uppercase;
-  text-decoration:none;
-  letter-spacing:3px;
-  color:#FFFFFF;
-  border:none;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 3px;
+  color: #FFFFFF;
+  border: none;
   display: block;
-  padding:22px 5%;
+  padding: 14px 5%;
 }
 
 #wrapper #navigation #nav-container nav ul li a:hover { 
@@ -609,6 +609,8 @@ a.contact:hover {
      
     #nav-container nav ul li a {
         font-size: 15px;
+        padding: 22px 5%;
+
     }
 
     /* Banner */
@@ -629,7 +631,7 @@ a.contact:hover {
     /* About Content */
       
      .about-text {
-        margin: 62px auto;
+        margin: 100px auto;
      }
 
      .about-text h1 {
