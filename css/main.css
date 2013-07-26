@@ -603,11 +603,11 @@ a.contact:hover {
 
     /* Navigation */
 
-    #wrapper #navigation #nav-container nav ul li {
+    nav ul li {
         margin-left: 60px;
     }
 
-    #wrapper #navigation #nav-container nav ul li a {
+    nav ul li a {
         padding: 22px 5%;
     }
 
