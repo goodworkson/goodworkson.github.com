@@ -450,7 +450,7 @@ iframe {
 }
 
 .about-text h1 {
-    margin: 30px 0 20px 0;
+    margin: 30px 0 10px 0;
     font-size: 22px;
     font-weight: normal;
     line-height: 130%;
@@ -458,8 +458,8 @@ iframe {
 
 .about-text h2 {
     margin: 30px 0 20px 0;
-    font-size: 21px;
-    font-weight: bold;
+    font-size: 18px;
+    font-weight: normal;
     line-height: 160%;
 }
 
@@ -643,7 +643,7 @@ a.contact:hover {
      .about-text h2 {
         margin-top: 40px; 
         margin-bottom: 12px;
-        font-size: 24px;
+        font-size: 22px;
      }
 
      .about-text p {
