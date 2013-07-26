@@ -53,6 +53,16 @@ footer, header, nav, section, audio, video {
     -moz-animation-delay: 1s;
     animation-delay: 1s;
 }
+.two2 {
+    -webkit-animation-delay: 1.3s;
+    -moz-animation-delay: 1.3s;
+    animation-delay: 1.3s;
+}
+.two3 {
+    -webkit-animation-delay: 1.6s;
+    -moz-animation-delay: 1.6s;
+    animation-delay: 1.6s;
+}
 
 ::-moz-selection {
     background: #888;
