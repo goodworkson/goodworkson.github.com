@@ -131,13 +131,16 @@ img a {
     padding:0 3%;
 }
 
+.videowrapper {    
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+    height: 0;
+}
+
 .project-video {
     max-width:800px;
     margin: 20px auto;
-    position: relative;
-    padding: 30px 3% 56.25%;
-    height: 0;
-    overflow: hidden;
+    padding:0 3%;
 }
 
 .project-img-small {
@@ -595,8 +598,8 @@ a.contact:hover {
     }
 
     .project-video {
+        padding:0 1.5em;
         margin: 80px auto;
-        padding: 30px 1.5% 56.25% 0;
     }
 
     /* Navigation */
