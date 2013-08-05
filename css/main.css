@@ -167,6 +167,9 @@ img a {
     padding:0 3%;
 }
 
+.seen { background: #1a1a1a;}
+
+
 /* Work : Style */
 
 p { 
@@ -579,7 +582,6 @@ a.contact:hover {
         padding: 100px 0;
     }
 
-    .seen { background: #1a1a1a;}
 
     .project-hero, .project-hero-arup {
         max-width:100%;
