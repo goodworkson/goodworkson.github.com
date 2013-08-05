@@ -601,7 +601,7 @@ a.contact:hover {
 
     .project-img-tiny {
         max-width:200px;
-        margin-top:-158px;
+        margin-top: 0;
     }
 
     .project-img-small {
