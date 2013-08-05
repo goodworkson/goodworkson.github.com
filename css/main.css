@@ -135,7 +135,7 @@ img a {
     text-align: center;
     margin: auto;
     max-width:100px;
-    margin-top:-130px;
+    margin-top: 0;
 }
 
 .videowrapper {    
@@ -601,7 +601,7 @@ a.contact:hover {
 
     .project-img-tiny {
         max-width:200px;
-        margin-top: 0;
+        margin-top:-158px;
     }
 
     .project-img-small {
