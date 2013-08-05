@@ -136,7 +136,7 @@ img a {
     margin: auto;
     max-width:80px;
     margin-top: -110px;
-    margin-left: 30px;
+    margin-left: 20px;
 }
 
 .videowrapper {    
@@ -201,7 +201,7 @@ h1.big {
 
 h1.mobile {
     font-family:"Apercu Regular", Calibri, sans-serif; 
-    font-size: 24px !important;
+    font-size: 26px !important;
     font-size-adjust:0.508; 
     font-weight:normal; 
     display:block;
