@@ -134,8 +134,8 @@ img a {
 .project-img-tiny {
     text-align: center;
     margin: auto;
-    max-width:200px;
-    margin-top:-158px;
+    max-width:100px;
+    margin-top:-130px;
 }
 
 .videowrapper {    
@@ -597,6 +597,11 @@ a.contact:hover {
     .project-img {
         padding:0 1.5em;
         margin:80px auto;
+    }
+
+    .project-img-tiny {
+        max-width:200px;
+        margin-top:-158px;
     }
 
     .project-img-small {
