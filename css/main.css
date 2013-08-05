@@ -131,6 +131,13 @@ img a {
     padding:0 3%;
 }
 
+.project-img-tiny {
+    text-align: center;
+    margin: auto;
+    max-width:150px;
+    margin-top:-158px;
+}
+
 .videowrapper {    
     position: relative;
     padding-bottom: 56.25%; /* 16:9 */
