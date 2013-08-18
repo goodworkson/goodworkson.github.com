@@ -584,7 +584,7 @@ a.contact:hover {
 
 
     .project-hero, .project-hero-arup {
-        max-width:100%;
+        max-width: 1920px;
         margin:80px auto;
         padding: 0;
     }
