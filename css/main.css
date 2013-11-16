@@ -495,10 +495,12 @@ iframe {
 .about-text p li {
     text-decoration:none;
     list-style:none;
+    text-align: center;
 }
 
 .about-text ul li {
     padding-bottom:10px;
+    text-align: center;
 }
 
 a.contact {
