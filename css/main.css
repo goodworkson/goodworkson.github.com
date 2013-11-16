@@ -469,13 +469,15 @@ iframe {
     font-size: 32px;
     font-weight: normal;
     line-height: 130%;
+    text-align: center;
 }
 
 .about-text h2 {
-    margin: 30px 0 10px 0;
-    font-size: 18px;
+    margin: 30px 0 20px 0;
+    font-size: 32px;
     font-weight: normal;
-    line-height: 160%;
+    line-height: 130%;
+    text-align: center;
 }
 
 .about-text p {
