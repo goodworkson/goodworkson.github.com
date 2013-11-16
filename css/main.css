@@ -504,7 +504,7 @@ iframe {
     text-align: center;
 }
 
-li .date {
+li.date {
     text-decoration:none;
     list-style:none;
     text-align: center;
