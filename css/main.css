@@ -188,7 +188,7 @@ p a {
 }
 
 p a:hover {
-    color: #111;
+    color: #999;
     border-bottom: 1px solid #666;
     text-decoration:none;
 }
@@ -330,7 +330,7 @@ iframe {
 } 
 
 .footer-container a:hover {
-    color: #111;
+    color: #999;
     border: none;
 } 
 
@@ -395,7 +395,7 @@ iframe {
 
 #wrapper #navigation #nav-container nav ul li a:hover { 
     text-decoration:none; 
-    color:#111111; 
+    color:#999; 
     border-bottom:none;
 } 
 
@@ -519,8 +519,8 @@ a.contact {
 }
 
 a.contact:hover {
-    border-bottom:#111111 1px solid;
-    color:#111111;
+    border-bottom:#cdcdcd 1px solid;
+    color:#999;
     cursor:pointer;
 }
 
