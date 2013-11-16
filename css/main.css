@@ -509,11 +509,9 @@ li.date {
     list-style:none;
     text-align: center;
     font-size:14;
-    font-weight: bold;
     color:#999;
     margin-top: 20px;
 }
-
 
 a.contact {
     color:#111111;
@@ -690,8 +688,7 @@ a.contact:hover {
      .about-text h2 {
         margin-top: 40px; 
         font-size: 30px;
-        margin-bottom: 12px;
-        letter-spacing: 14px;
+        margin: 20px 0 12px 0;
      }
 
      .about-text p {
@@ -740,8 +737,6 @@ a.contact:hover {
 
     h2.project{
         font-size: 40px;
-        letter-spacing: 16px;
-        text-transform: uppercase;
     }
 
     .project-img {
