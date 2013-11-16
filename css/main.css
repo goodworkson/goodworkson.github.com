@@ -478,6 +478,7 @@ iframe {
     font-weight: normal;
     line-height: 130%;
     text-align: center;
+
 }
 
 .about-text p {
@@ -502,6 +503,17 @@ iframe {
     padding-bottom:10px;
     text-align: center;
 }
+
+.about-text ul li .date {
+    text-decoration:none;
+    list-style:none;
+    text-align: center;
+    font-size:14;
+    font-style: bold;
+    color:#999;
+    margin-top: 10px;
+}
+
 
 a.contact {
     color:#111111;
@@ -679,6 +691,7 @@ a.contact:hover {
         margin-top: 40px; 
         margin-bottom: 12px;
         font-size: 22px;
+        text-transform: uppercase;
      }
 
      .about-text p {
@@ -728,6 +741,7 @@ a.contact:hover {
     h2.project{
         font-size: 40px;
         letter-spacing: 16px;
+        text-transform: uppercase;
     }
 
     .project-img {
