@@ -489,6 +489,7 @@ iframe {
     display:block;
     list-style-type:disc;
     margin-bottom:20px;
+    text-align: center;
 }
 
 .about-text p li {
