@@ -261,9 +261,8 @@ p.project-intro-sub {
   display:none;
 }
 
-
 p.project-text {
-    margin: 0 0 36px 0;
+    margin: 24px 0 0 0;
     text-align: left;
     padding: 0;
 }
@@ -541,6 +540,12 @@ a.contact:hover {
 
     p.quote {
         margin: 60px 0;
+    }
+
+    p.project-text {
+        margin: 0 0 36px 0;
+        text-align: left;
+        padding: 0;
     }
     
     h1 {
