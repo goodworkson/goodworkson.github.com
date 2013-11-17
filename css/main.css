@@ -597,6 +597,7 @@ a.contact:hover {
 
     #down {
         margin:110px auto;
+        width:100px;
     }
 
     .project-container {
@@ -711,6 +712,11 @@ a.contact:hover {
     #banner .logo {
         max-width: 140px;
         margin-top:40px;
+    }
+
+    #down {
+        width:160px;
+        margin:100px auto;
     }
 
     .first-project {
