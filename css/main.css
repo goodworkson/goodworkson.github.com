@@ -105,6 +105,11 @@ article {
     font-size: 1em;
 }
 
+section.bodytext {
+    opacity: 0.2;
+}
+
+
 p.roll {
     margin: 0 0;
 }
