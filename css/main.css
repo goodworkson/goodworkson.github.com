@@ -7,7 +7,7 @@ button,
 input,
 select,
 textarea {
-    color: #000;
+    color: #4a4a4a;
     background: #f6f6f6;
 }
 
@@ -28,7 +28,7 @@ textarea {
 .chromeframe {
     margin: 0.2em 0;
     background: #ccc;
-    color: #000;
+    color: #4a4a4a;
     padding: 0.2em 0;
 }
 
