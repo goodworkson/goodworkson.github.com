@@ -60,11 +60,10 @@ section {
 body {
     font-family: 'PT Serif', serif;
     line-height: 170%;
-    opacity: 0.7;
 }
 
 a {
-    color: #000;
+    color: #4a4a4a;
     text-decoration:none;
     padding-bottom: 1px;
     border-bottom: 1px solid #666;
@@ -74,7 +73,7 @@ a {
 }
 
 a:hover {
-    color: #666;
+    color: #919191;
     text-decoration:none;
     padding-bottom: 2px;
     border-bottom: 1px solid #AAA;
@@ -98,15 +97,12 @@ h2 {
 
 h3 {
     font-size: 1em;
-    opacity: 0.4;
+    color: #b2b2b2;
+    text-transform: uppercase;
 }
 
 article {
     font-size: 1em;
-}
-
-section.bodytext {
-    opacity: 0.2;
 }
 
 p.roll {
