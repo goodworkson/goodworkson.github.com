@@ -48,12 +48,12 @@ textarea {
    ============== */
 
 .main {
-    margin: 140px 0;
+    margin: 140px 0 0 0 ;
 }
 
 article {
     margin: 0 5%;
-    padding: 20px 0;
+    padding: 0 0 100px 0;
     line-height: 190%;
 
 }
@@ -63,7 +63,7 @@ h1 {
     font-size: 1.5em;
     font-weight: 300;
     line-height: 1.5em;
-    margin: 0 5% 2em 5%;
+    margin: 0 5% 80px 5%;
     max-width: 400px; /* 1140px - 10% for margins */
 }
 
@@ -73,7 +73,7 @@ h1 {
    ============== */
 
 body {
-    font-family: 'PT Serif', serif;
+    font-family: georgia, serif;
     line-height: 170%;
 }
 
@@ -110,10 +110,12 @@ h3 {
     color: #b2b2b2;
     text-transform: uppercase;
     letter-spacing: 3px;
+    padding-top:40px;
 }
 
 article {
-    font-size: 1em
+    font-size: 1em;
+    color:#444;
 }
 
 
@@ -122,7 +124,6 @@ p.roll {
 }
 
 ul {
-    font-weight: bold;
     list-style: none;
     padding: 0;
     margin: 1em 0 0 0;
@@ -148,8 +149,8 @@ li {
 
     article {
         max-width: 550px; /* 1140px - 10% for margins */
-        margin: 80px 5%;
-        padding:60px 0;
+        margin: 80px 5% 0;
+        padding:20px 0 200px 0;
         font-size: 1.1em;
     }
 
@@ -159,7 +160,7 @@ li {
     h1 {
         max-width: 500px; /* 1140px - 10% for margins */
         font-size: 2em;
-        margin-bottom: 130px;
+        margin-bottom: 120px;
         margin-left: 10%;   
     }
 
@@ -173,7 +174,7 @@ li {
 @media only screen and (min-width: 1140px) {
 
     .main {
-        padding: 100px 0;
+        padding: 90px 0 0;
     }
 
 
