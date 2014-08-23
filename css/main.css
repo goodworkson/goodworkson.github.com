@@ -142,6 +142,11 @@ li {
 
 @media only screen and (min-width: 480px) {
 
+    .main {
+        margin: 120px 0 0 0 ;
+    }
+
+
     h1 {
         font-size: 1.7em;
         margin-bottom: 1em;
@@ -156,6 +161,9 @@ li {
 
 @media only screen and (min-width: 768px) {
 
+    .main {
+        margin: 180px 0 0;
+    }
 
     h1 {
         max-width: 500px; /* 1140px - 10% for margins */
@@ -174,7 +182,7 @@ li {
 @media only screen and (min-width: 1140px) {
 
     .main {
-        padding: 90px 0 0;
+        margin: 220px 0 0;
     }
 
 
