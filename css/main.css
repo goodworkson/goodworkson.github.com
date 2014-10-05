@@ -52,6 +52,7 @@ textarea {
 }
 
 article {
+    display: block;
     margin: 0 5%;
     padding: 0 0 100px 0;
     line-height: 190%;
@@ -67,6 +68,9 @@ h1 {
     max-width: 400px; /* 1140px - 10% for margins */
 }
 
+.social{
+    margin-left: 0;
+}
 
 /* ==============
     TYPE
@@ -78,10 +82,10 @@ body {
 }
 
 a {
-    color: #4a4a4a;
+    color: #444;
     text-decoration:none;
     padding-bottom: 1px;
-    border-bottom: 1px solid #999;
+    border-bottom: 1px solid #ccc;
         -webkit-transition:color 0.1s ease-in; 
         -o-transition:color 0.1s ease-in;
         -moz-transition:color 0.1s ease-in;
@@ -140,6 +144,8 @@ li {
    Media Queries
    ========================================================================== */
 
+
+
 @media only screen and (min-width: 480px) {
 
     .main {
@@ -153,11 +159,27 @@ li {
     }
 
     article {
-        max-width: 550px; /* 1140px - 10% for margins */
         margin: 80px 5% 0;
         padding:20px 0 200px 0;
         font-size: 18px;
+        min-height: 1400px
     }
+
+    .bio{
+        float:left;
+        max-width: 550px;
+    }
+    .highlights {
+        float:left;
+        max-width: 550px;
+    }
+    .social{
+        float:left;
+        width: 300px;
+        margin-left: 0;
+    }
+
+
 
 @media only screen and (min-width: 768px) {
 
@@ -173,10 +195,24 @@ li {
     }
 
     article {
-        max-width: 580px; /* 1140px - 10% for margins */
         margin-left: 10%;
-
+        max-width: 1200px;
     }
+
+    .bio{
+        float:left;
+        max-width: 550px;
+    }
+    .highlights {
+        float:left;
+        max-width: 550px;
+    }
+    .social{
+        float:left;
+        max-width: 100px;
+        margin-left: 100px;
+    }
+
 }
 
 @media only screen and (min-width: 1140px) {
@@ -186,6 +222,11 @@ li {
     }
 
 }
+
+
+
+
+
 
 
 /* ==========================================================================
