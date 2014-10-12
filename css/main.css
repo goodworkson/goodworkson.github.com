@@ -41,9 +41,9 @@ a {
   text-decoration: none;
 }
 
+ul {list-style: none;}
+
 a img {border: 0;}
-
-
 
 /* Body */
 
@@ -59,8 +59,6 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-font-smoothing: antialiased;
 }
-
-
 
 /* Global */
 
@@ -83,8 +81,6 @@ img a:hover {
   opacity:0.8;
 }
 
-
-
 /* Main Content */
 
 #wrapper {
@@ -102,16 +98,10 @@ img a:hover {
   text-align: center;
 }
 
-#wrapper #foot {
-  border-top: #e5e5e5 1px solid;
-}
-
 #wrapper section {
   width: 100%;
   float: left;
 }
-
-
 
 /* Navigation */
 
@@ -193,8 +183,6 @@ img a:hover {
     margin-right:0;
 }
 
-
-
 /* Header Content */
 
 #wrapper section header {
@@ -219,8 +207,6 @@ img a:hover {
     transition: 0.3s;
 }
 
-
-
 /* Project */
 
 #project #containerheader {
@@ -230,6 +216,14 @@ img a:hover {
   padding: 0 5%;
   background: #fff;
 }
+
+#aboutcontainerheader {
+  margin: 0 auto;
+  max-width: 1000px;
+  margin-bottom: 20px;
+  padding: 0 5%;
+  background: #fff;
+  }
 
 #project #containertext {
   margin: 0 auto;
@@ -285,6 +279,74 @@ img a:hover {
   height: 100%;
 }
 
+/* About */
+
+#aboutsection {
+  background: #f3f3f3;
+}
+
+#about {
+  max-width:1000px;
+  margin: 0 auto;
+  padding: 0 5%;
+}
+
+h1.abouttitle {
+  font-size: 24px;
+  font-weight: 300;
+  font-family: 'Roboto', sans-serif;
+  color: #222;
+  display: block;
+  line-height: 140%;  
+}
+
+#aboutsection h3 {
+  font-size: 13px;
+  font-weight: bold;
+  font-family: 'Roboto', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #222;
+  margin-bottom: 10px;
+}
+
+.column_1 {
+  margin: 40px 0 0 0;
+  width: 100%;
+  float: left;
+}
+
+.column_1 p {
+    margin-bottom: 20px;
+  }
+
+.column_2 {
+  float: left;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.clients li {
+  font-size: 16px;
+  line-height: 180%;
+}
+
+.highlights {
+  margin-top: 30px;
+  margin-bottom: 60px;
+}
+
+.highlights ul{
+
+}
+
+.highlights li{
+  font-size: 16px;
+  line-height: 180%;
+  margin-bottom: 20px;
+}
+
+
 /* Footer */
 
 #wrapper section footer {
@@ -305,29 +367,12 @@ img a:hover {
   letter-spacing: 3px;
 }
 
-/* Return Button */
-
-#return-button {
-  position: fixed;
-  top: 80px;
-  right: 35px;
-  border: none;
-  padding: 0px;
-  display: none;
-}
-
-/* Pretty printing */
-
-@import("prettify.css");
 
 
 
 
-
-
-/* ============================================================
-   TABLET
-   ============================================================ */
+/* T A B L E T
+   ————————————————————————————————————————————————————— */
 
 @media only screen and (min-width: 500px) { 
 
@@ -377,7 +422,6 @@ img a:hover {
   #project #containerheader {
     margin-bottom: 60px;
     padding: 0 5%;
-    background: #fff;
   }
 
   .projecttext {
@@ -385,11 +429,29 @@ img a:hover {
     max-width: 800px;
     padding: 0 5%;
   }
-  
+
+  #wrapper section footer p {
+    letter-spacing: 5px;
+  }
+
+  /* Project Page */
+
   #project h1.projecttitle {
     float:left;
     font-size: 32px;
-    font-weight: 300;
+  }
+
+  /* About */
+
+  #aboutcontainerheader {
+    margin-bottom: 60px;
+    padding: 0 5%;
+  }
+
+  h1.abouttitle {
+    font-size: 32px;
+    max-width: 800px;
+    line-height: 150%;  
   }
 
   #project h2.roll {
@@ -399,16 +461,30 @@ img a:hover {
     padding: 12px 0 0 0;
   }
 
-  #wrapper section footer p {
-    letter-spacing: 5px;
+  .column_1 {
+    margin: 60px 0 0 0;
+    width: 100%;
   }
+
+  .column_2 {
+    width: 100%;
+    margin-top: 40px;
+  }
+
+  .clients {
+  
+  }
+
+  .highlights {
+
+  }
+
 }
 
 
 
-/* =============================================================
-   DESKTOP DISPLAYS
-   ============================================================= */
+/* D E S K T O P   D I S P L A Y S 
+   ————————————————————————————————————————————————————— */
 
 @media only screen and (min-width: 768px) {
 
@@ -420,18 +496,14 @@ img a:hover {
   }
 
   #wrapper section header {
-      max-width: 800px;
-      margin-left: auto;
-      margin-right: auto;
-      transition: 0.3s;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    transition: 0.3s;
   }
 
   #head-container {
-      float:left;
-  }
-
-  .projecttext {
-    margin:80px auto;
+    float:left;
   }
 
   /* Navigation */
@@ -458,16 +530,60 @@ img a:hover {
     text-align:left;
   }
 
+  /* Project Page */
+  
   #project #containerheader {
     max-width: 800px;
     transition: 0.3s;
   }
 
+  .projecttext {
+    margin:80px auto;
+  }
+
+  /* About Page */
+
+  #aboutcontainerheader {
+    margin-bottom: 90px;
+    max-width: 800px;
+  }
+
+  #about {
+    max-width: 800px;
+  }
+
+  .column_1 p {
+    margin-bottom: 30px;
+  }
+
+  .column_1 {
+    margin:80px 80px 80px 0;
+    width: 400px;
+  }
+
+  .column_2 {
+    max-width: 200px;
+    margin:80px 0 80px 0;
+  }
+  
+  .clients {
+  
+  }
+
+  .highlights {
+  
+  }
+
+  .highlights ul{
+  
+  }
+
 }
 
-/* =============================================================
-   WIDE SCREEN
-   ============================================================= */
+
+
+/* W I D E   S C R E E N 
+   ————————————————————————————————————————————————————— */
 
 @media only screen and (min-width: 1120px) {
 
@@ -478,6 +594,8 @@ img a:hover {
       transition: 0.3s;
   }
 
+  /* Project Page */
+
   #project #containerheader {
       max-width: 1000px;
       transition: 0.3s;
@@ -485,7 +603,41 @@ img a:hover {
 
   .projecttext {
     margin:100px auto;
+  }  
+
+  /* About Page */
+  
+  #aboutcontainerheader {
+    max-width: 1000px;
+    transition: 0.3s;
   }
+
+  #about {
+    max-width: 1000px;
+  }
+
+  .column_1 {
+    float: left;
+    margin:100px 100px 80px 0;
+    width: 500px; 
+  }
+
+  .column_2 {
+    float: left;
+    max-width: 300px;
+    margin-top: 100px;
+  }
+
+  /* 
+  .clients {
+  
+  }
+    
+  .highlights {
+    float: left;
+    width: 300px;
+  }
+  */
 }
 
 
