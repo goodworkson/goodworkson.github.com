@@ -6,7 +6,7 @@
 
 <head>
 
-   <title>Gareth Hughes, Profile</title>
+   <title>Gareth Hughes</title>
 
    <meta name="description" content="Gareth Hughes, Design and Film">
    <meta name="viewport" content="width=device-width; initial-scale=1; maximum-scale=1.0;">
@@ -34,71 +34,41 @@
                      <li><a href="#">Menu</a></li>
                   </ul>
                   <ul class="notmobile animated2 fadeInUp">
-                     <li><a class="current" href="/projects">Projects</a></li>
-                     <li><a href="#">Profile</a></li>
-                     <li><a href="http://blog.garethhughes.co/">Writing</a></li>
-                     <li class="last-child"><a href="/inspiration">Inspiration</a></li>
+                     <li><a href="projects.html">Work</a></li>
+                     <li><a href="profile.html">Info</a></li>
+                     <li><a href="http://blog.garethhughes.co/">Blog</a></li>
+                     <li class="last-child"><a href="/inspiration">Bookmarks</a></li>
                   </ul>
                </div>
             </header>
       </section>
 
-      <section id="inspiration">
+      <section id="project">
 
-         <div id="inspirationheader">
+         <div id="aboutcontainerheader">
             <div>
-               <h1 class="projecttitle">Books</h1>
-               <h2 class="roll">Previous</h2>
-               <h2 class="roll">Next</h2>
+               <h1 class="abouttitle">
+                  Gareth Hughes is a senior designer at the global ideas and innovation agency AKQA, in London.
+               </h1>
             </div>
          </div>
-
-         <div class="inspirationimg">
-            1
-            2
-            3
-            4
-         </div>
-
-      </section>
-
-      <section id="inspiration">
-
-         <div id="inspirationheader">
-            <div>
-               <h1 class="projecttitle">Articles</h1>
-               <h2 class="roll">Previous</h2>
-               <h2 class="roll">Next</h2>
-            </div>
-         </div>
-
-         <div class="inspirationimg">
-            1
-            2
-            3
-            4
-         </div>
-
-      </section>
-      <section id="inspiration">
-
-         <div id="inspirationheader">
-            <div>
-               <h1 class="projecttitle">People</h1>
-               <h2 class="roll">Previous</h2>
-               <h2 class="roll">Next</h2>
-            </div>
-         </div>
-
-         <div class="inspirationimg">
-            1
-            2
-            3
-            4
-         </div>
-
-      </section>
          
+      </section>
+
+
+      <section id="aboutsection">
+         
+         <div id="homegrid">
+            <a href="projects/isles.html"><img src="img/projects/isles/isles_tile.jpg" class="tile"></a>
+            <a href="projects/sles.html"><img src="img/projects/nike/nike_women_tile.jpg" class="tile"></a>
+            <a href="projects/nike_women.html"><img src="img/projects/purescript/purescript_tile.jpg" class="tile"></a>
+            <a href="projects/gloam.html"><img src="img/projects/gloam/gloam_tile.jpg" class="tile"></a>
+            <a href="projects/bbc_sport.html"><img src="img/projects/bbc_sport/bbc_sport_tile.jpg" class="tile"></a>
+            <a href="projects/arup.html"><img src="img/projects/arup/arup_tile.jpg" class="tile"></a>
+         </div>
+      </section>
+
+
       <section id="foot">
          <footer>
             <p>&copy; Gareth Hughes 2014</p>
@@ -109,6 +79,21 @@
 
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
     <script type="text/javascript" src="/themes/{{theme}}/app.js"></script>
+    <script>
+
+    $(function () {
+
+      var $menuButton = $("#nav h2")
+
+      $menuButton.on("click", function () {
+        var $body = $(document.body);
+        $body.toggleClass("show-nav");
+        $menuButton.text($body.is(".show-nav") ? "Close" : "Menu");
+      });
+
+    });
+
+    </script>
 
 </body>
   

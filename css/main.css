@@ -94,8 +94,26 @@ img a:hover {
   width: 100%; 
   overflow: hidden;
   z-index: 2;
+  text-align: center;
+}
+
+#wrapper #homehead {
+  z-index: 1000;
+  margin-bottom: 30px;
+  height:100px;
+  background: none;
+  width: 100%; 
+  overflow: hidden;
+  z-index: 2;
   position: relative;
   text-align: center;
+  position: absolute;
+}
+
+#home_img_container {
+  width: 100%;
+  z-index:1;
+  position: relative;
 }
 
 #wrapper section {
@@ -157,7 +175,7 @@ img a:hover {
   text-transform:uppercase;
   text-decoration:none;
   letter-spacing:2px;
-  color:#aaa;
+  color:#FFF;
   border:none;
   display: block;
   -webkit-transition:color 0.1s ease-in; 
@@ -166,13 +184,12 @@ img a:hover {
 }
 
 .nav ul li a.current {
-  color:#FFF;
-  font-weight: 600;
+  color:#AAA;
 }
 
 .nav ul li a:hover { 
   text-decoration:none; 
-  color:#666; 
+  color:#AAA; 
   border-bottom:none;
   -webkit-transition:color 0.1s ease-in; 
   -o-transition:color 0.1s ease-in;
@@ -206,6 +223,24 @@ img a:hover {
     float:left;
     transition: 0.3s;
 }
+
+
+/* Index (3) */
+
+#homegrid {
+  width: 100%
+}
+
+#homegrid .tile {
+  width: 100%;
+  float: left;
+}
+
+#homegrid .tile a:hover {
+  color: #000;
+  opacity: 0.6;
+}
+
 
 /* Project */
 
@@ -381,6 +416,11 @@ h1.abouttitle {
       margin-bottom: 70px;
   }
 
+  #wrapper #homehead {
+      height:200px;
+      margin-bottom: 70px;
+  }
+
   /* Navigation */
 
   .nav ul.notmobile {
@@ -395,7 +435,7 @@ h1.abouttitle {
     text-transform:uppercase;
     text-decoration:none;
     letter-spacing:1px;
-    color:#aaa;
+    color:#FFF;
     border:none;
     display: block;
     padding: 10px;
@@ -471,14 +511,6 @@ h1.abouttitle {
     margin-top: 40px;
   }
 
-  .clients {
-  
-  }
-
-  .highlights {
-
-  }
-
 }
 
 
@@ -493,6 +525,11 @@ h1.abouttitle {
   #wrapper #head {
       height:300px;
       margin-bottom: 100px;
+  }
+
+  #wrapper #homehead {
+      height:300px;
+      margin-bottom: 100px; 
   }
 
   #wrapper section header {
@@ -528,6 +565,13 @@ h1.abouttitle {
     float:left;
     margin-right: 60px;
     text-align:left;
+  }
+
+  /* Index (3) */
+
+  #homegrid .tile {
+    width: 50%;
+    float: left;
   }
 
   /* Project Page */
