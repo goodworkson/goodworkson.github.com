@@ -140,12 +140,21 @@ h1.logo a:hover {
 /*  Styles for things when the menu is open                                */
 /* ----------------------------------------------------------------------- */
 
+.show-nav header {
+    max-width: 1000px;
+    margin-left: 5%;
+    margin-right: auto;
+    padding: 0 5%;
+    transition: 0.3s;
+}
+
 .show-nav .header {
   position: absolute;
   left: 0px;
   top: 0px;
   width: 100%;
   height: 100%;
+  padding: 0 5%;
 }
 
 /* fuckup-proofing */

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+
+<head>
+
+   <title>Gareth Hughes</title>
+
+   <meta name="description" content="Gareth Hughes, Design and Film">
+   <meta name="viewport" content="width=device-width; initial-scale=1; maximum-scale=1.0;">
+   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta charset="utf-8"> 
+
+   <link rel="icon" href="http://goodworkson.co/favicon.ico">
+   <link rel="apple-touch-icon-precomposed" href="http://f.cl.ly/items/150t0W1L3U292J2R0i3I/touch-icon-ipad-retina-precomposed.png">
+   <link rel="alternate" type="application/rss+xml" title="RSS" href="{{base_url}}/feed" />
+   <link href='http://fonts.googleapis.com/css?family=Roboto:400,500,700,300' rel='stylesheet' type='text/css'>
+   <link rel="stylesheet" href="css/menu.css">
+
+</head>
+
+<body>
+
+   <div id="wrapper">
+      <div id="banner">
+        <header>  
+          <div class="header">
+
+            <h1 class="logo animated fadeInUp">
+              <a href="#">H</a>
+            </h1>
+
+            <div id="nav">
+              <h2 class="animated2 fadeInUp">Menu</h2>
+              <ul class="menu animated2 fadeInUp">
+                <li><a href="#">Work</a></li>
+                <li><a href="#">Info</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Bookmarks</a></li>
+              </ul>
+
+              <ul class="mobile animated2 fadeInUp">
+                <li><a href="http://twitter.com/goodworkson">Twitter</a></li>
+                <li><a href="http://instagram.com/garethughes">Instagram</a></li>
+                <li><a href="http://twitter.com/goodworkson">LinkedIn</a></li>
+              </ul>
+
+            </div>
+
+          </div>
+        </header>
+      </div>
+    </div>
+
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script type="text/javascript" src="/themes/{{theme}}/app.js"></script>
+    <script>
+
+    $(function () {
+
+      var $menuButton = $("#nav h2")
+
+      $menuButton.on("click", function () {
+        var $body = $(document.body);
+        $body.toggleClass("show-nav");
+        $menuButton.text($body.is(".show-nav") ? "Close" : "Menu");
+      });
+
+    });
+
+    </script>
+
+</body>
+  
+</html>                                                                                                                                                                
