@@ -304,7 +304,7 @@ h1.logo a:hover {
 }
 
 
-/* Index (3) */
+/* Work */
 
 #homegrid {
   width: 100%
@@ -398,6 +398,7 @@ h1.logo a:hover {
 
 #aboutsection {
   background: #f3f3f3;
+  z-index: 2;
 }
 
 #about {
@@ -652,7 +653,7 @@ h1.abouttitle {
     transition: 0.3s;
   }
 
-  /* Index (3) */
+  /* Work */
 
   #homegrid .tile {
     width: 50%;
