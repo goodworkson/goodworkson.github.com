@@ -107,7 +107,7 @@ h2 {
   text-transform: uppercase;
   font-size: 0.8em;
   letter-spacing: 2px;
-  margin: 2.4em 0 1.1em;
+  margin: 3.2em 0 1.1em;
 }
 
 article {
@@ -121,12 +121,6 @@ article {
 
 @media only screen and (min-width: 500px) { 
 
-  body {
-  }
-
-  h2 {
-    margin: 3.2em 0 1.1em;
-  }
 
 /* Small Desktop
    ————————————————————————————————————————————————————— */
