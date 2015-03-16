@@ -306,7 +306,7 @@ h1.logo a:hover {
 
 #homegrid {
   max-width: 100%;
-  padding: 0 30px;
+  padding: 0 0;
 }
 
 #homegrid .tile {
@@ -382,7 +382,7 @@ h1.logo a:hover {
 
 #aboutcontainerheader {
   max-width: 1000px;
-  padding: 30px;
+  padding: 60px 30px;
   float: left;
   background: #fff;
   }
@@ -456,7 +456,7 @@ h1.logo a:hover {
 }
 
 h1.abouttitle {
-  font-size: 21px;
+  font-size: 26px;
   font-weight: 300;
   font-family: 'Roboto', sans-serif;
   color: #222;
