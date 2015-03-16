@@ -16,7 +16,6 @@ menu, footer, header, nav, section, summary, time, mark, audio, video {
   border: 0;
   line-height: auto;
   -webkit-text-size-adjust: 100%; /* Prevent font scaling in landscape while allowing user zoom */
-
 }
 
 article, aside, canvas, figure, figure img, figcaption, hgroup,
@@ -37,6 +36,7 @@ footer, header, nav, section, audio, video {
 img {
     vertical-align: middle;
     width:100%;
+    height: 100%;
 }
 
 a {
@@ -324,6 +324,7 @@ h1.logo a:hover {
 
 .projectimg {
   float: left;
+  width: 100%;
   display: block;
   }
 
