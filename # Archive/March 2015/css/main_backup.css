@@ -15,8 +15,6 @@ menu, footer, header, nav, section, summary, time, mark, audio, video {
   padding: 0;
   border: 0;
   line-height: auto;
-  -webkit-text-size-adjust: 100%; /* Prevent font scaling in landscape while allowing user zoom */
-
 }
 
 article, aside, canvas, figure, figure img, figcaption, hgroup,
@@ -30,7 +28,7 @@ footer, header, nav, section, audio, video {
 }
 
 ::selection {
-    background: #ededed;
+    background: red;
     text-shadow: none;
 }
 
@@ -106,6 +104,7 @@ img a:hover {
   background: none;
   width: 100%; 
   overflow: hidden;
+  z-index: 2;
   position: relative;
   text-align: center;
   position: absolute;
@@ -122,69 +121,53 @@ img a:hover {
   float: left;
 }
 
-
-/* Header */
-
-header {
-    max-width: 1000px;
-    padding: 0 30px;
-    transition: 0.3s;
-}
-
-.header {
-    height:80px;
-    width: 100%; 
-    overflow: hidden;
-    position: relative;
-    background: #0d0f12;
-}
-
-#banner  {
-  height:100px;
-  background: #0d0f12;
-  width: 100%; 
-  overflow: hidden;
-  z-index: 2;
-  text-align: center;
-}
-
-
-/* Logo */
-h1.logo a:hover {
-  color: #777;
-    -webkit-transition:color 0.1s ease-in; 
-    -o-transition:color 0.1s ease-in;
-    -moz-transition:color 0.1s ease-in;
-}
-
 /* Navigation */
 
-#nav {
-  text-align:right;
-  list-style-type: none;
-}
-
-#nav ul {
-  display: none;
-}
-
-#nav h1.logo, h1.logo a {
+#logo {
   float:left;
   text-align:left;
+  -webkit-animation-name:fadeInUp;
+  -moz-animation-name:fadeInUp;
+  -o-animation-name:fadeInUp;
+  animation-name:fadeInUp
+}
+
+#logo a {
   font-family: 'Roboto', sans-serif;
   font-weight:bold; 
   font-size: 32px;
   color: #FFF;
-  margin-top: 30px;
-  padding: 10px 0;
-  text-align:left;
-    -webkit-transition:color 0.1s ease-in; 
-    -o-transition:color 0.1s ease-in;
-    -moz-transition:color 0.1s ease-in;
+  -webkit-transition:color 0.1s ease-in; 
+  -o-transition:color 0.1s ease-in;
+  -moz-transition:color 0.1s ease-in;
 }
 
-#nav h2 {
-  margin: 40px 0 0 0;
+#logo a:hover {
+  color: #666;
+  -webkit-transition:color 0.1s ease-in; 
+  -o-transition:color 0.1s ease-in;
+  -moz-transition:color 0.1s ease-in;
+}
+
+.nav ul.mobile {
+  text-align:right;
+  list-style-type: none;
+  margin-top: 40px;
+}
+
+.nav ul.notmobile {
+  text-align:left;
+  list-style-type: none;
+  margin-top: 30px;
+  display:none;
+}
+
+.nav ul li {
+  list-style:none;
+  display:inline-block;
+}
+
+.nav ul li a {
   font-family: 'Roboto', sans-serif;
   font-weight:500; 
   font-style:normal;
@@ -194,104 +177,20 @@ h1.logo a:hover {
   letter-spacing:2px;
   color:#FFF;
   border:none;
-}
-
-/* ----------------------------------------------------------------------- */
-/*  Styles for things when the menu is open                                */
-/* ----------------------------------------------------------------------- */
-
-.show-nav header {
-    max-width: 1000px;
-    margin-left: 30px;
-    margin-right: auto;
-    padding: 0 30px;
-    transition: 0.3s;
-}
-
-.show-nav .header {
-  position: absolute;
-  left: 0px;
-  top: 0px;
-  width: 100%;
-  height: 100%;
-  padding: 0 30px;
-}
-
-/* fuckup-proofing */
-.show-nav h2 {
-  display: block !important;
-}
-
-.show-nav .content {
-  display: none;
-}
-
-.show-nav #nav {
-  text-align: right;
-}
-
-.show-nav #nav ul { /* Navigation list*/
   display: block;
-  margin-top: 40px
-}
-
-.show-nav #nav ul.menu li {
-  margin-bottom: 10px;
-}
-
-.show-nav #nav ul.mobile {
-  margin-top: 40px;
-}
-
-.show-nav #nav ul.mobile li {
-  font-size: 16px !important;
-}
-
-#nav ul.menu li { /* This is the mobile navigation */
-  list-style: none;
-  font-size: 32px;
-  font-family: 'Roboto', sans-serif;
-  font-weight: 300; 
-  font-style:normal;
-  text-decoration:  none;
-  line-height: 150%;
-  color:#FFF;
-  border:none;
-  display: block;
-}
-
-#nav ul.menu li a { /* Mobile navigation list */
-  color:#FFF;
-}
-
-#nav ul.menu li a:hover,
-#nav ul.mobile li a:hover {
-  color:#777;
   -webkit-transition:color 0.1s ease-in; 
   -o-transition:color 0.1s ease-in;
   -moz-transition:color 0.1s ease-in;
 }
 
-#nav ul.mobile li a { /* This is the social mobile navigation */
-  font-size:18px;
-  font-family: 'Roboto', sans-serif;
-  font-weight:300; 
-  font-style:normal;
-  text-decoration:none;
-  line-height: 180%;
-  color:#FFF;
-  border:none;
-  display: block;
-} 
-
 .nav ul li a.current {
-  color:#ccc;
+  color:#AAA;
 }
 
 .nav ul li a:hover { 
-  text-decoration: none; 
-  color: #777; 
-  border-bottom: none;
+  text-decoration:none; 
+  color:#AAA; 
+  border-bottom:none;
   -webkit-transition:color 0.1s ease-in; 
   -o-transition:color 0.1s ease-in;
   -moz-transition:color 0.1s ease-in;
@@ -301,12 +200,35 @@ h1.logo a:hover {
     margin-right:0;
 }
 
+/* Header Content */
 
-/* Work */
+#wrapper section header {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 5%;
+    transition: 0.3s;
+}
+
+#head {
+    height:120px;
+    width: 100%; 
+    overflow: hidden;
+    position: relative;
+    background: #0d0f12;
+}
+
+#head-container {
+    width: 1000px;
+    float:left;
+    transition: 0.3s;
+}
+
+
+/* Index (3) */
 
 #homegrid {
-  max-width: 100%;
-  padding: 0 30px;
+  width: 100%
 }
 
 #homegrid .tile {
@@ -322,31 +244,26 @@ h1.logo a:hover {
 
 /* Project */
 
-.projectimg {
-  float: left;
-  display: block;
-  }
-
 #project #containerheader {
-  margin: 40px 0;
+  margin: 0 auto;
+  max-width: 1000px;
+  margin-bottom: 20px;
+  padding: 0 5%;
   background: #fff;
-  display: block;
-  float: left;
-  width: 100%;
 }
 
 #aboutcontainerheader {
+  margin: 0 auto;
   max-width: 1000px;
-  padding: 30px;
-  float: left;
+  margin-bottom: 20px;
+  padding: 0 5%;
   background: #fff;
   }
 
 #project #containertext {
   margin: 0 auto;
   max-width: 1000px;
-  padding: 0 30px;
-  float: left;
+  padding: 0 5%;
 }
 
 #project h1.projecttitle {
@@ -355,8 +272,6 @@ h1.logo a:hover {
   font-family: 'Roboto', sans-serif;
   color: #222;
   display: block;
-  float: left;
-  padding-left: 30px; 
 }
 
 #project h2.roll {
@@ -368,14 +283,16 @@ h1.logo a:hover {
   color: #AAA;
   display: block;
   padding-top: 2px;
+}
+
+.projectimage {
   float: left;
-  padding-left: 30px; 
 }
 
 .projecttext {
-  float: left;
+  margin:40px auto;
   max-width: 800px;
-  padding: 30px;
+  padding: 0 5%;
 }
 
 .projecttext h3 {
@@ -395,23 +312,22 @@ h1.logo a:hover {
 #project {
   width: 100%;
   height: 100%;
-  transition: 0.3s;
 }
 
 /* About */
 
 #aboutsection {
   background: #f3f3f3;
-  z-index: 2;
 }
 
 #about {
   max-width:1000px;
-  padding: 0 30px;
+  margin: 0 auto;
+  padding: 0 5%;
 }
 
 h1.abouttitle {
-  font-size: 21px;
+  font-size: 24px;
   font-weight: 300;
   font-family: 'Roboto', sans-serif;
   color: #222;
@@ -487,36 +403,34 @@ h1.abouttitle {
 }
 
 
-/* Tablet ————————————————————————————————————————————————————— */
+
+
+
+/* T A B L E T
+   ————————————————————————————————————————————————————— */
 
 @media only screen and (min-width: 500px) { 
 
-   #banner {
+  #wrapper #head {
       height:200px;
-    }
+      margin-bottom: 70px;
+  }
 
-    header {
-      padding: 0 60px;
-    }
-
-  .header {
+  #wrapper #homehead {
       height:200px;
       margin-bottom: 70px;
   }
 
   /* Navigation */
 
-  #nav h1.logo, h1.logo a {
-     float: left;
-     margin-top: 120px;
-     margin-right: 30px;
-     text-align: left;
+  .nav ul.notmobile {
+    text-align:left;
+    list-style-type: none;
+    margin-top: 120px;
+    display: block;
   }
 
-  #nav ul li a {
-    font-family: 'Roboto', sans-serif;
-    font-weight:500; 
-    font-style:normal;
+  .nav ul li a {
     font-size:13px;  
     text-transform:uppercase;
     text-decoration:none;
@@ -524,35 +438,19 @@ h1.abouttitle {
     color:#FFF;
     border:none;
     display: block;
-    padding: 10px 20px;
-    -webkit-transition:color 0.1s ease-in; 
-    -o-transition:color 0.1s ease-in;
-    -moz-transition:color 0.1s ease-in;
+    padding: 10px;
+
   }
 
-  .mobile {
-    display: none !important;
+  .nav ul.mobile {
+    display:none;
   }
 
-  #nav {
+  #logo {
     float:left;
+    padding: 10px 10px 10px 0;
+    margin-right: 20px;
     text-align:left;
-    list-style-type: none;
-    margin-top: 135px;
-    display: block;
-  }
-
-  #nav h2 {
-    display: none;
-  }
-  
-  #nav ul.menu {
-    display: block;
-  }
-  
-  #nav ul.menu li {
-    font-size: 14px;
-    float: left;
   }
 
   /* Main */
@@ -561,55 +459,46 @@ h1.abouttitle {
     font-size: 20px;
   }
 
+  #project #containerheader {
+    margin-bottom: 60px;
+    padding: 0 5%;
+  }
+
+  .projecttext {
+    margin:60px auto;
+    max-width: 800px;
+    padding: 0 5%;
+  }
+
   #wrapper section footer p {
     letter-spacing: 5px;
   }
 
-  /* Work */
-  #homegrid {
-  padding: 0 60px;
-  }
-
-
   /* Project Page */
-
-  #project #containerheader {
-    margin: 60px 0;
-  }
 
   #project h1.projecttitle {
     float:left;
     font-size: 32px;
-    padding-left: 60px;
   }
 
-  .projecttext {
+  /* About */
+
+  #aboutcontainerheader {
+    margin-bottom: 60px;
+    padding: 0 5%;
+  }
+
+  h1.abouttitle {
+    font-size: 32px;
     max-width: 800px;
-    padding: 60px;
+    line-height: 150%;  
   }
 
   #project h2.roll {
     float: right;
     font-size: 13px;
     letter-spacing: 2px;
-    padding-right: 60px;
-  }
-
-  /* About */
-
-  #about{    
-    padding: 0 60px;
-  }
-
-  #aboutcontainerheader {
-    max-width: 600px;
-    padding: 60px;
-    transition: 0.3s;
-  }
-
-  h1.abouttitle {
-    font-size: 32px;
-    line-height: 150%;  
+    padding: 12px 0 0 0;
   }
 
   .column_1 {
@@ -625,60 +514,82 @@ h1.abouttitle {
 }
 
 
-/* Small Desktop
+
+/* D E S K T O P   D I S P L A Y S 
    ————————————————————————————————————————————————————— */
 
 @media only screen and (min-width: 768px) {
 
-    /* Header Content */
-  #banner {
-      height:267px;
-  }
+  /* Header Content */
 
-
-  .header {
+  #wrapper #head {
       height:300px;
       margin-bottom: 100px;
   }
 
-  /* Navigation */
-
-  #nav {
-    margin-top: 100px;
+  #wrapper #homehead {
+      height:300px;
+      margin-bottom: 100px; 
   }
 
-   #nav h1.logo, h1.logo a {
-     float: left;
-     margin-top: 180px;
-     margin-right: 58px;
-     text-align: left;
-   }
-
-  #nav ul {
-    list-style-type: none;
-    margin-top: 92px;
-    display: block;
-  }
-
-  #nav ul li a {
-    letter-spacing: 2px;
-  }
-
-  header {
+  #wrapper section header {
     max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
     transition: 0.3s;
   }
 
-  /* Work */
+  #head-container {
+    float:left;
+  }
+
+  /* Navigation */
+
+  .nav ul.notmobile {
+    text-align:left;
+    list-style-type: none;
+    margin-top: 215px;
+    display: block;
+  }
+
+  .nav ul li {
+    margin-right:10px;
+  }
+
+  .nav ul li a {
+    font-size:14px;  
+    letter-spacing:2px;
+  }
+
+  #logo {
+    float:left;
+    margin-right: 60px;
+    text-align:left;
+  }
+
+  /* Index (3) */
+
   #homegrid .tile {
     width: 50%;
     float: left;
   }
 
-  h1.abouttitle {
-    font-size: 36px;
-    font-weight: 300;
-    line-height: 150%;  
+  /* Project Page */
+  
+  #project #containerheader {
+    max-width: 800px;
+    transition: 0.3s;
+  }
+
+  .projecttext {
+    margin:80px auto;
+  }
+
+  /* About Page */
+
+  #aboutcontainerheader {
+    margin-bottom: 90px;
+    max-width: 800px;
   }
 
   #about {
@@ -697,51 +608,56 @@ h1.abouttitle {
   .column_2 {
     max-width: 200px;
     margin:80px 0 80px 0;
-  } 
+  }
+  
+  .clients {
+  
+  }
+
+  .highlights {
+  
+  }
+
+  .highlights ul{
+  
+  }
+
 }
 
 
-/* Large Desktop
+
+/* W I D E   S C R E E N 
    ————————————————————————————————————————————————————— */
 
 @media only screen and (min-width: 1120px) {
 
-  /* Navigation */
-  header {
-      padding: 0 100px;
+  #wrapper section header {
       max-width: 1000px;
+      margin-left: auto;
+      margin-right: auto;
       transition: 0.3s;
   }
-  
+
   /* Project Page */
 
   #project #containerheader {
-    margin: 100px 0;
+      max-width: 1000px;
+      transition: 0.3s;
   }
 
   .projecttext {
-    padding:100px;
+    margin:100px auto;
   }  
 
-  #project h1.projecttitle {
-    font-size: 42px;
-    padding-left: 100px;
-  }
-
-  #project h2.roll {
-    padding-right: 100px;
-  }
-
   /* About Page */
+  
+  #aboutcontainerheader {
+    max-width: 1000px;
+    transition: 0.3s;
+  }
 
   #about {
-    padding: 0 100px;
     max-width: 1000px;
-  }
-
-  #aboutcontainerheader {
-    padding: 100px;
-    max-width: 680px;
   }
 
   .column_1 {
@@ -756,22 +672,19 @@ h1.abouttitle {
     margin-top: 100px;
   }
 
-  /* Work */
-  #homegrid {    
-    padding: 0 100px;
+  /* 
+  .clients {
+  
   }
+    
+  .highlights {
+    float: left;
+    width: 300px;
+  }
+  */
 }
 
 
-
-
-
-/* Animations ————————————————————————————————————————————————————— */
-
-.fadeInUp { 
-    -webkit-animation-name: fadeInUp; 
-    animation-name: fadeInUp; 
-}
 
 .animated { 
     -webkit-animation-duration: 0.6s; 
@@ -815,68 +728,28 @@ h1.abouttitle {
     animation-delay: 0.2s;
 } 
 
-
-.animated_slowtile1 { 
-    -webkit-animation-duration: 0.6s; 
-    animation-duration: 0.6s; 
-    -webkit-animation-fill-mode: both; 
-    animation-fill-mode: both; 
-    -webkit-animation-timing-function: ease; 
-    animation-timing-function: ease;
-    -webkit-animation-delay: 0.6s;
-    animation-delay: 0.6s;
+@-webkit-keyframes fadeInUp { 
+    0% { 
+        opacity: 0; 
+        -webkit-transform: translateY(30px); 
+    } 
+    100% { 
+        opacity: 1; 
+        -webkit-transform: translateY(0); 
+    } 
 } 
 
-.animated_slowtile2 { 
-    -webkit-animation-duration: 0.6s; 
-    animation-duration: 0.6s; 
-    -webkit-animation-fill-mode: both; 
-    animation-fill-mode: both; 
-    -webkit-animation-timing-function: ease; 
-    animation-timing-function: ease;
-    -webkit-animation-delay: 0.8s;
-    animation-delay: 0.8s;
+@keyframes fadeInUp { 
+    0% { 
+        opacity: 0; 
+        transform: translateY(30px); 
+    } 
+    100% { 
+        opacity: 1; 
+        transform: translateY(0); 
+    } 
 } 
-
-.animated_slowtile3 { 
-    -webkit-animation-duration: 0.6s; 
-    animation-duration: 0.6s; 
-    -webkit-animation-fill-mode: both; 
-    animation-fill-mode: both; 
-    -webkit-animation-timing-function: ease; 
-    animation-timing-function: ease;
-    -webkit-animation-delay: 1s;
-    animation-delay: 1s;
-} 
-
-.animated_slowtile4 { 
-    -webkit-animation-duration: 0.6s; 
-    animation-duration: 0.6s; 
-    -webkit-animation-fill-mode: both; 
-    animation-fill-mode: both; 
-    -webkit-animation-timing-function: ease; 
-    animation-timing-function: ease;
-    -webkit-animation-delay: 1.2s;
-    animation-delay: 1.2s;
-} 
-.animated_slowtile5 { 
-    -webkit-animation-duration: 0.6s; 
-    animation-duration: 0.6s; 
-    -webkit-animation-fill-mode: both; 
-    animation-fill-mode: both; 
-    -webkit-animation-timing-function: ease; 
-    animation-timing-function: ease;
-    -webkit-animation-delay: 1.4s;
-    animation-delay: 1.4s;
-} 
-
-.animated_slowtile6 { 
-    -webkit-animation-duration: 0.6s; 
-    animation-duration: 0.6s; 
-    -webkit-animation-fill-mode: both; 
-    animation-fill-mode: both; 
-    -webkit-animation-timing-function: ease; 
-    animation-timing-function: ease;
-    -webkit-animation-delay: 1.6s;
-    animation-delay: 1.6s;
-} 
+.fadeInUp { 
+    -webkit-animation-name: fadeInUp; 
+    animation-name: fadeInUp; 
+}
