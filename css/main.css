@@ -446,7 +446,7 @@ h1.logo a:hover {
 /* About */
 
 #aboutsection {
-  background: #f3f3f3;
+  border-top: solid 1px #ededed;
   z-index: 2;
 }
 
