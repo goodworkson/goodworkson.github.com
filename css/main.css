@@ -284,8 +284,8 @@ h1.logo a:hover {
   display: block;
 } 
 
-.nav ul li a.current {
-  color:#ccc;
+#nav ul li a.current {
+  font-weight: 700;
 }
 
 .nav ul li a:hover { 
@@ -314,9 +314,53 @@ h1.logo a:hover {
   float: left;
 }
 
-#homegrid .tile a:hover {
-  color: #000;
-  opacity: 0.6;
+/* Swag Overlay */
+
+.swag-rollover {
+  position: relative;
+  cursor: pointer;
+  width: 100%;
+  float: left;
+}
+
+.swag-rollover .hover {
+  position: absolute;
+  padding-left: 20px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  background: rgba(0, 0, 0, 0.5);
+  top: 0; left: 0; bottom: 0; right: 0;
+  color: #fff;
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.swag-rollover .hover > div p.tiletitle {
+    font-size: 32px;
+}
+
+.swag-rollover .hover > div p.tilesubtitle {
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.swag-rollover .hover > div {
+  text-align: left;
+  position: absolute;
+  top: 40%;
+  
+  transition: opacity 0.5s ease-in-out;
+  opacity: 0;
+}
+
+.swag-rollover:hover .hover {
+  opacity: 1;
+}
+
+.swag-rollover:hover .hover > div {
+  top: 40%;
+  opacity: 1;
 }
 
 
@@ -674,6 +718,19 @@ h1.abouttitle {
   #homegrid .tile {
     width: 50%;
     float: left;
+  }
+
+  .swag-rollover .hover {
+    padding-left: 40px;
+    font-family: 'Roboto', sans-serif;
+  }
+
+  .swag-rollover .hover > div p.tiletitle {
+      font-size: 38px;
+  }
+
+  .swag-rollover .hover > div p.tilesubtitle {
+    font-size: 14px;
   }
 
   h1.abouttitle {
