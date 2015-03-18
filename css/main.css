@@ -342,7 +342,7 @@ h1.logo a:hover {
   padding-left: 20px;
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.8);
   top: 0; left: 0; bottom: 0; right: 0;
   color: #fff;
   opacity: 0;
@@ -363,7 +363,6 @@ h1.logo a:hover {
   text-align: left;
   position: absolute;
   top: 40%;
-  
   transition: opacity 0.5s ease-in-out;
   opacity: 0;
 }
