@@ -524,6 +524,67 @@ h1.abouttitle {
 }
 
 
+
+/* Bookmarks */
+
+#bookmarkgrid {
+  max-width: 100%;
+  padding: 0 20px;
+  float: left;
+}
+
+#bookmarkgrid .tile {
+  width: 100%;
+  float: left;
+  margin-bottom: 60px;
+}
+
+.bookmarksnav a {
+  margin-right: 10px;
+}
+
+.bookimage {
+  width:30%;
+  margin-right: 20px;
+  float: left;
+  border: 1px solid #ededed;
+  max-width: 200px;
+}
+
+.booktext {
+  color: #444;
+  float: left;
+  font-size: 14px;
+  line-height: 170%;
+  width:60%;
+  max-width: 400px;
+}
+
+.booktext h2, .booktext h3 {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 12px;
+  font-weight:500;
+}
+
+.booktext h3 {
+  font-weight:300;
+  margin-bottom: 10px;
+}
+
+.book {
+  float: left;
+}
+
+.people {
+    border-radius: 100px;
+      -webkit-border-radius: 100px;
+      -moz-border-radius: 100px;
+    overflow:hidden;
+}
+
+
 /* Footer */
 
 #wrapper section footer {
@@ -628,7 +689,6 @@ h1.abouttitle {
   padding: 0 60px;
   }
 
-
   /* Project Page */
 
   #project #containerheader {
@@ -678,6 +738,10 @@ h1.abouttitle {
   .column_2 {
     width: 100%;
     margin-top: 40px;
+  }
+
+  #bookmarkgrid {
+    padding: 0 60px;
   }
 
 }
@@ -769,6 +833,16 @@ h1.abouttitle {
     max-width: 200px;
     margin:80px 0 80px 0;
   } 
+
+  #bookmarkgrid .tile {
+    width: 50%;
+    float: left;
+  }
+
+  .bookmarksnav a {
+    margin-right: 20px;
+  }
+
 }
 
 
@@ -829,6 +903,11 @@ h1.abouttitle {
 
   /* Work */
   #homegrid {    
+    padding: 0 100px;
+  }
+
+  /* Bookmarks */
+  #bookmarkgrid {    
     padding: 0 100px;
   }
 }
