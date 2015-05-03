@@ -65,12 +65,12 @@ body {
 /* Global */
 
 a {
-  color: #bc941b;
+  color: #2156ec;
   padding-bottom: 2px;
 }
 
 a:hover {
-  color:#e1c87b;
+  color:#17327f;
   cursor: pointer;
 }
 
@@ -913,7 +913,9 @@ h1.abouttitle {
   }
 
   /* Work */
-
+  #homegrid {    
+    padding: 0 100px;
+  }
 
   /* Bookmarks */
   #bookmarkgrid {    
