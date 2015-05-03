@@ -763,7 +763,7 @@ h1.abouttitle {
 
 @media only screen and (min-width: 768px) {
 
-    /* Header Content */
+  /* Header Content */
   #banner {
       height:267px;
   }
@@ -923,7 +923,7 @@ h1.abouttitle {
   }
 
   .book .tile {
-    margin-right: 120px;
+    margin-right: 100px;
   }
 }
 
