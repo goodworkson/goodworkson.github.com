@@ -557,7 +557,7 @@ h1.abouttitle {
   font-size: 14px;
   line-height: 170%;
   width:60%;
-  max-width: 400px;
+  max-width: 300px;
 }
 
 .booktext h2, .booktext h3 {
@@ -582,6 +582,7 @@ h1.abouttitle {
       -webkit-border-radius: 100px;
       -moz-border-radius: 100px;
     overflow:hidden;
+    border: none;
 }
 
 
