@@ -620,7 +620,7 @@ h1.abouttitle {
 #footer ul li {
   display: inline;
   list-style-type: none;
-  margin: 0 8px;
+  margin: 0 4px;
 }
 
 #footer ul li a img {
@@ -769,6 +769,10 @@ h1.abouttitle {
 
   #bookmarkgrid {
     padding: 0 60px;
+  }
+
+  #footer ul li {
+    margin: 0 8px;
   }
 
 }
