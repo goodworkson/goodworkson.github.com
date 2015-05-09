@@ -151,7 +151,7 @@ header {
     background: #0d0f12;
 }
 
-#banner  {
+#banner {
   height:100px;
   background: #0d0f12;
   width: 100%; 
@@ -229,7 +229,6 @@ h1.logo a:hover {
   height: 100%;
   padding: 0 30px; /* <––––– THIS FUCKER RIGHT HERE */
   z-index: 10000;
-  background: blue;
 }
 
 /* fuckup-proofing */
@@ -280,6 +279,7 @@ h1.logo a:hover {
 
 #nav ul.menu li a { /* Mobile navigation list */
   color:#FFF;
+  border: none;
 }
 
 #nav ul.menu li a:hover,
