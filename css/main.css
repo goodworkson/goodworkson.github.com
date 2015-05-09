@@ -39,10 +39,6 @@ img {
     height: 100%;
 }
 
-a {
-  text-decoration: none;
-}
-
 ul {list-style: none;}
 
 a img {border: 0;}
@@ -65,12 +61,14 @@ body {
 /* Global */
 
 a {
-  color: #2156ec;
-  padding-bottom: 2px;
+  text-decoration: none;
+  color: #444;
+  border-bottom: solid 1px #2156ec;
+  padding-bottom: 3px;
 }
 
 a:hover {
-  color:#17327f;
+  color:#2156ec;
   cursor: pointer;
 }
 
@@ -192,6 +190,7 @@ h1.logo a:hover {
   margin-top: 30px;
   padding: 10px 0;
   text-align:left;
+  border: none;
     -webkit-transition:color 0.1s ease-in; 
     -o-transition:color 0.1s ease-in;
     -moz-transition:color 0.1s ease-in;
@@ -397,7 +396,7 @@ h1.logo a:hover {
 }
 
 .projectimgsmall img {
-  padding: 80px 0;
+  padding: 10px 0;
 }
 
 #project #containerheader {
@@ -458,11 +457,12 @@ h1.logo a:hover {
   text-transform: uppercase;
   letter-spacing: 2px;
   color: #222;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 .projecttext p {
   text-align: left;
+  margin-bottom: 20px;
 }
 
 #project {
@@ -623,11 +623,16 @@ h1.abouttitle {
   margin: 0 4px;
 }
 
+#footer ul li a {
+  border: none;
+}
+
 #footer ul li a img {
   opacity: 0.6;
   height: 16px;
   width: 16px;
   padding: 10px 10px;
+  border: none;
 }
 
 #footer ul li a img:hover {
@@ -740,6 +745,11 @@ h1.abouttitle {
     letter-spacing: 2px;
     padding-right: 60px;
   }
+
+  .projectimgsmall img {
+    padding: 40px 0;
+  }
+
 
   /* About */
 
