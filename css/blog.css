@@ -659,8 +659,9 @@ h1.logo a:hover {
 
    #banner {
       height:200px;
+      margin-bottom: 60px;
     }
-
+  
     header {
       padding: 0 60px;
     }
@@ -738,6 +739,7 @@ h1.logo a:hover {
   /* Header Content */
   #banner {
       height:267px;
+      margin-bottom: 100px;
   }
 
   .header {
