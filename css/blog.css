@@ -656,6 +656,14 @@ h1.logo a:hover {
 /* Tablet ——————————————––––––––––––––––––––——————————————————————————————————————— */
 
 @media only screen and (min-width: 500px) { 
+    
+    #wrapper section article div.content {
+      max-width: 800px;
+      height: 100%;
+      margin-left: auto;
+      margin-right: auto;
+      padding: 0 30px;
+    }
 
    #banner {
       height:200px;
@@ -729,6 +737,10 @@ h1.logo a:hover {
     font-size: 14px;
     float: left;
   }
+
+  #wrapper section article div.content {
+    padding: 0 60px;
+  }
 }
   
 /* Small Desktop
@@ -786,6 +798,10 @@ h1.logo a:hover {
       padding: 0 100px;
       max-width: 1000px;
       transition: 0.3s;
+  }
+
+  #wrapper section article div.content {
+    padding: 0 100px;
   }
 }
 
