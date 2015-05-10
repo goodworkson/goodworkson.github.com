@@ -47,7 +47,7 @@ a img {border: 0;}
 
 body {
   font-size: 16px;
-  font-family: 'Georgia', serif;
+  font-family: 'PT Serif', serif;
   font-size-adjust:0.508; 
   font-weight:normal; 
   font-style:normal;
@@ -303,7 +303,7 @@ h1.logo a:hover {
 } 
 
 #nav ul li a.current {
-  font-weight: 700;
+  color: 800;
 }
 
 .nav ul li a:hover { 
@@ -344,8 +344,6 @@ h1.logo a:hover {
 .swag-rollover .hover {
   position: absolute;
   padding-left: 20px;
-  font-family: 'Roboto', sans-serif;
-  font-weight: 300;
   background: rgba(0, 0, 0, 0.8);
   top: 0; left: 0; bottom: 0; right: 0;
   color: #fff;
@@ -354,10 +352,15 @@ h1.logo a:hover {
 }
 
 .swag-rollover .hover > div p.tiletitle {
+    font-family: 'PT Serif', serif;
     font-size: 32px;
+    font-weight: normal;
+    padding-bottom: 10px;
 }
 
 .swag-rollover .hover > div p.tilesubtitle {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
   font-size: 14px;
   text-transform: uppercase;
   letter-spacing: 2px;
@@ -366,7 +369,7 @@ h1.logo a:hover {
 .swag-rollover .hover > div {
   text-align: left;
   position: absolute;
-  top: 40%;
+  top: 38%;
   transition: opacity 0.5s ease-in-out;
   opacity: 0;
 }
@@ -376,7 +379,7 @@ h1.logo a:hover {
 }
 
 .swag-rollover:hover .hover > div {
-  top: 40%;
+  top: 38%;
   opacity: 1;
 }
 
@@ -424,7 +427,7 @@ h1.logo a:hover {
 #project h1.projecttitle {
   font-size: 26px;
   font-weight: 300;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'PT Serif', serif;
   color: #222;
   display: block;
   float: left;
@@ -485,7 +488,7 @@ h1.logo a:hover {
 h1.abouttitle {
   font-size: 26px;
   font-weight: 300;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'PT Serif', serif;
   color: #222;
   display: block;
   line-height: 140%;  
@@ -535,24 +538,20 @@ h1.abouttitle {
   margin-bottom: 20px;
 }
 
-
-
 /* Bookmarks */
 
-#bookmarkgrid {
+#foundgrid {
   max-width: 100%;
   padding: 0 20px;
   float: left;
 }
 
-#bookmarkgrid .tile {
+#foundgrid .tile {
   width: 100%;
+  padding-right: 0;
   float: left;
-  margin-bottom: 60px;
-}
-
-.bookmarksnav a {
-  margin-right: 10px;
+  margin-bottom: 40px;
+  min-height: 0;
 }
 
 .bookimage {
@@ -598,11 +597,8 @@ h1.abouttitle {
 }
 
 
-/* Footer */
 
-#wrapper section footer {
-  
-}
+/* Footer */
 
 #footer {
   width: 100%;
@@ -643,7 +639,7 @@ h1.abouttitle {
 }
 
 
-/* Tablet ————————————————————————————————————————————————————— */
+/* Tablet ——————————————––––––––––––––––––––——————————————————————————————————————— */
 
 @media only screen and (min-width: 500px) { 
 
@@ -658,6 +654,14 @@ h1.abouttitle {
   .header {
       height:200px;
       margin-bottom: 70px;
+  }
+
+  .swag-rollover:hover .hover > div {
+    top: 42%;
+  }
+
+  .swag-rollover .hover > div {
+    top: 42%;
   }
 
   /* Navigation */
@@ -750,7 +754,6 @@ h1.abouttitle {
     padding: 40px 0;
   }
 
-
   /* About */
 
   #about{    
@@ -777,12 +780,18 @@ h1.abouttitle {
     width: 100%;
   }
 
-  #bookmarkgrid {
+  #footer ul li {
+    margin: 0 8px;
+  }
+
+  /* Bookmarks */
+
+  #foundgrid {
     padding: 0 60px;
   }
 
-  #footer ul li {
-    margin: 0 8px;
+  .bookimage {
+    width: 20%;
   }
 
 }
@@ -797,7 +806,6 @@ h1.abouttitle {
   #banner {
       height:267px;
   }
-
 
   .header {
       height:300px;
@@ -844,7 +852,7 @@ h1.abouttitle {
   }
 
   .swag-rollover .hover > div p.tiletitle {
-      font-size: 38px;
+      font-size: 36px;
   }
 
   .swag-rollover .hover > div p.tilesubtitle {
@@ -875,13 +883,26 @@ h1.abouttitle {
     margin: 0 0 80px 0; 
   } 
 
-  #bookmarkgrid .tile {
-    width: 50%;
+  /* Bookmarks */
+
+  #foundgrid {
+    max-width: 100%;
+    padding: 0 60px;
     float: left;
   }
 
-  .bookmarksnav a {
-    margin-right: 20px;
+  #foundgrid .tile {
+    width: 46%;
+    padding-right: 0;
+    float: left;
+    margin-bottom: 60px;
+    min-height: 240px;
+    padding-right: 2%;
+    border: none;
+  }
+
+  .bookimage {
+    width: 30%;
   }
 
 }
@@ -947,17 +968,32 @@ h1.abouttitle {
   }
 
   /* Bookmarks */
-  #bookmarkgrid {    
+
+  #foundgrid {
+    max-width: 100%;
     padding: 0 100px;
+    float: left;
   }
 
-  .book .tile {
-    margin-right: 100px;
+  #foundgrid .tile {
+    width: 30%;
+    padding-right: 2%;
+    float: left;
+    margin-bottom: 60px;
+  }
+
+  #foundgrid .tile {
+    width: 30%;
+    padding-right: 2%;
+    float: left;
+    margin-bottom: 60px;
+    min-height: 250px;
+  }
+
+  .bookimage {
+    max-width: 150px;
   }
 }
-
-
-
 
 
 /* Animations ————————————————————————————————————————————————————— */
