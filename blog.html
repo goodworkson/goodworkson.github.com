@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+
+<head>
+    <title>{{author}}, Blog{{#is_post}}{{#posts}} — {{title}}{{/posts}}{{/is_post}}</title>
+    <meta name="description" content="{{blog_title}}" />
+    <meta name="viewport" content="width=device-width; initial-scale=1; maximum-scale=1.0;">
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <meta property="og:title" content="{{author}}{{#is_post}}{{#posts}} — {{title}}{{/posts}}{{/is_post}}" />
+    <meta property="og:site_name" content="{{author}} — {{#is_post}}{{#posts}}{{title}}{{/posts}}{{/is_post}}" />
+
+    {{#is_post}}
+    <meta property="og:description" content="{{#posts}}{{#excerpt}}{{excerpt}}{{/excerpt}}{{/posts}}" />
+    <meta property="og:url" content="{{#posts}}{{permalink}}{{/posts}}" />
+    <meta property="og:type" content="article" />
+    {{/is_post}}  
+    
+    <link rel="icon" href="http://goodworkson.co/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" href="https://dl.dropboxusercontent.com/u/8888369/host/icons/touch-icon-ipad-retina-precomposed.png">
+    <link rel="alternate" type="application/rss+xml" title="RSS" href="{{base_url}}/feed" />
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,500,700,300' rel='stylesheet' type='text/css'>
+    {{css}}
+
+</head>
+
+<body lang="en">
+    
+  <div id="wrapper">
+        
+        <section id="banner">
+            <header>  
+                <div class="header">
+                    <h1 class="logo animated fadeInUp"><a href="http://garethhughes.co">H</a></h1>
+                    <div id="nav">
+                        <h2 class="animated2 fadeInUp">Menu</h2>
+                        <ul class="menu animated2 fadeInUp">
+                          <li><a href="http://garethhughes.co">Work</a></li>
+                          <li><a href="http://garethhughes.co/info.html">Info</a></li>
+                            <li><a href="http://blog.garethhughes.co/">Blog</a></li>
+                          <li><a href="http://garethhughes.co/bookmarks.html">Found</a></li>
+                        </ul>
+                        <ul class="mobile animated2 fadeInUp">
+                            <li><a href="http://twitter.com/goodworkson">Twitter</a></li>
+                            <li><a href="http://instagram.com/garethughes">Instagram</a></li>
+                            <li><a href="uk.linkedin.com/in/mrgarethhughes">LinkedIn</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </header>
+        </section>
+
+        <section id="posts" class="fadeInUp animated3">
+
+          {{#posts}} 
+
+          {{#is_index}}
+            <!-- Index article -->
+            <article class="index">
+          {{/is_index}}
+
+          {{#is_archive}}
+            <!-- Archive article -->
+            <article class="archive">
+          {{/is_archive}}
+
+          {{#is_post}}
+            <!-- Post article -->
+            <article class="post">
+          {{/is_post}}
+
+          {{#is_page}}
+            <!-- Page article -->
+            <article class="page">
+          {{/is_page}}
+
+            <div class="content">
+
+              <div class="title">
+                {{#date}}
+                  <!-- Date -->
+                  <div class="date">{{prettydate}}</div>
+                {{/date}}
+
+                <!-- Post Title -->
+                <h1>
+                  <a href="{{permalink}}">{{title}}</a>
+                  {{#post_permalink}}<a class="post-permalink" href="{{post_permalink}}">❒</a>{{/post_permalink}}
+                </h1>
+              </div>
+
+              <div id="body">
+
+                {{#is_index}}
+
+                  {{#excerpt}}<p class="introduction">{{excerpt}}</p>{{/excerpt}}
+
+                  {{content}}
+
+                {{/is_index}}
+
+                {{#is_post}}
+
+                  {{#excerpt}}<p class="introduction">{{excerpt}}</p>{{/excerpt}}
+
+                  {{content}}
+
+                {{/is_post}}
+
+                {{#is_page}}
+
+                  {{#excerpt}}<p class="introduction">{{excerpt}}</p>{{/excerpt}}
+
+                  {{content}}
+
+                {{/is_page}}
+              </div>
+
+              {{#is_post}}
+
+              <div id="meta">
+
+                {{#if_tags}}
+                <!-- Tags -->
+                <div id="info">
+                  <span>
+                    {{#tags}}<a href="{{base_url}}/tag/{{name}}">#{{name}}</a>   {{/tags}}
+                  </span>
+                </div>
+                {{/if_tags}}
+
+              </div>
+              {{/is_post}}
+
+            </div>
+
+          </article>
+          {{/posts}}
+        </section>
+          
+        <!-- Footer -->
+        <section id="foot">
+          <footer>
+            <p>Copyright © Gareth Hughes 2014</p>
+          </footer>
+        </section>
+          
+    </div>
+
+
+    <!-- Return To Top Button -->
+    <a id="return-button">
+      <img src="/themes/{{theme}}/return-button.png" width="33" height="32" alt="Return button" />
+    </a>
+
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script type="text/javascript" src="/themes/{{theme}}/app.js"></script>
+    <script>
+
+    $(function () {
+
+      var $menuButton = $("#nav h2")
+
+      $menuButton.on("click", function () {
+        var $body = $(document.body);
+        $body.toggleClass("show-nav");
+        $menuButton.text($body.is(".show-nav") ? "Close" : "Menu");
+      });
+
+    });
+
+    </script>
+
+  </body>
+  
+</html>                                                                                                                                                                                                                            
