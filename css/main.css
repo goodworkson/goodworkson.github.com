@@ -149,6 +149,7 @@ header {
     overflow: hidden;
     position: relative;
     background: #0d0f12;
+    box-sizing: border-box;
 }
 
 #banner {
