@@ -286,6 +286,8 @@ h1.logo a:hover {
 #nav ul.menu li a:hover,
 #nav ul.mobile li a:hover {
   color:#777;
+  font-family: 'PT Serif', serif;
+  font-weight: normal;
   -webkit-transition:color 0.1s ease-in; 
   -o-transition:color 0.1s ease-in;
   -moz-transition:color 0.1s ease-in;
@@ -293,8 +295,8 @@ h1.logo a:hover {
 
 #nav ul.mobile li a { /* This is the social mobile navigation */
   font-size:18px;
-  font-family: 'Roboto', sans-serif;
-  font-weight:300; 
+  font-family: 'PT Serif', serif;
+  font-weight: normal;
   font-style:normal;
   text-decoration:none;
   line-height: 180%;
