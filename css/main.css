@@ -495,8 +495,8 @@ h1.abouttitle {
   line-height: 140%;  
 }
 
-#aboutsection h3 .first,
-#aboutsection h3 {
+#aboutsection h3,
+#aboutsection h3.clients {
   font-size: 13px;
   font-weight: bold;
   font-family: 'Roboto', sans-serif;
@@ -504,10 +504,12 @@ h1.abouttitle {
   letter-spacing: 2px;
   color: #222;
   margin-bottom: 10px;
+  margin-top: 40px;
+
 }
 
- #aboutsection h3{
-  margin-top: 20px;
+#aboutsection h3.first {
+  margin-top: 0;
 }
 
 .column_1 {
@@ -873,6 +875,8 @@ h1.abouttitle {
     line-height: 150%;  
   }
 
+  /* About */
+
   #about {
     max-width: 800px;
   }
@@ -889,7 +893,11 @@ h1.abouttitle {
   .column_2 {
     max-width: 200px;
     margin: 0 0 80px 0; 
-  } 
+  }
+
+  #aboutsection h3.clients {
+    margin-top: 0;
+  }
 
   /* Bookmarks */
 
