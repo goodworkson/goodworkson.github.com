@@ -675,8 +675,8 @@ h1.abouttitle {
   }
 
   #nav ul li a {
-    font-family: 'PT Serif', serif;
-    font-weight:normal; 
+    font-family: 'Roboto', sans-serif;
+    font-weight:500; 
     font-style:normal;
     font-size:13px;  
     text-transform:uppercase;
@@ -712,6 +712,8 @@ h1.abouttitle {
   }
   
   #nav ul.menu li {
+    font-family: 'PT Serif', serif;
+    font-weight:normal; 
     font-size: 14px;
     float: left;
   }
