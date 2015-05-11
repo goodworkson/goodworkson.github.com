@@ -114,22 +114,13 @@ img a:hover {
   position: absolute;
 }
 
-#banner  {
-  margin-bottom: 30px;
-  height:100px;
-  background: #0d0f12;
-  width: 100%; 
-  overflow: hidden;
-  z-index: 2;
-  text-align: center;
-}
-
 /* Header */
 
 header {
     max-width: 1000px;
     padding: 0 30px;
     transition: 0.3s;
+    box-sizing: border-box;
 }
 
 .header {
