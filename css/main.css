@@ -262,14 +262,14 @@ h1.logo a:hover {
 
 .show-nav #nav ul.mobile li {
   font-size: 16px !important;
-  text-align: center;
+  text-align: left;
 }
 
 #nav ul.menu li { /* This is the mobile navigation */
   list-style: none;
   font-size: 32px;
-  font-family: 'Roboto', sans-serif;
-  font-weight: 300; 
+  font-family: 'PT Serif', serif;
+  font-weight: normal;
   font-style:normal;
   text-decoration:  none;
   line-height: 150%;
@@ -286,8 +286,6 @@ h1.logo a:hover {
 #nav ul.menu li a:hover,
 #nav ul.mobile li a:hover {
   color:#777;
-  font-family: 'PT Serif', serif;
-  font-weight: normal;
   -webkit-transition:color 0.1s ease-in; 
   -o-transition:color 0.1s ease-in;
   -moz-transition:color 0.1s ease-in;
