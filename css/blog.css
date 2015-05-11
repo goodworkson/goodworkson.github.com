@@ -280,6 +280,7 @@ h1.logo a:hover {
   color:#FFF;
   border:none;
   display: block;
+  list-style-type: none;
 } 
 
 #nav ul li a.current {
