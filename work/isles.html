@@ -62,7 +62,7 @@
             </div>
          
             <div id="container">
-                <div class="projecttext">
+                <div class="projecttext hideme">
                     <h3>Concept</h3>
                     <p>
                         In a world deprived of light, a curious collector searches islands for items lost at sea while shadows of giants wander with unknown intentions.
@@ -70,12 +70,12 @@
                 </div>
             </div>
 
-            <div class="projectimg">
+            <div class="projectimg hideme">
                 <img src="../img/work/isles/isles_1.jpg">
             </div>
 
             <div id="container">
-                <div class="projecttext">
+                <div class="projecttext hideme">
                     <h3>Future</h3>
                     <p>
                         Isles is a concept. So far a fully realised character design and three visual stills have been created. A screenplay has been written so in the future we may see this character discover more of this dark world in a short film or even game.
@@ -83,27 +83,27 @@
                 </div>
             </div>
 
-         <div class="projectimg">
+         <div class="projectimg hideme">
             <img src="../img/work/isles/isles_3.jpg">
          </div>
 
-         <div class="projectimgsmall">
+         <div class="projectimgsmall hideme">
             <img src="../img/work/isles/isles-poster.jpg">
          </div>
 
-         <div class="projectimg videoWrapper">
+         <div class="projectimg videoWrapper hideme">
             <iframe src="https://player.vimeo.com/video/98538988" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
          </div>
 
-         <div class="projectimgsmall">
+         <div class="projectimgsmall hideme">
               <img src="../img/work/isles/isles_concepts_02.jpg">
          </div>
 
-         <div class="projectimgsmall">
+         <div class="projectimgsmall hideme">
              <img src="../img/work/isles/isles_concepts_03.jpg">
          </div>
          
-         <div class="projectimgsmall">
+         <div class="projectimgsmall hideme">
              <img src="../img/work/isles/isles_concepts_01.jpg">
          </div>
 
@@ -177,6 +177,34 @@
     }).resize();
 
     </script>
+
+    <script>
+
+    $(document).ready(function() {
+    
+    /* Every time the window is scrolled ... */
+    $(window).scroll( function(){
+    
+        /* Check the location of each desired element */
+        $('.hideme').each( function(i){
+            
+            var bottom_of_object = $(this).offset().top + $(this).outerHeight();
+            var bottom_of_window = $(window).scrollTop() + $(window).height();
+            
+            /* If the object is completely visible in the window, fade it it */
+            if( bottom_of_window > bottom_of_object ){
+                
+                $(this).animate({'opacity':'1'},200);
+                    
+            }
+            
+        }); 
+    
+    });
+    
+});    
+</script>
+
 
 </body>
   

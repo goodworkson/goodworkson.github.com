@@ -95,6 +95,11 @@ img a:hover {
   height: 100%;
 }
 
+.hideme
+{
+    opacity:0;
+}
+
 /* Main Content */
 
 #wrapper {
@@ -879,6 +884,10 @@ h1.abouttitle {
     font-size: 36px;
     font-weight: 300;
     line-height: 150%;  
+  }
+
+  .projectimgsmall img {
+    padding: 100px 0;
   }
 
   /* About */
