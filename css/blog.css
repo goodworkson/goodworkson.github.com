@@ -292,11 +292,11 @@ h1.logo a:hover {
   text-align: center;
 } 
 
-a.current {
+#nav ul li a.current {
   color: #FFF;
 }
 
-a.current:hover {
+#nav ul li a.current:hover {
   color: #FFF;
 }
 
