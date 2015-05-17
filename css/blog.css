@@ -288,11 +288,11 @@ h1.logo a:hover {
   text-align: center;
 } 
 
-#nav ul li a.current {
+a.current {
   color: #FFF;
 }
 
-#nav ul li a.current:hover {
+a.current:hover {
   color: #FFF;
 }
 

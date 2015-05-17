@@ -33,7 +33,7 @@
                     <div id="nav">
                         <h2 class="animated2 fadeInUp">Menu</h2>
                         <ul class="menu animated2 fadeInUp">
-                            <li><a href="../index.html">Work</a></li>
+                            <li><a href="../index.html" class="current">Work</a></li>
                             <li><a href="../info.html">Info</a></li>
                             <li><a href="http://blog.garethhughes.co/">Blog</a></li>
                             <li><a href="../bookmarks.html">Found</a></li>
@@ -121,6 +121,107 @@
                 </ul>
             </div>              
         </section>
+
+        <div id="homegrid">
+            
+          <div class="swag-rollover tile fadeInUp animated_slowtile1">
+            <img src="../img/work/isles/isles_tile.jpg"/>
+            <a href="../work/isles.html">
+              <div class="hover">
+                  <div>
+                      <p class="tiletitle">Isles</p>
+                      <p class="tilesubtitle">Short film concept</p>
+                  </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="swag-rollover tile fadeInUp animated_slowtile2">
+            <img src="../img/work/roompal/roompal_tile.png"/>
+            <a href="../work/roompal.html">
+              <div class="hover">
+                  <div>
+                      <p class="tiletitle">Roompal</p>
+                      <p class="tilesubtitle">iOS app</p>
+                  </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="swag-rollover tile fadeInUp animated_slowtile3">
+            <img src="../img/work/purescript/purescript_tile.png"/>
+            <a href="../work/purescript.html">
+              <div class="hover">
+                  <div>
+                      <p class="tiletitle">Purescript</p>
+                      <p class="tilesubtitle">Web &amp; Identity</p>
+                  </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="swag-rollover tile fadeInUp animated_slowtile4">
+            <img src="../img/work/gloam/gloam_tile.jpg"/>
+            <a href="../work/gloam.html">
+              <div class="hover">
+                  <div>
+                      <p class="tiletitle">Gloam</p>
+                      <p class="tilesubtitle">Short film</p>
+                  </div>
+              </div>
+            </a>
+          </div>
+
+
+          <div class="swag-rollover tile fadeInUp animated_slowtile5">
+            <img src="../img/work/nike_wms/nike_women_tile.jpg"/>
+            <a href="../work/nike_womens.html">
+              <div class="hover">
+                  <div>
+                      <p class="tiletitle">Nike Women</p>
+                      <p class="tilesubtitle">iOS app</p>
+                  </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="swag-rollover tile fadeInUp animated_slowtile3">
+            <img src="../img/work/bbc_sport/bbc_sport_tile.jpg"/>
+            <a href="../work/bbc_sport.html">
+              <div class="hover">
+                  <div>
+                      <p class="tiletitle">BBC Sport</p>
+                      <p class="tilesubtitle">Mobile Web</p>
+                  </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="swag-rollover tile fadeInUp animated_slowtile6">
+            <img src="../img/work/2sugars/2sugars_02.jpg"/>
+            <a href="../work/2sugars.html">
+              <div class="hover">
+                  <div>
+                      <p class="tiletitle">2 Sugars</p>
+                      <p class="tilesubtitle">Product</p>
+                  </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="swag-rollover tile fadeInUp animated_slowtile2">
+            <img src="../img/work/arup/arup_tile.jpg"/>
+            <a href="../work/arup.html">
+              <div class="hover">
+                  <div>
+                      <p class="tiletitle">Arup Explorer</p>
+                      <p class="tilesubtitle">Web</p>
+                  </div>
+              </div>
+            </a>
+          </div>
+
+        </div>
           
    </div>
 
@@ -177,34 +278,6 @@
     }).resize();
 
     </script>
-
-    <script>
-
-    $(document).ready(function() {
-    
-    /* Every time the window is scrolled ... */
-    $(window).scroll( function(){
-    
-        /* Check the location of each desired element */
-        $('.hideme').each( function(i){
-            
-            var bottom_of_object = $(this).offset().top + $(this).outerHeight();
-            var bottom_of_window = $(window).scrollTop() + $(window).height();
-            
-            /* If the object is completely visible in the window, fade it it */
-            if( bottom_of_window > bottom_of_object ){
-                
-                $(this).animate({'opacity':'1'},200);
-                    
-            }
-            
-        }); 
-    
-    });
-    
-});    
-</script>
-
 
 </body>
   
