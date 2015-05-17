@@ -326,6 +326,10 @@ h1.logo a:hover {
   color: #FFF;
 }
 
+#nav ul li a.current:hover {
+  color: #FFF;
+}
+
 .nav ul li a:hover { 
   text-decoration: none; 
   color: #777; 
