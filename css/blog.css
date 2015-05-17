@@ -261,6 +261,7 @@ h1.logo a:hover {
 #nav ul.menu li a { /* Mobile navigation list */
   color:#FFF;
   border: none;
+  list-style: none;
 }
 
 #nav ul.menu li a:hover,
