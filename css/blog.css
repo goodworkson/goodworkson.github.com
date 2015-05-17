@@ -269,7 +269,7 @@ h1.logo a:hover {
 
 #nav ul.menu li a:hover,
 #nav ul.mobile li a:hover {
-  color:#777;
+  color:#666;
   -webkit-transition:color 0.1s ease-in; 
   -o-transition:color 0.1s ease-in;
   -moz-transition:color 0.1s ease-in;
@@ -713,7 +713,7 @@ a.current:hover {
     text-transform:uppercase;
     text-decoration:none;
     letter-spacing:1px;
-    color:#FFF;
+    color:#888;
     border:none;
     display: block;
     padding: 10px 20px;
