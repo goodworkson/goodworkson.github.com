@@ -18,12 +18,12 @@ footer, header, nav, section, audio, video {
 }
 
 ::-moz-selection {
-    background: #17327f;
+    background: #ededed;
     text-shadow: none;
 }
 
 ::selection {
-    background: #17327f;
+    background: #ededed;
     text-shadow: none;
 }
 
@@ -138,6 +138,7 @@ header {
   overflow: hidden;
   z-index: 2;
   text-align: center;
+  margin-bottom: 40px;
 }
 
 /* Logo */
@@ -241,6 +242,7 @@ h1.logo a:hover {
 .show-nav #nav ul.mobile li {
   font-size: 16px !important;
   text-align: center;
+  list-style: none;
 }
 
 #nav ul.menu li { /* This is the mobile navigation */
@@ -349,9 +351,9 @@ a.current:hover {
 #wrapper section article div.content div.title h5,
 #wrapper section article div.content div.title h6 {
   max-width: 800px;
-  font-family: 'PT Serif', serif;
-  font-weight:300; 
-  font-size: 26px;
+  font-family: 'Roboto', sans-serif;
+  font-weight:400; 
+  font-size: 24px;
   font-style:normal;
   color: #222;
   margin-bottom: 20px;
