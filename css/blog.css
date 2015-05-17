@@ -69,6 +69,7 @@ a:hover {
 img a {
   border:0;
   text-decoration:none;
+  border: none;
 }
 
 img a:hover {
