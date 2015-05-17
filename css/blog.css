@@ -262,7 +262,7 @@ h1.logo a:hover {
 }
 
 #nav ul.menu li a { /* Mobile navigation list */
-  color:#FFF;
+  color:#888;
   border: none;
   list-style: none;
 }
