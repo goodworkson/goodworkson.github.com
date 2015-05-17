@@ -692,6 +692,10 @@ a.current:hover {
     top: 42%;
   }
 
+  #wrapper section article div.content div.title h1 {
+    font-size: 32px;
+  }
+
   /* Navigation */
 
   #nav h1.logo, h1.logo a {
@@ -762,6 +766,10 @@ a.current:hover {
   .header {
       height:300px;
       margin-bottom: 100px;
+  }
+
+  #wrapper section article div.content div.title h1 {
+    font-size: 36px;
   }
 
   /* Navigation */
