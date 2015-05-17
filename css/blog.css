@@ -285,7 +285,7 @@ h1.logo a:hover {
   text-decoration:none;
   letter-spacing:2px;
   line-height: 150%;
-  color:#FFF;
+  color:#888;
   border:none;
   margin-bottom: 10px;
   display: block;
@@ -430,7 +430,7 @@ a.current:hover {
 #wrapper section article div.content #body pre {
   word-wrap: break-word;
   margin-top: 0px;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   line-height: 185%;
 }
 
