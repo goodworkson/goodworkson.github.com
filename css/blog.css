@@ -661,6 +661,12 @@ h1.logo a:hover {
 /* Tablet ——————————————––––––––––––––––––––——————————————————————————————————————— */
 
 @media only screen and (min-width: 500px) { 
+
+    /* Body */
+
+    body {
+      font-size: 19px;
+    }
     
     #wrapper section article div.content {
       max-width: 800px;

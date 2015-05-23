@@ -669,7 +669,22 @@ h1.abouttitle {
 
 @media only screen and (min-width: 500px) { 
 
-   #banner {
+    body {
+      font-size: 21px;
+    }
+
+  
+
+    #about p { 
+      font-size: 16px;
+      font-family: 'Georgia', serif;
+      font-size-adjust:0.508; 
+      font-weight:normal; 
+      font-style:normal;
+      line-height: 170%;
+    }
+
+    #banner {
       height:200px;
     }
 
