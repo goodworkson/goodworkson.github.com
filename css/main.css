@@ -375,7 +375,7 @@ h1.logo a:hover {
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
     font-size: 32px;
-    padding-bottom: 10px;
+    padding-bottom: 6px;
 }
 
 .swag-rollover .hover > div p.tilesubtitle {
@@ -805,7 +805,7 @@ h1.abouttitle {
 
   #aboutcontainerheader {
     max-width: 600px;
-    padding: 60px;
+    padding: 80px 60px;
     transition: 0.3s;
   }
 
