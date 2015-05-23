@@ -71,7 +71,7 @@ body {
 a {
   text-decoration: none;
   color: #444;
-  border-bottom: solid 1px #2156ec;
+  border-bottom: solid 1px #ddd;
   padding-bottom: 3px;
 }
 
@@ -673,7 +673,7 @@ h1.abouttitle {
       font-size: 21px;
     }
 
-  
+
 
     #about p { 
       font-size: 16px;
