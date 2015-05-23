@@ -76,7 +76,7 @@ a {
 }
 
 a:hover {
-  color:#2156ec;
+  color:#ddd;
   cursor: pointer;
 }
 
@@ -295,7 +295,7 @@ h1.logo a:hover {
 
 #nav ul.menu li a:hover,
 #nav ul.mobile li a:hover {
-  color:#666;
+  color:#FFF;
   -webkit-transition:color 0.1s ease-in; 
   -o-transition:color 0.1s ease-in;
   -moz-transition:color 0.1s ease-in;
