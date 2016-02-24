@@ -61,7 +61,7 @@ body {
   font-style:normal;
   line-height: 170%;
   color: #444;
-  background:#f6f6f6;
+  background:#fff;
   -webkit-font-smoothing: antialiased;
   -moz-font-smoothing: antialiased;
 }
@@ -113,7 +113,7 @@ img a:hover {
 #wrapper #head {
   margin-bottom: 30px;
   height:100px;
-  background: #FFFFFF;
+  background: #0d0f12;
   width: 100%; 
   overflow: hidden;
   z-index: 2;
@@ -154,16 +154,16 @@ header {
 
 .header {
     height:80px;
-    width: 100%;
-    background: #FFFFFF;
+    width: 100%; 
     overflow: hidden;
     position: relative;
+    background: #0d0f12;
     box-sizing: border-box;
 }
 
 #banner {
   height:100px;
-  background: #FFFFFF;
+  background: #0d0f12;
   width: 100%; 
   overflow: hidden;
   z-index: 2;
@@ -196,7 +196,7 @@ h1.logo a:hover {
   font-family: 'Roboto', sans-serif;
   font-weight:bold; 
   font-size: 32px;
-  color: #444;
+  color: #FFF;
   margin-top: 30px;
   padding: 10px 0;
   text-align:left;
@@ -215,7 +215,7 @@ h1.logo a:hover {
   text-transform:uppercase;
   text-decoration:none;
   letter-spacing:2px;
-  color:#444;
+  color:#FFF;
   border:none;
 }
 
@@ -295,7 +295,7 @@ h1.logo a:hover {
 
 #nav ul.menu li a:hover,
 #nav ul.mobile li a:hover {
-  color:#222;
+  color:#FFF;
   -webkit-transition:color 0.1s ease-in; 
   -o-transition:color 0.1s ease-in;
   -moz-transition:color 0.1s ease-in;
@@ -311,7 +311,7 @@ h1.logo a:hover {
   text-decoration:none;
   letter-spacing:2px;
   line-height: 150%;
-  color:#444;
+  color:#FFF;
   border:none;
   margin-bottom: 10px;
   display: block;
@@ -319,11 +319,11 @@ h1.logo a:hover {
 } 
 
 #nav ul li a.current {
-  color: #444;
+  color: #FFF;
 }
 
 #nav ul li a.current:hover {
-  color: #222;
+  color: #FFF;
 }
 
 .nav ul li a:hover { 
@@ -434,6 +434,7 @@ h1.logo a:hover {
   max-width: 530px;
   padding: 60px 30px;
   float: left;
+  background: #fff;
   }
 
 #project #containertext {
@@ -720,7 +721,7 @@ h1.abouttitle {
     text-transform:uppercase;
     text-decoration:none;
     letter-spacing:1px;
-    color:#444;
+    color:#FFF;
     border:none;
     display: block;
     padding: 10px 20px;
