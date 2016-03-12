@@ -256,7 +256,7 @@
 
   .show-nav #nav ul { /* Navigation list*/
     display: block;
-    margin-top: 40px
+    margin-top: 80px
   }
 
   .show-nav #nav ul.menu li {
@@ -289,7 +289,7 @@
   }
 
   #nav ul.menu li a { /* Mobile navigation list */
-    color:#888;
+    color:#999;
     border: none;
   }
 
@@ -311,7 +311,7 @@
     text-decoration:none;
     letter-spacing:2px;
     line-height: 150%;
-    color:#444;
+    color:#888;
     border:none;
     margin-bottom: 10px;
     display: block;
