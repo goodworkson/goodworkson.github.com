@@ -33,25 +33,41 @@
         <section id="banner">
             <header>  
                 <div class="header">
-                    
-                    <h1 class="logo animated fadeInUp"><a href="../index.html">Portfolio <i class="of">of</i> Gareth Hughes</a></h1>
-                    <h1 class="logo-mobile animated fadeInUp"><a href="../index.html">Gareth Hughes</a></h1>
+                    <div id="nav" class="leftnav">
 
-                    
-                    <div id="nav">
+                        <ul class="menu animated2 fadeInUp">
+                            <li><a class="nav-links" href="../index.html">Work</a></li>
+                            <li><a class="nav-links" href="../info.html" class="current">Info</a></li>
+                        </ul>
+
+                    </div>
+
+
+                    <div id="logo">
+                      <h1 class="logo animated fadeInUp"><a href="../index.html">Portfolio <i class="of">of</i> Gareth Hughes</a></h1>
+                    </div>
+
+
+                    <div id="nav" class="rightnav">
 
                         <h2 class="animated2 fadeInUp">Menu</h2>
-                    
+
                         <ul class="menu animated2 fadeInUp">
-                            <li><a href="../index.html">Work</a></li>
-                            <li><a href="../info.html" class="current">Info</a></li>
-                            <li><a href="http://instagram.com/garethughes">Insta</a></li>
+                            <li class="social-icon"><a class="social-icon" href="http://instagram.com/garethughes" title="Instagram"><img src="img/icons/insta.svg"/></a></li>
+                            <li class="social-icon"><a class="social-icon" href="http://twitter.com/goodworkson" title="Twitter"><img src="img/icons/twitter.svg"/></a></li>
+                            <li class="social-icon"><a class="social-icon" href="http://verkson.tumblr.com" title="Tumblr"><img src="img/icons/tumblr.svg"/></a></li>
+                            <li class="social-icon"><a class="social-icon" href="http://uk.linkedin.com/in/mrgarethhughes" title="LinkedIn"><img src="img/icons/linkedin.svg"/></a></li>
+                            <li class="social-icon"><a path class="social-icon" href="mailto:gareth.hughes@akqa.com" title="Email"><img src="img/icons/mail.svg"/></a></li>
                         </ul>
+
                         <ul class="mobile animated2 fadeInUp">
                             <li><a href="http://twitter.com/goodworkson">Twitter</a></li>
                             <li><a href="http://uk.linkedin.com/in/mrgarethhughes">LinkedIn</a></li>
                         </ul>
+
                     </div>
+
+
                 </div>
             </header>
         </section>
@@ -61,7 +77,7 @@
             <div id="aboutcontainerheader" class="fadeInUp animated_slowtile1">
                 <div>
                     <h1 class="abouttitle">
-                        Hi, I'm Gareth. An Art Director at AKQA
+                        Hi, I'm Gareth. An Art Director at AKQA.
                     </h1>
                 </div>
             </div>
@@ -118,14 +134,19 @@
 
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
     <script>
+
     $(function () {
+
       var $menuButton = $("#nav h2")
+
       $menuButton.on("click", function () {
         var $body = $(document.body);
         $body.toggleClass("show-nav");
         $menuButton.text($body.is(".show-nav") ? "Close" : "Menu");
       });
+
     });
+
     </script>
 
     <script>
@@ -133,10 +154,12 @@
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
       })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
       ga('create', 'UA-34421058-1', 'auto');
       ga('send', 'pageview');
+
     </script>
 
 </body>
   
-</html>   
+</html>                                                                                                                                                                
