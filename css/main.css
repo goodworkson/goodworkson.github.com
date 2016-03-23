@@ -433,7 +433,6 @@
   /* Project */
 
   .projectimg {
-    float: left;
     width: 100%;
     display: block;
     }
@@ -489,8 +488,7 @@
   }
 
   .projecttext {
-    float: left;
-    max-width: 800px;
+    max-width: 600px;
     padding: 30px;
   }
 
@@ -802,7 +800,6 @@
     }
 
     .projecttext {
-      max-width: 800px;
       padding: 60px;
       margin: 0 auto;
     }
