@@ -33,6 +33,11 @@
       text-shadow: none;
   }
 
+  video {
+      padding: none;
+      margin: none;
+  }
+
   img {
       vertical-align: middle;
       width:100%;
@@ -439,10 +444,6 @@
     display: block;
   }
 
-  .projectimgsmall img {
-    padding: 10px 0;
-  }
-
   #project #containerheader {
     margin: 40px 0;
     display: block;
@@ -803,6 +804,7 @@
     .projecttext {
       max-width: 800px;
       padding: 60px;
+      margin: 0 auto;
     }
 
     #project h2.roll {
@@ -812,10 +814,6 @@
       padding-right: 74px;
       padding-top: 9px;
       clear: none;
-    }
-
-    .projectimgsmall img {
-      padding: 40px 0;
     }
 
     /* About */
