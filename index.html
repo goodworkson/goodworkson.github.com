@@ -15,14 +15,13 @@
    <meta charset="utf-8"> 
 
    <link rel="icon" href="http://garethhughes.co/favicon.png">
-   <link rel="apple-touch-icon-precomposed" href="https://dl.dropboxusercontent.com/u/8888369/host/icons/touch-icon-ipad-retina-precomposed.png">
    <link rel="alternate" type="application/rss+xml" title="RSS" href="{{base_url}}/feed" />
-
-   <link href='http://fonts.googleapis.com/css?family=Roboto:400,500,300,200,100,' rel='stylesheet' type='text/css'>
-   <link href='https://fonts.googleapis.com/css?family=Crimson+Text:400,400italic' rel='stylesheet' type='text/css'>
-   <link href='http://fonts.googleapis.com/css?family=PT+Serif:400,700,400italic' rel='stylesheet' type='text/css'>
-
    <link rel="stylesheet" href="css/main.css">
+
+   <link href='https://fonts.googleapis.com/css?family=Crimson+Text:400,400italic' rel='stylesheet' type='text/css'>
+
+   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+   <script src="../js/picturefill.js" type="text/javascript"></script><!-- pull relevent image sizes -->
 
 </head>
 
@@ -34,20 +33,19 @@
             <header>  
                 <div class="header">
                     
-                    <h1 class="logo animated fadeInUp"><a href="../index.html">Portfolio <i class="of">of</i> Gareth Hughes</a></h1>
+                    <h1 class="logo animated fadeInUp"><a href="../index.html">Gareth Hughes</a></h1>
                     <h1 class="logo-mobile animated fadeInUp"><a href="../index.html">Gareth Hughes</a></h1>
-
                     
                     <div id="nav">
 
                         <h2 class="animated2 fadeInUp">Menu</h2>
                     
                         <ul class="menu animated2 fadeInUp">
-                            <li><a href="../index.html" class="current">Work</a></li>
-                            <li><a href="../info.html">Info</a></li>
-                            <li><a href="http://instagram.com/garethughes">Insta</a></li>
+                            <li><a href="../index.html" class="current">Projects</a></li>
+                            <li><a href="../profile.html">Profile</a></li>
                         </ul>
                         <ul class="mobile animated2 fadeInUp">
+                            <li><a href="http://instagram.com/garethughes">Instagram</a></li>
                             <li><a href="http://twitter.com/goodworkson">Twitter</a></li>
                             <li><a href="http://uk.linkedin.com/in/mrgarethhughes">LinkedIn</a></li>
                         </ul>
@@ -59,14 +57,28 @@
         <section id="project">
          	<div id="aboutcontainerheader">
             	<div>
-               		<h1 class="animated_slowtile4 fadeInUp abouttitle">
-                      Art director, filmmaker <i>&amp;</i> interactive designer in London
+               		<h1 class="animated_slowtile4 fadeInUp hometitle">
+                      Art director, filmmaker <i>&amp;</i> interactive designer
                		</h1>
             	</div>
          </div>
       	</section>
 
         <div id="homegrid">
+
+
+          <div class="swag-rollover large-tile fadeInUp animated_slowtile1">
+
+          <img src="img/work/future_lions/future_lions_tile.jpg"/>
+            <a href="work/future_lions_2016.html">
+              <div class="hover">
+                  <div>
+                      <p class="tiletitle">Future Lions</p>
+                      <p class="tilesubtitle">2016</p>
+                  </div>
+              </div>
+            </a>
+          </div>
 
       
           <div class="swag-rollover tile fadeInUp animated_slowtile1">
@@ -95,30 +107,6 @@
               </div>
             </a>
           </div>
-            
-          <div class="swag-rollover tile fadeInUp animated_slowtile1">
-            <img src="img/work/isles/isles_tile.jpg"/>
-            <a href="work/isles.html">
-              <div class="hover">
-                  <div>
-                      <p class="tiletitle">Isles</p>
-                      <p class="tilesubtitle">Short film concept</p>
-                  </div>
-              </div>
-            </a>
-          </div>
-
-          <div class="swag-rollover tile fadeInUp animated_slowtile2">
-            <img src="img/work/roompal/roompal_tile.png"/>
-            <a href="work/roompal.html">
-              <div class="hover">
-                  <div>
-                      <p class="tiletitle">Roompal</p>
-                      <p class="tilesubtitle">iOS app</p>
-                  </div>
-              </div>
-            </a>
-          </div>
 
           <div class="swag-rollover tile fadeInUp animated_slowtile3">
             <img src="img/work/purescript/purescript_tile.png"/>
@@ -139,6 +127,18 @@
                   <div>
                       <p class="tiletitle">Gloam</p>
                       <p class="tilesubtitle">Short film</p>
+                  </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="swag-rollover large-tile fadeInUp animated_slowtile1">
+            <img src="img/work/isles/isles_tile.jpg"/>
+            <a href="work/isles.html">
+              <div class="hover">
+                  <div>
+                      <p class="tiletitle">Isles</p>
+                      <p class="tilesubtitle">Short film concept</p>
                   </div>
               </div>
             </a>
@@ -170,7 +170,7 @@
 
           <div class="swag-rollover tile fadeInUp animated_slowtile6">
             <img src="img/work/2sugars/2sugars_02.jpg"/>
-            <a href="work/2sugars.html">
+            <a href="work/twosugars.html">
               <div class="hover">
                   <div>
                       <p class="tiletitle">2 Sugars</p>

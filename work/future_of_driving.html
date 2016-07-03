@@ -20,6 +20,9 @@
    <link href='http://fonts.googleapis.com/css?family=Roboto:400,500,700,300' rel='stylesheet' type='text/css'>
    <link rel="stylesheet" href="../css/main.css">
 
+   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+   <script src="../js/picturefill.js" type="text/javascript"></script><!-- pull relevent image sizes -->
+
 </head>
 
 <body>
@@ -30,7 +33,7 @@
             <header>  
                 <div class="header">
                     
-                    <h1 class="logo animated fadeInUp"><a href="../index.html">Portfolio <i class="of">of</i> Gareth Hughes</a></h1>
+                    <h1 class="logo animated fadeInUp"><a href="../index.html">Gareth Hughes</a></h1>
                     <h1 class="logo-mobile animated fadeInUp"><a href="../index.html">Gareth Hughes</a></h1>
 
                     
@@ -39,11 +42,11 @@
                         <h2 class="animated2 fadeInUp">Menu</h2>
                     
                         <ul class="menu animated2 fadeInUp">
-                            <li><a href="../index.html" class="current">Work</a></li>
-                            <li><a href="../info.html">Info</a></li>
-                            <li><a href="http://instagram.com/garethughes">Insta</a></li>
+                            <li><a href="../index.html">Projects</a></li>
+                            <li><a href="../profile.html">Profile</a></li>
                         </ul>
                         <ul class="mobile animated2 fadeInUp">
+                            <li><a href="http://instagram.com/garethughes">Instagram</a></li>
                             <li><a href="http://twitter.com/goodworkson">Twitter</a></li>
                             <li><a href="http://uk.linkedin.com/in/mrgarethhughes">LinkedIn</a></li>
                         </ul>
@@ -54,54 +57,48 @@
         
         <section id="project" class="animated_slowtile1 fadeInUp">
 
-            <div id="containerheader">
+            <div id="aboutcontainerheader" class="fadeInUp animated_slowtile1">
                 <div>
-                    <h1 class="projecttitle">Volvo&#58; Future of Driving</h1>
-                    <h2 class="roll">Art Direction</h2>
+                    <h1 class="abouttitle">Future <i>of</i> Driving</h1>
+                    <h2 class="roll">Design lead</h2>
                 </div>
             </div>
 
             <div class="projectimg">
-
-              <video width="100%" poster="data:image/gif,AAAA" style="background:transparent no-repeat url('../img/work/volvo_fod/video_poster.jpg');background-size:100%" controls>
-                 <source src="../img/work/volvo_fod/Volvo_FoD_CaseStudy.mp4" type="video/mp4">
-                 Your browser does not support the video tag.
-              </video>
-
+                <div data-picture>
+                    <div data-src="../img/work/volvo_fod/volvo_fod_debate_small.jpg"></div>
+                    <div data-src="../img/work/volvo_fod/volvo_fod_debate_medium.jpg" data-media="(min-width: 480px)"></div>
+                    <div data-src="../img/work/volvo_fod/volvo_fod_debate_large.jpg" data-media="(min-width: 768px)"></div>
+                    <noscript><img src="../img/work/volvo_fod/future_lions/future_lions_5_medium.jpg"></noscript>
+                </div>
             </div>
-            
+
             <div id="container">
-                <div class="projecttext">
+                <div class="projecttext hideme">
                     <h3>About</h3>
-
                     <p>A global debate spanning 36 markets with over 41,000 respondents, placing Volvo at the forefront of the autonomous driving conversation.</p>
-
                     <p>Experience it here <a href="http://futureofdriving.com">futureofdriving.com</a>.</p>
                 </div>
             </div>
 
-            <div class="projectimg">
-                <img src="../img/work/volvo_fod/volvo_fod_debate.jpg">
+            <div class="projectimgsmall hideme">
+                <video width="100%" poster="data:image/gif,AAAA" loop="none" style="background:transparent no-repeat url('../img/work/volvo_fod/video_poster.jpg');background-size:100%" controls>
+                   <source src="../img/work/volvo_fod/Volvo_FoD_CaseStudy.mp4" type="video/mp4">
+                   Your browser does not support the video tag.
+                </video>
             </div>
 
-
-            <div class="projectimg">
+            <div class="projectimgsmall hideme">
                 <img src="../img/work/volvo_fod/volvo_fod_lockup.png">
             </div>
 
             <div id="container">
                 <div class="projecttext">
                     <h3>Response</h3>
-
                     <p>The involvement from 41,000+ respondents has helped Volvo tip the scales on the autonomous driving share of voice. Overtaking Audi, Tesla, Mercedes and even Google. Volvo will soon release all of the data in the hope that it will contribute towards creating a meaningful future of driving, designed around people.</p>
                 </div>
             </div>
 
-            <div class="projectimg">
-                <img src="../img/work/volvo_c26/volvo_c26_lockup.jpg">
-            </div>
-
-            
         </section>
 
         <section>
@@ -145,6 +142,63 @@
       ga('create', 'UA-34421058-1', 'auto');
       ga('send', 'pageview');
 
+    </script>
+
+    <script>
+      var videos = document.getElementsByTagName("video"),
+      fraction = 0.8;
+      function checkScroll() {
+
+          for(var i = 0; i < videos.length; i++) {
+
+              var video = videos[i];
+
+              var x = video.offsetLeft, y = video.offsetTop, w = video.offsetWidth, h = video.offsetHeight, r = x + w, //right
+                  b = y + h, //bottom
+                  visibleX, visibleY, visible;
+
+                  visibleX = Math.max(0, Math.min(w, window.pageXOffset + window.innerWidth - x, r - window.pageXOffset));
+                  visibleY = Math.max(0, Math.min(h, window.pageYOffset + window.innerHeight - y, b - window.pageYOffset));
+
+                  visible = visibleX * visibleY / (w * h);
+
+                  if (visible > fraction) {
+                      video.play();
+                  } else {
+                      video.pause();
+                  }
+
+          }
+
+      }
+
+      window.addEventListener('scroll', checkScroll, false);
+      window.addEventListener('resize', checkScroll, false);
+    </script>
+
+
+    <script>
+      $(function() {
+          $(window).scroll( function(){
+          
+             
+              $('.hideme').each( function(i){
+                  
+                  var bottom_of_object = $(this).position().top + $(this).outerHeight();
+                  var bottom_of_window = $(window).scrollTop() + $(window).height();
+                  
+                  /* Adjust the "200" to either have a delay or that the content starts fading a bit before you reach it  */
+                  bottom_of_window = bottom_of_window + 300;  
+                
+                  if( bottom_of_window > bottom_of_object ){
+                      
+                      $(this).animate({'opacity':'1'},700);
+                          
+                  }
+              }); 
+          
+          });
+      });
     </script>
 
 </body>
