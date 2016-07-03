@@ -465,6 +465,7 @@
     margin: 0 auto;
     max-width: 600px;
     padding: 60px 30px;
+    text-align: center;
     }
 
   #project #containertext {
@@ -485,11 +486,11 @@
   }
 
   #project h2.roll {
-    text-align: left;
     font-size: 13px;
     font-weight: 400;
     font-family: sans-serif;
     text-transform: uppercase;
+    text-align: center;
     letter-spacing: 2px;
     color: #222;
     display: block;
@@ -558,7 +559,8 @@
     color: #222;
     display: block;
     line-height: 140%;
-    max-width: 300px;  
+    max-width: 300px; 
+    margin: auto; 
   }
 
   h1.profile {
@@ -765,7 +767,6 @@
     }
 
     #project h2.roll {
-      text-align: center;
       font-size: 13px;
       clear: none;
     }
