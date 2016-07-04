@@ -57,7 +57,7 @@
         <section id="project">
          	<div id="aboutcontainerheader">
             	<div>
-               		<h1 class="animated_slowtile4 fadeInUp hometitle">
+               		<h1 class="animated_slowtile4 fadeInUp hometitle hideme">
                       Art director, filmmaker <i>&amp;</i> interactive designer
                		</h1>
             	</div>
@@ -67,7 +67,7 @@
         <div id="homegrid">
 
 
-          <div class="swag-rollover large-tile fadeInUp animated_slowtile1">
+          <div class="swag-rollover large-tile fadeInUp animated_slowtile1 hideme">
 
           <img src="img/work/future_lions/future_lions_tile.jpg"/>
             <a href="work/future_lions_2016.html">
@@ -81,7 +81,7 @@
           </div>
 
       
-          <div class="swag-rollover tile fadeInUp animated_slowtile1">
+          <div class="swag-rollover tile fadeInUp animated_slowtile1 hideme">
 
           <img src="img/work/terrain_unexplored/tu_tile.jpg"/>
             <a href="work/terrain_unexplored.html">
@@ -95,7 +95,7 @@
           </div>
 
 
-          <div class="swag-rollover tile fadeInUp animated_slowtile1">
+          <div class="swag-rollover tile fadeInUp animated_slowtile1 hideme">
             
             <img src="img/work/volvo_c26/volvo_c26_tile.jpg"/>
             <a href="work/future_of_driving.html">
@@ -108,7 +108,7 @@
             </a>
           </div>
 
-          <div class="swag-rollover tile fadeInUp animated_slowtile3">
+          <div class="swag-rollover tile fadeInUp animated_slowtile3 hideme">
             <img src="img/work/purescript/purescript_tile.png"/>
             <a href="work/purescript.html">
               <div class="hover">
@@ -120,7 +120,7 @@
             </a>
           </div>
 
-          <div class="swag-rollover tile fadeInUp animated_slowtile4">
+          <div class="swag-rollover tile fadeInUp animated_slowtile4 hideme">
             <img src="img/work/gloam/gloam_tile.jpg"/>
             <a href="work/gloam.html">
               <div class="hover">
@@ -132,7 +132,7 @@
             </a>
           </div>
 
-          <div class="swag-rollover large-tile fadeInUp animated_slowtile1">
+          <div class="swag-rollover large-tile fadeInUp animated_slowtile1 hideme">
             <img src="img/work/isles/isles_tile.jpg"/>
             <a href="work/isles.html">
               <div class="hover">
@@ -144,7 +144,7 @@
             </a>
           </div>
 
-          <div class="swag-rollover tile fadeInUp animated_slowtile5">
+          <div class="swag-rollover tile fadeInUp animated_slowtile5 hideme">
             <img src="img/work/nike_wms/nike_women_tile.jpg"/>
             <a href="work/nike_womens.html">
               <div class="hover">
@@ -156,7 +156,7 @@
             </a>
           </div>
 
-          <div class="swag-rollover tile fadeInUp animated_slowtile3">
+          <div class="swag-rollover tile fadeInUp animated_slowtile3 hideme">
             <img src="img/work/bbc_sport/bbc_sport_tile.jpg"/>
             <a href="work/bbc_sport.html">
               <div class="hover">
@@ -168,7 +168,7 @@
             </a>
           </div>
 
-          <div class="swag-rollover tile fadeInUp animated_slowtile6">
+          <div class="swag-rollover tile fadeInUp animated_slowtile6 hideme">
             <img src="img/work/2sugars/2sugars_02.jpg"/>
             <a href="work/twosugars.html">
               <div class="hover">
@@ -180,7 +180,7 @@
             </a>
           </div>
 
-          <div class="swag-rollover tile fadeInUp animated_slowtile2">
+          <div class="swag-rollover tile fadeInUp animated_slowtile2 hideme">
             <img src="img/work/arup/arup_03.gif"/>
             <a href="work/arup.html">
               <div class="hover">
@@ -235,6 +235,30 @@
       ga('create', 'UA-34421058-1', 'auto');
       ga('send', 'pageview');
 
+    </script>
+
+    <script>
+      $(function() {
+          $(window).scroll( function(){
+          
+             
+              $('.hideme').each( function(i){
+                  
+                  var bottom_of_object = $(this).position().top + $(this).outerHeight();
+                  var bottom_of_window = $(window).scrollTop() + $(window).height();
+                  
+                  /* Adjust the "200" to either have a delay or that the content starts fading a bit before you reach it  */
+                  bottom_of_window = bottom_of_window + 300;  
+                
+                  if( bottom_of_window > bottom_of_object ){
+                      
+                      $(this).animate({'opacity':'1'},700);
+                          
+                  }
+              }); 
+          
+          });
+      });
     </script>
 
 </body>
