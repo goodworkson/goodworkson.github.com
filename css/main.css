@@ -34,11 +34,16 @@
   }
 
   video {
-      background-size: auto 100%;
-      background-position: center; 
-      padding: none;
-      margin: none;
+      object-fit: contain;
   }
+
+  .videoContainer video 
+    {
+        width: 100%;
+        height:auto;
+    }
+          
+
 
   img {
       vertical-align: middle;
@@ -240,7 +245,7 @@
 
 
   #nav h2 {
-    margin: 44px 0 0 0;
+    margin: 42px 0 0 0;
     text-transform: uppercase;
     font-family: 'Roboto', sans-serif;
     font-weight:500; 

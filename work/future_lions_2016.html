@@ -82,14 +82,17 @@
             
 
             <div class="projectimgsmall">
+              <div class="videoContainer">
 
-	            <video width="100%" poster="data:image/gif,AAAA" style="background:transparent no-repeat url('../img/work/future_lions/video_poster.jpg');background-size:100%" controls>
-	               <source src="../img/work/future_lions/future_lions_walkthrough.mp4" type="video/mp4">
-	               Your browser does not support the video tag.
-	            </video>
+                <video autoplay preload="auto|metadata|none" width='100%' height='100%' controls>
 
-	           </div>
+                    <source src="../img/work/future_lions/future_lions_walkthrough.mp4" type="video/mp4; codecs="avc1.42E01E, mp4a.40.2"">
 
+                    Video not supported in this browser.
+                </video>
+
+  	           </div>
+             </div>
             
             
               <div class="projecttext">
@@ -145,11 +148,19 @@
                 </div>
             </div>
 
-            <div class="projectimgsmall">
-                <video preload="auto" width="100%" poster="data:image/gif,AAAA" style="background:transparent no-repeat url('../img/work/future_lions/video_poster.jpg');background-size:100%" controls>
-                <source src="../img/work/future_lions/Sign_Up_Mockup.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-                </video>
+              <div class="projectimgsmall">
+                <div class="videoContainer">
+
+                  <video preload="auto|metadata|none" width='100%' height='100%' controls>
+
+                      <source src="../img/work/future_lions/Sign_Up_Mockup.mp4" type="video/mp4; codecs="avc1.42E01E, mp4a.40.2"">
+
+                      Video not supported in this browser.
+                  </video>
+
+                 </div>
+               </div>
+
             </div>
 
             <div class="projecttext">
@@ -157,7 +168,7 @@
 
                 <p>Through social channels we released artwork which told the story of a progressing journey while announcing deadline extensions and live events in the run up to Cannes.</p>
 
-                <p>The artwork was also animated for some social posts and the backdrop the awards ceremony at Cannes.</p>
+                <p>The artwork was also animated for <a href="https://www.instagram.com/p/BCx6VkXutAf/?taken-by=akqa">some social posts</a> and the backdrop the awards ceremony at Cannes.</p>
                 
             </div>
 
@@ -227,38 +238,7 @@
 
     </script>
 
-    <script>
-      var videos = document.getElementsByTagName("video"),
-      fraction = 0.8;
-      function checkScroll() {
-
-          for(var i = 0; i < videos.length; i++) {
-
-              var video = videos[i];
-
-              var x = video.offsetLeft, y = video.offsetTop, w = video.offsetWidth, h = video.offsetHeight, r = x + w, //right
-                  b = y + h, //bottom
-                  visibleX, visibleY, visible;
-
-                  visibleX = Math.max(0, Math.min(w, window.pageXOffset + window.innerWidth - x, r - window.pageXOffset));
-                  visibleY = Math.max(0, Math.min(h, window.pageYOffset + window.innerHeight - y, b - window.pageYOffset));
-
-                  visible = visibleX * visibleY / (w * h);
-
-                  if (visible > fraction) {
-                      video.play();
-                  } else {
-                      video.pause();
-                  }
-
-          }
-
-      }
-
-      window.addEventListener('scroll', checkScroll, false);
-      window.addEventListener('resize', checkScroll, false);
-    </script>
-
+    
 </body>
   
 </html>                                                                                                                                                                
