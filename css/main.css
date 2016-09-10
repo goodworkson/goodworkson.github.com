@@ -138,6 +138,7 @@
     overflow: hidden;
     z-index: 2;
     text-align: center;
+
   }
 
   #wrapper #homehead {
@@ -177,6 +178,7 @@
       overflow: hidden;
       position: relative;
       box-sizing: border-box;
+
   }
 
   #banner {
@@ -605,6 +607,30 @@
     height: 110px;
     margin: 80px auto 30px;
     text-align: center;
+  }
+
+  #footer a {
+    text-transform: uppercase;
+    letter-spacing: 6px;
+    font-family: 'Roboto', sans-serif;
+    color: #222;
+    font-weight:600;
+    font-size: 13px;
+    border: none;
+    -o-transition:0.1s ease-in;
+    -ms-transition:0.1s ease-in;
+    -moz-transition:0.1s ease-in;
+    -webkit-transition:0.1s ease-in;
+    transition:0.1s ease-in;
+  }
+
+  #footer a:hover{
+    opacity: 0.4;
+    -o-transition:0.1s ease-in;
+    -ms-transition:0.1s ease-in;
+    -moz-transition:0.1s ease-in;
+    -webkit-transition:0.1s ease-in;
+    transition:0.1s ease-in;
   }
 
   #footer ul {
