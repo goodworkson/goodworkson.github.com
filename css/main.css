@@ -795,7 +795,7 @@ h1.hometitle {
   #project-thumb {   
       position:relative;
       max-width: 1920px;
-      margin: 0 auto;
+      margin: 0 40px 20px;
   }
 
   .twocol {
@@ -956,13 +956,13 @@ h1.hometitle {
 
       #project-thumb-small-1 {
           position:relative;
-          width: 49.1%;
+          width: 49%;
           float: left;
       }
 
       #project-thumb-small-2 {
           position:relative;
-          width: 49.1%;
+          width: 49%;
           float: right;
       }
 
