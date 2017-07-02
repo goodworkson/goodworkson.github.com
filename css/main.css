@@ -403,20 +403,23 @@ h1.logo a:hover {
     }
 
 #homegrid {
-  max-width: 100%;
-  float: left;
+  max-width: 1920px;
   position: relative;
+  margin: 0 auto;
+  text-align: center;
 }
 
 #project-thumb {   
     position:relative;
-    max-width: 1600px;
-    margin: 0 0 0;
+    max-width: 1920px;
+    margin: 0 auto 0;
+    text-align: center;
 }
 
 .twocol {
-    max-width: 1600px;
-    margin: 0;
+    max-width: 1920px;
+    margin: 0 auto;
+    text-align: center;
 }
 
     #project-thumb-small-1 {
@@ -791,12 +794,12 @@ h1.hometitle {
   /* Home */
   #project-thumb {   
       position:relative;
-      max-width: 1600px;
-      margin: 0;
+      max-width: 1920px;
+      margin: 0 auto;
   }
 
   .twocol {
-      max-width: 1600px;
+      max-width: 1920px;
       margin: 0 40px;
   }
 
@@ -947,7 +950,7 @@ h1.hometitle {
   }
 
   .twocol {
-      max-width: 1600px;
+      max-width: 1920px;
       margin: 0 40px 20px;
   }
 
@@ -1042,12 +1045,12 @@ h1.hometitle {
 
   #project-thumb {   
       position:relative;
-      max-width: 1600px;
+      max-width: 1920px;
       margin: 0 60px 20px;
   }
 
   .twocol {
-      max-width: 1600px;
+      max-width: 1920px;
       margin: 0 60px 20px;
   }
 
