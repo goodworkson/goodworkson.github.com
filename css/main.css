@@ -403,24 +403,25 @@ h1.logo a:hover {
     }
 
 #homegrid {
-  max-width: 1920px;
+  max-width: 1700px;
   position: relative;
   margin: 0 auto;
-  float: left;
   text-align: center;
 }
 
 #project-thumb {   
     position:relative;
-    max-width: 1920px;
+    max-width: 1700px;
     margin: 0 auto 0;
     text-align: center;
+    float: left;
 }
 
 .twocol {
-    max-width: 1920px;
+    max-width: 1700px;
     margin: 0 auto;
     text-align: center;
+    float: left;
 }
 
     #project-thumb-small-1 {
@@ -440,6 +441,7 @@ h1.logo a:hover {
 #project-thumb img {    
     position:relative;
     width:100%;
+    float: left;
 }
 
 #project-thumb-txt {
@@ -795,13 +797,12 @@ h1.hometitle {
   /* Home */
   #project-thumb {   
       position:relative;
-      max-width: 1920px;
-      margin: 0 40px 20px;
+      margin: 0 30px 30px;
   }
 
   .twocol {
-      max-width: 1920px;
       margin: 0 40px;
+      float: left;
   }
 
       #project-thumb-small-1 {
@@ -951,8 +952,8 @@ h1.hometitle {
   }
 
   .twocol {
-      max-width: 1920px;
       margin: 0 40px 20px;
+      float: left;
   }
 
       #project-thumb-small-1 {
@@ -1046,13 +1047,12 @@ h1.hometitle {
 
   #project-thumb {   
       position:relative;
-      max-width: 1920px;
-      margin: 0 60px 20px;
+      margin: 0 60px 40px;
   }
 
   .twocol {
-      max-width: 1920px;
       margin: 0 60px 20px;
+      float: left;
   }
 
       #project-thumb-small-1 {
