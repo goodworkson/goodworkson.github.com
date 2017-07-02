@@ -406,6 +406,7 @@ h1.logo a:hover {
   max-width: 1920px;
   position: relative;
   margin: 0 auto;
+  float: left;
   text-align: center;
 }
 

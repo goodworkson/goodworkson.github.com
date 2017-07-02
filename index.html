@@ -34,9 +34,9 @@
 
 <body>
     
-   	<div id="wrapper">
+    <div id="wrapper">
         
-      	<section id="banner">
+        <section id="banner">
             <header>  
                 <div class="header">
 
@@ -66,14 +66,14 @@
 
       
         <section id="project">
-         	<div id="homecontainerheader">
-            	<div>
-               		<h1 class="animated_slowtile1 fadeInUp hometitle">
-                       Senior Art Director</br>& Interactive Designer
-               		</h1>
-            	</div>
+            <div id="homecontainerheader">
+                <div>
+                    <h1 class="animated_slowtile1 fadeInUp hometitle">
+                       Senior Art Director</br>&amp; Interactive Designer
+                    </h1>
+                </div>
             </div>
-      	</section>
+        </section>
 
 
         <section id="contact-links" class="animated_slowtile1 fadeInUp hometitle"> 
@@ -93,11 +93,9 @@
 
 
             <!-- FL 2017 -->
-            <div class="fadeInUp animated_slowtile4" id="trigger2>
+            <div class="fadeInUp animated_slowtile4">
                 <a href="work/future_lions_2017.html">
-
                     <div id="project-thumb">
-
                         <div data-picture>
                             <div data-src="img/work/future_lions_2017/future_lions_2017_thumb_s.jpg"></div>
                             <div data-src="img/work/future_lions_2017/future_lions_2017_thumb_m.jpg" data-media="(min-width: 480px)"></div>
@@ -106,14 +104,14 @@
                         </div>
 
                             <p id="project-thumb-txt">Future Lions 2017 - Web &amp; art direction - Coming soon</p>
-
                     </div>
                 </a>
             </div>
 
 
             <!-- PRINTS -->
-            <div class="fadeInUp animated_slowtile4" data-color="prints">
+            <div class="fadeInUp animated_slowtile4">
+                <a href="work/prints.html">
                     <div id="project-thumb">
                         <div data-picture >
                             <div data-src="img/work/prints/geoflow_s.jpg"></div>
@@ -125,9 +123,12 @@
                             Prints - Store coming soon
                         </p>
                     </div>
+                </a>
             </div>
 
+
             <div class="twocol">
+                
                 <!-- VOLVO CONCIERGE -->
                 <div class="fadeInUp animated_slowtile4">
                     <a href="work/volvo_concierge.html">
@@ -316,7 +317,6 @@
                 </div>
             </div>
 
-
         </div>
 
 
@@ -335,39 +335,21 @@
                   
     </div>
 
-    <script>
-        // build tween
-        var tween = new TimelineMax ()
-            .add([
-                TweenMax.fromTo("#parallaxText .layer1", 1, {scale: 3, autoAlpha: 0.05, left: 300}, {top: -350, ease: Linear.easeNone}),
-                TweenMax.fromTo("#parallaxText .layer2", 1, {scale: 2, autoAlpha: 0.3, left: 150}, {top: -175, ease: Linear.easeNone})
-            ]);
-
-        // build scene
-        var scene = new ScrollMagic.Scene({triggerElement: "#trigger2", duration: $(window).width()})
-                        .setTween(tween)
-                        .addIndicators() // add indicators (requires plugin)
-                        .addTo(controller);
-    </script>
-
-
-
 
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    
     <script>
+        $(function () {
 
-    $(function () {
+          var $menuButton = $("#nav h2")
 
-      var $menuButton = $("#nav h2")
+          $menuButton.on("click", function () {
+            var $body = $(document.body);
+            $body.toggleClass("show-nav");
+            $menuButton.text($body.is(".show-nav") ? "Close" : "Menu");
+          });
 
-      $menuButton.on("click", function () {
-        var $body = $(document.body);
-        $body.toggleClass("show-nav");
-        $menuButton.text($body.is(".show-nav") ? "Close" : "Menu");
-      });
-
-    });
-
+        });
     </script>
 
     <script>
