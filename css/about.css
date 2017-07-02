@@ -4,7 +4,7 @@
 #about {
     padding: 0 30px; /* This is for the margins of entire page content */
     max-width: 900px;
-    float: left;    
+    margin: 0 auto;    
 }
 
     #about .info {
@@ -85,6 +85,7 @@
             padding-top: 20px;
             float:left;
             width: 100%;
+            margin-bottom: 60px;
         }
 
         #about .three .articles h2.articles_h2 {
@@ -98,10 +99,10 @@
         }
 
 #clients {
-    margin: 100px 0 0;
+    margin: 100px auto 0;
     padding: 0 20px; /* This is for the margins of entire page content */
-    max-width: 1400px;
-    float: left;
+    max-width: 1000px;
+    text-align: center;
 }
 
     #clients .clientlogos {
@@ -285,7 +286,7 @@
     #clients {
         padding: 0 100px;
         clear:left;
-        margin: 120px 0 0;
+        margin: 120px auto 0;
     }
 
         #clients .clientlogos {
