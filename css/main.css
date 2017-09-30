@@ -91,7 +91,6 @@ body.purescript { background: #ffded8; }
 a {
   text-decoration: none;
   color: #222;
-  padding-bottom: 2px;
   border-bottom: 1px solid #ccc;
 }
 
@@ -170,7 +169,7 @@ img a:hover {
       margin: 0 0 0 30px;
       padding: 6px 12px;
       top: 30px;
-      height:29px;
+      height:31px;
       }
 
       .returnhomelink a {
