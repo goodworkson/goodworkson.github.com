@@ -137,12 +137,19 @@ img a:hover {
     border-radius: 29px;
     padding: 6px 10px;
     height:29px;
+    font-family: 'Graphik Web', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-stretch: normal;
     }
 
     .returnhomelink a {
+        font-family: 'Graphik Web', sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-stretch: normal;
         color: #fff;
         text-transform: uppercase;
-        font-weight: 500;
         letter-spacing: 2px;
         font-size: 10px;
         margin:0 8px;
