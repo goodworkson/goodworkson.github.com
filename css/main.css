@@ -133,23 +133,25 @@ img a:hover {
     bottom: 20px;
     position: fixed;
     z-index: 1000;
-    background: rgba(255, 255, 255, .9);
-    border-radius: 4px;
-    padding: 6px 12px;
+    background: rgba(0, 0, 0, 1);
+    border-radius: 29px;
+    padding: 6px 10px;
     height:29px;
     }
 
     .returnhomelink a {
+        color: #fff;
         text-transform: uppercase;
         font-weight: 500;
         letter-spacing: 2px;
         font-size: 10px;
+        margin:0 8px;
         transition: opacity .25s ease-in-out;
         -moz-transition: opacity .25s ease-in-out;
         -webkit-transition: opacity .25s ease-in-out;
     }
 
-    .returnhomelink a:hover {
+    .returnhomelink:hover {
         cursor: pointer;
         opacity: 0.5;
         border: none;
@@ -165,7 +167,6 @@ img a:hover {
       }
 
       .returnhomelink a {
-          letter-spacing: 3px;
           font-size: 11px;
       }
 }
@@ -221,7 +222,7 @@ img a:hover {
 }
 
 #project-header {
-  padding: 120px 30px 120px;
+  padding: 120px 30px 30px;
   max-width: 600px;
 }
 
@@ -294,12 +295,12 @@ img a:hover {
 
 h1.abouttitle {
   font-family: 'Graphik Web', sans-serif ;
-  font-weight: 400;
+  font-weight: 300;
   font-style: normal;
   font-stretch: normal;
   color: #222;
   text-align: left;
-  font-size: 34px;
+  font-size: 28px;
   line-height: 150%;
   letter-spacing: 1.52px;
 }
@@ -396,7 +397,7 @@ h1.abouttitle {
 
 
   #project-header {
-    padding: 120px 80px 120px;
+    padding: 150px 80px 80px;
     max-width: 600px;
   }
 
@@ -425,7 +426,7 @@ h1.abouttitle {
   }
 
   h1.abouttitle {
-    font-size: 30px;
+    font-size: 34px;
   }
 
 }
@@ -438,9 +439,6 @@ h1.abouttitle {
 
 
   /* Work */
-  h1.hometitle {
-    font-size: 36px;
-  }
 
   .projectimg {
     margin: 0 0 110px;
@@ -464,7 +462,7 @@ h1.abouttitle {
   }
 
   #project-header {
-    padding: 200px 0 200px 120px;
+    padding: 200px 0 120px 120px;
   }
 
 }
