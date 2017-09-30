@@ -1,3 +1,33 @@
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, 
+p, blockquote, pre, a, abbr, address, cite, code, del, dfn, em, 
+img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, hr, 
+dl, dt, dd, ol, ul, li, fieldset, form, label, legend, 
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figure, figcaption, hgroup, 
+menu, footer, header, nav, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  line-height: auto;
+  -webkit-text-size-adjust: 100%; 
+  /* Prevent font scaling in landscape while allowing user zoom */
+}
+
+article, aside, canvas, figure, figure img, figcaption, hgroup,
+footer, header, nav, section, audio, video {
+    display: block;
+}
+
+::-moz-selection {
+    background: #ededed;
+    text-shadow: none;
+}
+
+::selection {
+    background: #ededed;
+    text-shadow: none;
+}
+
 /* Base style */
 
 body {
@@ -5,7 +35,6 @@ body {
     font-weight: 400;
     font-style: normal;
     font-stretch: normal;
-    color: #666;
     }
 
 .homebackground {
