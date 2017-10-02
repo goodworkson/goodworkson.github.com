@@ -121,6 +121,7 @@ img a:hover {
 
 .returnhomebutton {
     position: fixed;
+    left: 0;
     margin: 20px 0 0 20px;
     bottom: 20px;
     z-index: 1000;
