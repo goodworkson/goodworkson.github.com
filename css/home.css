@@ -289,6 +289,13 @@ a:hover {
     vertical-align: bottom;
     }
 
+.masonry .brick img:hover {
+    max-width: 100%;
+    vertical-align: bottom;
+    }
+
+
+
 .masonry .brick h3 {
 	font-size: 14px;
 	font-weight: 400;
