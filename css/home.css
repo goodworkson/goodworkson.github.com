@@ -450,7 +450,7 @@ a:hover {
     float: left;
     max-width: 480px;
     margin-left: 0;
-    margin-bottom: 80px;
+    margin-bottom: 20px;
     }
 
     .info-right h3 {
@@ -475,6 +475,21 @@ a:hover {
         list-style-type: none;
     }
 
+.info-right-right {
+    float: left;
+    max-width: 480px;
+    margin-left: 0;
+    margin-bottom: 80px;
+    }
+
+    .info-right-right li, .info-right-right li a {
+        color: #000;
+        font-size: 14px;
+        line-height: 170%;  
+        margin-bottom: 10px; 
+        list-style-type: none;
+    }
+
 
 @media only screen and (min-width: 500px) {
 
@@ -486,6 +501,13 @@ a:hover {
         float: left;
         max-width: 480px;
         margin-left: 0px;
+    }
+
+    .info-right-right {
+        float: left;
+        max-width: 480px;
+        margin-left: 0px;
+        clear: left;
     }
 
     .info-left h3 {
@@ -515,6 +537,13 @@ a:hover {
         margin-top:135px;
     }
 
+    .info-right-right {
+        max-width: 269px;
+        margin-left: 80px;
+        margin-top: 0px;
+        clear: none;
+    }
+
     .info-left {
         margin-bottom: 100px;
     }
@@ -540,6 +569,16 @@ a:hover {
         max-width: 269px;
         }
 }
+
+@media only screen and (min-width: 1215px) {
+
+    .info-right-right {
+        margin-left: 80px;
+        max-width: 269px;
+        margin-top:135px;
+        }
+}
+
 
 
 
