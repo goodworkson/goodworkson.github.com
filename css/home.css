@@ -120,7 +120,7 @@ a:hover {
     text-align: left;
     margin: 0 0 20px 40px;
     font-family: 'Graphik Web', sans-serif ;
-    font-weight: 400;
+    font-weight: 300;
     font-style: normal;
     font-stretch: normal;
     font-size: 16px;
@@ -561,7 +561,7 @@ a:hover {
 @media only screen and (min-width: 1080px) {
 
     #info-container {
-        padding: 140px 120px;
+        padding: 160px 120px;
         }   
 
     .info-right {
@@ -792,7 +792,7 @@ a:hover {
     position: absolute;
     top: 0px;
     left: 0px;
-    animation: shooting-star-1 10s ease-in infinite;
+    animation: shooting-star-1 10s linear infinite;
     animation-delay: 5s;
 }
 
@@ -804,7 +804,7 @@ a:hover {
     position: absolute;
     top: 0px;
     left: 0px;
-    animation: shooting-star-2 10s ease-in infinite;
+    animation: shooting-star-4 10s linear infinite;
     animation-delay: 2s;
 }
 
@@ -816,7 +816,7 @@ a:hover {
     position: absolute;
     top: 0px;
     left: 0px;
-    animation: shooting-star-3 10s ease-in infinite;
+    animation: shooting-star-3 10s linear infinite;
     animation-delay: 7s;
 }
 
@@ -828,7 +828,7 @@ a:hover {
     position: absolute;
     top: 0px;
     left: 0px;
-    animation: shooting-star-4 10s ease-in infinite;
+    animation: shooting-star-2 10s linear infinite;
     animation-delay: 11s;
 }
 
@@ -840,7 +840,7 @@ a:hover {
     position: absolute;
     top: 0px;
     left: 0px;
-    animation: shooting-star-5 10s ease-in infinite;
+    animation: shooting-star-5 10s linear infinite;
     animation-delay: 13s;
 }
 
@@ -853,11 +853,11 @@ a:hover {
         width:1px;
     }
     12% {
-        transform: translate(268px,953px) rotate(45deg);
+        transform: translate(479px,1204px) rotate(45deg);
         width: 400px;
     }
     100% {
-        transform: translate(268px,953px) rotate(45deg);
+        transform: translate(479px,1204px) rotate(45deg);
         width: 400px;
         opacity:0;
     }
@@ -902,15 +902,15 @@ a:hover {
 @keyframes shooting-star-4 {
     0% {
         opacity:1;
-        transform: translate(623px,-56px) rotate(45deg);
+        transform: translate(423px,-256px) rotate(45deg);
         width:1px;
     }
-    15% {
-        transform: translate(1782px,1303px) rotate(45deg);
+    13% {
+        transform: translate(1582px,1103px) rotate(45deg);
         width: 400px;
     }
     100% {
-        transform: translate(1282px,1303px) rotate(45deg);
+        transform: translate(1582px,1103px) rotate(45deg);
         width: 400px;
         opacity:0;
     }
