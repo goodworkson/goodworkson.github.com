@@ -779,3 +779,157 @@ a:hover {
     -webkit-animation-delay: 1.9s;
     animation-delay: 1.9s;
     } 
+
+
+/** STARS **/
+
+
+.star-anim-1 {
+    z-index: 2000;
+    width: 1px;
+    height: 1px;
+    background: -webkit-linear-gradient(-135deg, rgb(255, 255, 255) 0%, rgba(255, 255, 255, 0) 100%);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    animation: shooting-star-1 10s ease-in infinite;
+    animation-delay: 6s;
+}
+
+.star-anim-2 {
+    z-index: 2000;
+    width: 1px;
+    height: 1px;
+    background: -webkit-linear-gradient(-135deg, rgb(255, 255, 255) 0%, rgba(255, 255, 255, 0) 100%);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    animation: shooting-star-2 8s ease-in infinite;
+    animation-delay: 2s;
+}
+
+.star-anim-3 {
+    z-index: 2000;
+    width: 1px;
+    height: 1px;
+    background: -webkit-linear-gradient(-135deg, rgb(255, 255, 255) 0%, rgba(255, 255, 255, 0) 100%);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    animation: shooting-star-3 10s ease-in infinite;
+    animation-delay: 8s;
+}
+
+.star-anim-4 {
+    z-index: 2000;
+    width: 1px;
+    height: 1px;
+    background: -webkit-linear-gradient(-135deg, rgb(255, 255, 255) 0%, rgba(255, 255, 255, 0) 100%);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    animation: shooting-star-4 8s ease-in infinite;
+    animation-delay: 10s;
+}
+
+.star-anim-5 {
+    z-index: 2000;
+    width: 1px;
+    height: 1px;
+    background: -webkit-linear-gradient(-135deg, rgb(255, 255, 255) 0%, rgba(255, 255, 255, 0) 100%);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    animation: shooting-star-5 10s ease-in infinite;
+    animation-delay: 6s;
+}
+
+
+
+@keyframes shooting-star-1 {
+    0% {
+        opacity:1;
+        transform: translate(80px,565px) rotate(45deg);
+        width:1px;
+    }
+    15% {
+        transform: translate(268px,953px) rotate(45deg);
+        width: 400px;
+    }
+    100% {
+        transform: translate(268px,953px) rotate(45deg);
+        width: 400px;
+        opacity:0;
+    }
+}
+
+@keyframes shooting-star-2 {
+    0% {
+        opacity:1;
+        transform: translate(80px,105px) rotate(45deg);
+        width:1px;
+    }
+    15% {
+        transform: translate(1280px,1505px) rotate(45deg);
+        width: 400px;
+    }
+    100% {
+        transform: translate(1280px,1505px) rotate(45deg);
+        width: 400px;
+        opacity:0;
+    }
+}
+
+
+@keyframes shooting-star-3 {
+    0% {
+        opacity:1;
+        transform: translate(340px,175px) rotate(45deg);
+        width:1px;
+    }
+    15% {
+        transform: translate(1540px,1575px) rotate(45deg);
+        width: 400px;
+    }
+    100% {
+        transform: translate(1540px,1575px) rotate(45deg);
+        width: 400px;
+        opacity:0;
+    }
+}
+
+
+@keyframes shooting-star-4 {
+    0% {
+        opacity:1;
+        transform: translate(623px,-56px) rotate(45deg);
+        width:1px;
+    }
+    15% {
+        transform: translate(1432px,953px) rotate(45deg);
+        width: 400px;
+    }
+    100% {
+        transform: translate(1432px,953px) rotate(45deg);
+        width: 400px;
+        opacity:0;
+    }
+}
+
+
+@keyframes shooting-star-5 {
+    0% {
+        opacity:1;
+        transform: translate(1131px,124px) rotate(45deg);
+        width:1px;
+    }
+    15% {
+        transform: translate(1757px,950px) rotate(45deg);
+        width: 400px;
+    }
+    100% {
+        transform: translate(1757px,950px) rotate(45deg);
+        width: 400px;
+        opacity:0;
+    }
+}
