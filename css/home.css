@@ -125,7 +125,7 @@ a:hover {
     font-stretch: normal;
     font-size: 16px;
     line-height: 140%;
-    letter-spacing: 0.5px;
+    letter-spacing: 1.5px;
     }
 
 .hero-title {
@@ -804,7 +804,7 @@ a:hover {
     position: absolute;
     top: 0px;
     left: 0px;
-    animation: shooting-star-4 10s linear infinite;
+    animation: shooting-star-2 10s linear infinite;
     animation-delay: 2s;
 }
 
@@ -828,7 +828,7 @@ a:hover {
     position: absolute;
     top: 0px;
     left: 0px;
-    animation: shooting-star-2 10s linear infinite;
+    animation: shooting-star-4 10s linear infinite;
     animation-delay: 11s;
 }
 
@@ -853,9 +853,17 @@ a:hover {
         width:1px;
     }
     12% {
+        transform: translate(279px,1004px) rotate(45deg);
+        width: 400px;
+        opacity:1;
+    }
+
+    15% {
         transform: translate(479px,1204px) rotate(45deg);
         width: 400px;
+        opacity:0;
     }
+
     100% {
         transform: translate(479px,1204px) rotate(45deg);
         width: 400px;
@@ -866,15 +874,20 @@ a:hover {
 @keyframes shooting-star-2 {
     0% {
         opacity:1;
-        transform: translate(80px,105px) rotate(45deg);
+        transform: translate(0px,0px) rotate(45deg);
         width:1px;
     }
     15% {
-        transform: translate(1280px,1505px) rotate(45deg);
+        transform: translate(1100px,1100px) rotate(45deg);
         width: 400px;
+        opacity:1;
+    }
+    17% {
+        transform: translate(1200px,1200px) rotate(45deg);
+        opacity:0;
     }
     100% {
-        transform: translate(1280px,1505px) rotate(45deg);
+        transform: translate(1200px,1200px) rotate(45deg);
         width: 400px;
         opacity:0;
     }
@@ -888,11 +901,17 @@ a:hover {
         width:1px;
     }
     15% {
-        transform: translate(1540px,1575px) rotate(45deg);
+        transform: translate(1440px,1475px) rotate(45deg);
         width: 400px;
+        opacity: 1;
+    }
+    17% {
+        transform: translate(1640px,1675px) rotate(45deg);
+        width: 400px;
+        opacity: 0;
     }
     100% {
-        transform: translate(1540px,1575px) rotate(45deg);
+        transform: translate(1640px,1675px) rotate(45deg);
         width: 400px;
         opacity:0;
     }
@@ -905,9 +924,15 @@ a:hover {
         transform: translate(423px,-256px) rotate(45deg);
         width:1px;
     }
+    11% {
+        transform: translate(1382px,903px) rotate(45deg);
+        width: 400px;
+        opacity:1;
+    }
     13% {
         transform: translate(1582px,1103px) rotate(45deg);
         width: 400px;
+        opacity:0;
     }
     100% {
         transform: translate(1582px,1103px) rotate(45deg);
@@ -923,9 +948,15 @@ a:hover {
         transform: translate(1131px,124px) rotate(45deg);
         width:1px;
     }
+    13% {
+        transform: translate(1657px,850px) rotate(45deg);
+        width: 400px;
+        opacity:1;
+    }
     15% {
         transform: translate(1757px,950px) rotate(45deg);
         width: 400px;
+        opacity:0;
     }
     100% {
         transform: translate(1757px,950px) rotate(45deg);
