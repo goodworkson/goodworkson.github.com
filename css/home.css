@@ -37,6 +37,10 @@ body {
     font-stretch: normal;
     }
 
+.hideme {
+    opacity:0;
+    }
+
 .homebackground {
     background: #000;
 }
@@ -87,7 +91,7 @@ a:hover {
         margin: 0 0 0 20px;
         font-weight: 400;
         letter-spacing: 3px;
-        font-size: 11px;
+        font-size: 12px;
         border-bottom: none;
         padding:4px;
         cursor: pointer;
@@ -238,6 +242,19 @@ a:hover {
         }
 }
 
+@media only screen and (min-width: 1400px) {
+
+    .hero-name {
+        font-size: 27px;
+        margin: 0 0 20px 120px;
+        }
+
+    .hero-title {
+        font-size: 47px;
+        margin: 0 0 0 120px;
+        }
+}
+
 
 /* Grid */
 
@@ -276,26 +293,24 @@ a:hover {
 		break-inside: avoid;
     }
 
-/****
-.masonry .brick:hover {
-    opacity: 1;
-    cursor: url("../img/cursor/arrow-right@1x.png") 20 20, pointer; /* Legacy */
-    cursor: url("../img/cursor/arrow-right.svg") 20 20, pointer; /* FF */
-    cursor: -webkit-image-set(url("../img/cursor/arrow-right@1x.png") 1x, url("../img/cursor/arrow-right@2x.png") 2x) 20 20, pointer; /* Webkit */
-    }
-    ****/
-
 .masonry .brick img {
     max-width: 100%;
     vertical-align: bottom;
+    opacity: 1;
+    transition: opacity .25s ease-in-out;
+        -moz-transition: opacity .25s ease-in-out;
+        -webkit-transition: opacity .25s ease-in-out;
     }
 
 .masonry .brick img:hover {
     max-width: 100%;
     vertical-align: bottom;
+    border: none;
+    opacity: 0.5;
+    transition: opacity .25s ease-in-out;
+        -moz-transition: opacity .25s ease-in-out;
+        -webkit-transition: opacity .25s ease-in-out;
     }
-
-
 
 .masonry .brick h3 {
 	font-size: 14px;
@@ -379,7 +394,7 @@ a:hover {
         }
 
     .masonry .brick {
-        margin-bottom: 40px;
+        margin-bottom: 60px;
         }
 
                     .masonry .brickNo {
@@ -407,17 +422,40 @@ a:hover {
    	.masonry .brick {
         margin-bottom: 120px;
         }
-
                     .masonry .brickNo {
                      margin-bottom: 120px;
                      }
 }
 
+@media only screen and (min-width: 1400px) {
+
+        .sectionGrid {
+            max-width: 1600px;
+            padding: 180px;
+            }
+        
+        .masonry {
+            column-count: 2;
+                -moz-column-count: 2;
+                -webkit-column-count: 2;
+            column-gap: 180px;
+                -moz-column-gap: 180px;
+                -webkit-column-gap: 180px;
+            }
+
+        .masonry .brick {
+            margin-bottom: 180px;
+            }
+
+                .masonry .brickNo {
+                    margin-bottom: 180px;
+                }
+}
 
 /* Info */
 
 #info {
-    background-color: #f5f5f5;
+    background-color: #fff;
     min-height: 100vh;
     width: 100%;
     float: left;
@@ -682,7 +720,9 @@ a:hover {
     .footer-title {
         margin: 0 0 0 120px;
         }
+
     }
+
 
 
 
