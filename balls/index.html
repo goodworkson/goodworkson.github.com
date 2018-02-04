@@ -14,11 +14,13 @@
       var gameInstance = UnityLoader.instantiate("gameContainer", "Build/balls.json", {onProgress: UnityProgress});
     </script>
   </head>
-  <body>
-    <div class="webgl-content" style="position:relative; left:0; top:0; min-height: 100%; min-width: 100%; height: auto; width: auto; background: #999; -webkit-transform:none;">
 
-      <div id="gameContainer"></div>
+  <body style="margin:0; padding:0;">
+  	
+  		<div class="webgl-content" style="position:relative; left:0; top:0; min-height: 100vh; min-width: 100%; height: auto; width: auto; background: #999; -webkit-transform:none;">
+
+      	<div id="gameContainer"></div>
     
-    </div>
   </body>
+
 </html>
